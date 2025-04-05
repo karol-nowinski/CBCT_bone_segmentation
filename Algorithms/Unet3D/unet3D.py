@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import criterions as crit
+import Algorithms.losses as crit
 #from ..utils import DoubleConv
 import datetime
 import os
@@ -78,84 +78,84 @@ class UNet3D(nn.Module):
 
 
 
-class Unet3DTrainer:
-    def __init__(self,model,train_dataset,val_dataset,batch_size = 4, learning_rate = 1e-4, num_epochs = 50, device = 'cuda'):
-        self.device = device
-        self.model = model.to(device)
-        self.train_loader = train_dataset
-        self.val_loader = val_dataset
-        self.num_epochs = num_epochs
-        self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
-        self.criterion = crit.DiceLoss()
-        self.best_loss = float('inf')
-        pass
+# class Unet3DTrainer:
+#     def __init__(self,model,train_dataset,val_dataset,batch_size = 4, learning_rate = 1e-4, num_epochs = 50, device = 'cuda'):
+#         self.device = device
+#         self.model = model.to(device)
+#         self.train_loader = train_dataset
+#         self.val_loader = val_dataset
+#         self.num_epochs = num_epochs
+#         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
+#         self.criterion = crit.DiceLoss()
+#         self.best_loss = float('inf')
+#         pass
 
 
-    def train_epoch(self):
-        self.model.train()
-        running_loss = 0.0
+#     def train_epoch(self):
+#         self.model.train()
+#         running_loss = 0.0
 
-        for image,label in self.train_loader:
-            images, labels = images.to(self.device), labels.to(self.device)
-            self.optimizer.zero_grad()
-            outputs = self.model(images)
-            loss = self.criterion(outputs, labels)
-            running_loss += loss.item()
-            loss.backward()
-            self.optimizer.step()
-        avg_loss = running_loss / len(self.train_loader)
-        return avg_loss
+#         for image,label in self.train_loader:
+#             images, labels = images.to(self.device), labels.to(self.device)
+#             self.optimizer.zero_grad()
+#             outputs = self.model(images)
+#             loss = self.criterion(outputs, labels)
+#             running_loss += loss.item()
+#             loss.backward()
+#             self.optimizer.step()
+#         avg_loss = running_loss / len(self.train_loader)
+#         return avg_loss
     
-    def validate(self):
-        self.model.eval() 
-        running_loss = 0.0
-        with torch.no_grad():  # Disable gradient computation during validation
-            for val_images, val_labels in self.val_loader:
-                val_images, val_labels = val_images.to(self.device), val_labels.to(self.device)
+#     def validate(self):
+#         self.model.eval() 
+#         running_loss = 0.0
+#         with torch.no_grad():  # Disable gradient computation during validation
+#             for val_images, val_labels in self.val_loader:
+#                 val_images, val_labels = val_images.to(self.device), val_labels.to(self.device)
                 
-                # Forward pass
-                val_outputs = self.model(val_images)
+#                 # Forward pass
+#                 val_outputs = self.model(val_images)
                 
-                # Calculate validation loss
-                val_loss = self.criterion(val_outputs, val_labels)
-                running_loss += val_loss.item()
+#                 # Calculate validation loss
+#                 val_loss = self.criterion(val_outputs, val_labels)
+#                 running_loss += val_loss.item()
 
-        avg_val_loss = running_loss / len(self.val_loader)
-        return avg_val_loss
+#         avg_val_loss = running_loss / len(self.val_loader)
+#         return avg_val_loss
 
-    def train(self):
+#     def train(self):
 
-        model_dir = 'Models/Unet3D'
-        if not os.path.exists(model_dir):
-            os.makedirs(model_dir)  
+#         model_dir = 'Models/Unet3D'
+#         if not os.path.exists(model_dir):
+#             os.makedirs(model_dir)  
 
-        for epoch in range(self.num_epochs):
-            print(f"Epoch {epoch + 1}/{self.num_epochs}:")
+#         for epoch in range(self.num_epochs):
+#             print(f"Epoch {epoch + 1}/{self.num_epochs}:")
 
-            #training
-            train_loss= self.train_epoch()
-            print(f"Training loss: {train_loss}")
+#             #training
+#             train_loss= self.train_epoch()
+#             print(f"Training loss: {train_loss}")
 
-            # validation
-            val_loss = self.validate()
-            print(f"Validation loss: {val_loss}")
+#             # validation
+#             val_loss = self.validate()
+#             print(f"Validation loss: {val_loss}")
 
-            if val_loss < self.best_loss:
-                self.best_loss = val_loss
-                print("Validation loss improved, saving model...")
+#             if val_loss < self.best_loss:
+#                 self.best_loss = val_loss
+#                 print("Validation loss improved, saving model...")
 
-                # Get current date and time to add to filename
-                timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-                model_filename = f"unet3d_model_{timestamp}.pth"
-                torch.save(self.model.state_dict(), model_filename)
-                print(f"Model saved as {model_filename}")
+#                 # Get current date and time to add to filename
+#                 timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+#                 model_filename = f"unet3d_model_{timestamp}.pth"
+#                 torch.save(self.model.state_dict(), model_filename)
+#                 print(f"Model saved as {model_filename}")
 
 
 
-    def load_model(self, model_path):
-        # Load the model weights
-        self.model.load_state_dict(torch.load(model_path))
-        print("Model loaded successfully from", model_path)
+#     def load_model(self, model_path):
+#         # Load the model weights
+#         self.model.load_state_dict(torch.load(model_path))
+#         print("Model loaded successfully from", model_path)
 
 
 # Example usage

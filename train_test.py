@@ -3,12 +3,14 @@ from torch.utils.data import DataLoader
 import torchio as tio
 import glob
 from pathlib import Path
-
+from Algorithms.Unet3D.unet3D import UNet3D
+from Algorithms.trainer import UnetTrainer
+import numpy as np
 
 # === Parametry ===
 PATCH_SIZE = (160, 160, 160)
 BATCH_SIZE = 1
-
+histogram_landmarks_path = "landmarks.npy"
 
 # === Tworzenie Subjectów ===
 def create_subjects_by_exact_filename(image_dir, mask_dir):
@@ -42,19 +44,38 @@ if __name__ == "__main__":
     # image_paths = sorted(glob.glob("Data/ChinaCBCT/img/*.nii.gz")) 
     # mask_paths = sorted(glob.glob("Data/ChinaCBCT/label/*.nii.gz")) 
 
-    # Transformacje wykonywane na danych treninigowych
-    training_transform = tio.Compose([
-        tio.RandomFlip(axes=(0, 1, 2)),
-        tio.RandomNoise(std=0.01),
-        tio.RandomAffine(scales=0.1, degrees=10),
-    ])
-
 
     subject_list = create_subjects_by_exact_filename("Data/ChinaCBCT/img","Data/ChinaCBCT/label")
 
     # podział danych na walidacje oraz treningowe
     train_subjects = subject_list[:8]
     val_subjects = subject_list[8:10]
+
+
+    paths = [str(s['image'].path) for s in train_subjects]
+    print(paths)
+
+    landmarks = tio.HistogramStandardization.train(
+        [s['image'].path for s in train_subjects],
+        output_path=histogram_landmarks_path
+        )
+    print('\nTrained landmarks:', landmarks)
+
+
+
+    landmark_dict = {'image': landmarks}
+    # Transformacje wykonywane na danych treninigowych
+    training_transform = tio.Compose([
+        #tio.ToCanonical()
+        tio.HistogramStandardization(landmark_dict),
+        tio.ZNormalization(masking_method=tio.ZNormalization.mean),
+        tio.RandomFlip(axes=(0, 1, 2)),
+        tio.RandomNoise(std=0.01),
+        tio.RandomAffine(scales=0.1, degrees=10),
+        tio.OneHot()
+    ])
+
+
 
     #print(subject_list)
     print(len(subject_list))
@@ -76,10 +97,29 @@ if __name__ == "__main__":
 
     train_loader = DataLoader(train_queue,batch_size=BATCH_SIZE)
 
-    print("\n--- Treningowy batch ---")
-    for batch in train_loader:
-        print("Image shape:", batch['image'][tio.DATA].shape)
-        print("Mask shape:", batch['mask'][tio.DATA].shape)
+    print("--- Tworzenie modelu Unet3D ---")
+    model = UNet3D(in_channels=1, out_channels=33)
+
+    print("--- Tworzenie trainera ---")
+
+    print(torch.cuda.is_available())
+
+    trainer = UnetTrainer(
+        model = model,
+        train_dataset=train_loader,
+        val_dataset=None,
+        classes_number=33,
+        batch_size=1,
+        learning_rate=1e-4,
+        num_epochs=30,
+        device='cuda' if torch.cuda.is_available() else 'cpu'
+    )
+
+    print("\n--- Trenowanie---")
+    trainer.train()
+    # for batch in train_loader:
+    #     print("Image shape:", batch['image'][tio.DATA].shape)
+    #     print("Mask shape:", batch['mask'][tio.DATA].shape)
         
 
 

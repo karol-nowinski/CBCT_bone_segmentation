@@ -6,6 +6,7 @@ import torch.nn.functional as F
 import datetime
 import os
 import Algorithms.losses as crit
+import torchio as tio
 
 # Ze wzgledu na korzytsanie z overlaptilestrategy batch_size musi byc 1
 class UnetTrainer:
@@ -25,9 +26,14 @@ class UnetTrainer:
         self.model.train()
         running_loss = 0.0
 
-        for image,label in self.train_loader:
-            images, labels = image.to(self.device), label.to(self.device)
+        print("W train_epoch")
+        for batch in self.train_loader:
 
+            print("batch")
+            images = batch['image'][tio.DATA].to(self.device)
+            labels = batch['mask'][tio.DATA].to(self.device)
+
+            print("Optimizer")
             self.optimizer.zero_grad()
             outputs = self.model(images)
             loss = self.criterion(outputs, labels)

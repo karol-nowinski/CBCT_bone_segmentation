@@ -5,3 +5,4 @@ try:
     print("✔️ Działa jako .nii (bez kompresji)")
 except Exception as e:
     print("❌ Nadal nie działa:", e)
+    

@@ -7,6 +7,7 @@ import datetime
 import os
 import Algorithms.losses as crit
 import torchio as tio
+import time
 
 # Ze wzgledu na korzytsanie z overlaptilestrategy batch_size musi byc 1
 class UnetTrainer:
@@ -27,20 +28,42 @@ class UnetTrainer:
         running_loss = 0.0
 
         print("W train_epoch")
-        for batch in self.train_loader:
+        for batch_idx, batch in enumerate(self.train_loader):
 
-            print("batch")
-            images = batch['image'][tio.DATA].to(self.device)
+            print(f"\n📦 Batch {batch_idx + 1}/{len(self.train_loader)}")
+            images = batch['image'][tio.DATA].to(self.device).float()
             labels = batch['mask'][tio.DATA].to(self.device)
 
             print("Optimizer")
+            #start = time.time()
             self.optimizer.zero_grad()
+            #print(f"⏱️ zero_grad: {time.time() - start:.3f}s")
+
+            #start = time.time()
             outputs = self.model(images)
+            #print(f"⏱️ forward pass: {time.time() - start:.3f}s")
+
+            #start = time.time()
             loss = self.criterion(outputs, labels)
+            #print(f"⏱️ criterion compute: {time.time() - start:.3f}s")
             
+            #start = time.time()
+            torch.cuda.synchronize()
             running_loss += loss.item()
+            #print(f"⏱️ loss item compute: {time.time() - start:.3f}s")
+
+            #start = time.time()
             loss.backward()
+            #print(f"⏱️ backward pass: {time.time() - start:.3f}s")
+
+            #start = time.time()
             self.optimizer.step()
+            #print(f"⏱️ optimizer step: {time.time() - start:.3f}s")
+            # Zabezpieczenie: opcjonalnie czyszczenie cache
+            torch.cuda.empty_cache()
+
+            # (Opcjonalnie) monitorowanie GPU
+            print(f"🧠 GPU użycie: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
         avg_loss = running_loss / len(self.train_loader)
         return avg_loss
     
@@ -48,15 +71,21 @@ class UnetTrainer:
         self.model.eval() 
         running_loss = 0.0
         with torch.no_grad():  # Disable gradient computation during validation
-            for val_images, val_labels in self.val_loader:
-                val_images, val_labels = val_images.to(self.device), val_labels.to(self.device)
-                
+            for batch_idx, batch in enumerate(self.val_loader):
+                print(f"\n🧪 Walidacja — Batch {batch_idx + 1}/{len(self.val_loader)}")
+
+                images = batch['image'][tio.DATA].to(self.device, non_blocking=True).float()
+                labels = batch['mask'][tio.DATA].to(self.device, non_blocking=True)
+
                 # Forward pass
-                val_outputs = self.model(val_images)
+                val_outputs = self.model(images)
                 
                 # Calculate validation loss
-                val_loss = self.criterion(val_outputs, val_labels)
+                val_loss = self.criterion(val_outputs, labels)
                 running_loss += val_loss.item()
+                torch.cuda.empty_cache()
+                print(f"🧠 GPU użycie: {torch.cuda.memory_allocated() / 1024**2:.2f} MB")
+                print(f"📉 Walidacja - Loss: {val_loss.item():.4f}")
 
         avg_val_loss = running_loss / len(self.val_loader)
         return avg_val_loss

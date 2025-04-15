@@ -22,15 +22,37 @@ class MultiClassDiceLoss(nn.Module):
         self.epsilon = epsilon
 
     def forward(self,inputs,targets):
-        inputs = F.softmax(inputs, dim=1)  # [B, C, D, H, W]
-        targets_one_hot = F.one_hot(targets, self.num_classes)  # [B, D, H, W, C]
-        targets_one_hot = targets_one_hot.permute(0, 4, 1, 2, 3).float()  # [B, C, D, H, W]
 
-        dims = (0, 2, 3, 4)
-        intersection = torch.sum(inputs * targets_one_hot, dims)
-        cardinality = torch.sum(inputs + targets_one_hot, dims)
-        dice_loss = 1 - (2. * intersection + self.epsilon) / (cardinality + self.epsilon)
-        return dice_loss.mean()
+        #print(f"🔍 inputs shape: {inputs.shape}")
+        #print(f"🔍 targets shape: {targets.shape}")
+
+        targets = targets.squeeze(1)
+
+        targets_one_hot = F.one_hot(targets.long(), num_classes=self.num_classes)
+        #print(f"🔍 targets_one_hot 1 shape: {targets_one_hot.shape}")
+        targets_one_hot = targets_one_hot.permute(0, 4, 1, 2, 3).float()
+        #print(f"🔍 targets_one_hot 2 shape: {targets_one_hot.shape}")
+
+        inputs_soft = F.softmax(inputs, dim=1)
+        inputs_flat = inputs_soft.view(inputs.size(0), self.num_classes, -1)
+        targets_flat = targets_one_hot.view(inputs.size(0), self.num_classes, -1)
+
+        intersection = (inputs_flat * targets_flat).sum(-1)
+        denominator = inputs_flat.sum(-1) + targets_flat.sum(-1)
+
+        dice_score = (2 * intersection + self.epsilon) / (denominator + self.epsilon)
+
+        loss = 1 - dice_score.mean()
+        return loss
+        # inputs = F.softmax(inputs, dim=1)  # [B, C, D, H, W]
+        # targets_one_hot = F.one_hot(targets, self.num_classes)  # [B, D, H, W, C]
+        # targets_one_hot = targets_one_hot.permute(0, 4, 1, 2, 3).float()  # [B, C, D, H, W]
+
+        # dims = (0, 2, 3, 4)
+        # intersection = torch.sum(inputs * targets_one_hot, dims)
+        # cardinality = torch.sum(inputs + targets_one_hot, dims)
+        # dice_loss = 1 - (2. * intersection + self.epsilon) / (cardinality + self.epsilon)
+        # return dice_loss.mean()
 
 
 # Połączenie MultiClassDiceLoss z CrossEntropyLoss

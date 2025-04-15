@@ -8,7 +8,7 @@ from Algorithms.trainer import UnetTrainer
 import numpy as np
 
 # === Parametry ===
-PATCH_SIZE = (160, 160, 160)
+PATCH_SIZE = (128, 128, 128)
 BATCH_SIZE = 1
 histogram_landmarks_path = "landmarks.npy"
 
@@ -66,16 +66,21 @@ if __name__ == "__main__":
     landmark_dict = {'image': landmarks}
     # Transformacje wykonywane na danych treninigowych
     training_transform = tio.Compose([
-        #tio.ToCanonical()
+        tio.ToCanonical(),
         tio.HistogramStandardization(landmark_dict),
         tio.ZNormalization(masking_method=tio.ZNormalization.mean),
         tio.RandomFlip(axes=(0, 1, 2)),
         tio.RandomNoise(std=0.01),
         tio.RandomAffine(scales=0.1, degrees=10),
-        tio.OneHot()
     ])
 
-
+    val_transform = tio.Compose(
+        [
+            tio.ToCanonical(),
+            tio.HistogramStandardization(landmark_dict),
+            tio.ZNormalization(masking_method=tio.ZNormalization.mean)
+        ]
+    )
 
     #print(subject_list)
     print(len(subject_list))
@@ -87,10 +92,10 @@ if __name__ == "__main__":
     # Kolejka treningowa
     train_queue = tio.Queue(
         train_dataset,
-        300,
-        32,
+        64,
+        8,
         sampler=tio.data.LabelSampler(PATCH_SIZE),
-        num_workers=2,
+        num_workers=6,
         shuffle_subjects=True,
         shuffle_patches=True,
     )
@@ -100,6 +105,20 @@ if __name__ == "__main__":
     print("--- Tworzenie modelu Unet3D ---")
     model = UNet3D(in_channels=1, out_channels=33)
 
+    print("--- Tworzenie walidacyjnego datasetu---")
+    val_dataset = tio.SubjectsDataset(val_subjects,transform=val_transform)
+    val_queue = tio.Queue(
+        val_dataset,
+        24,
+        8,
+        sampler=tio.data.LabelSampler(PATCH_SIZE),
+        num_workers=2,
+        shuffle_subjects=True,
+        shuffle_patches=True
+    )
+    val_loader = DataLoader(val_queue,batch_size=1,shuffle=False)
+
+
     print("--- Tworzenie trainera ---")
 
     print(torch.cuda.is_available())
@@ -107,7 +126,7 @@ if __name__ == "__main__":
     trainer = UnetTrainer(
         model = model,
         train_dataset=train_loader,
-        val_dataset=None,
+        val_dataset=val_loader,
         classes_number=33,
         batch_size=1,
         learning_rate=1e-4,
@@ -121,7 +140,4 @@ if __name__ == "__main__":
     #     print("Image shape:", batch['image'][tio.DATA].shape)
     #     print("Mask shape:", batch['mask'][tio.DATA].shape)
         
-
-
-
     pass

@@ -1,0 +1,3265 @@
+
+Plik: 1000813648_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44574508 voxeli
+  Klasa 1: 13381 voxeli
+  Klasa 2: 10984 voxeli
+  Klasa 3: 11436 voxeli
+  Klasa 4: 11150 voxeli
+  Klasa 5: 13587 voxeli
+  Klasa 6: 7453 voxeli
+  Klasa 7: 5079 voxeli
+  Klasa 8: 8480 voxeli
+  Klasa 9: 6882 voxeli
+  Klasa 10: 6077 voxeli
+  Klasa 11: 3685 voxeli
+  Klasa 12: 3186 voxeli
+  Klasa 13: 7190 voxeli
+  Klasa 14: 3139 voxeli
+  Klasa 15: 4063 voxeli
+  Klasa 16: 7646 voxeli
+  Klasa 17: 8232 voxeli
+  Klasa 18: 6072 voxeli
+  Klasa 19: 6385 voxeli
+  Klasa 20: 8066 voxeli
+  Klasa 21: 7050 voxeli
+  Klasa 22: 7848 voxeli
+  Klasa 23: 12096 voxeli
+  Klasa 24: 11717 voxeli
+  Klasa 25: 11015 voxeli
+  Klasa 26: 11779 voxeli
+  Klasa 27: 11814 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1000889125_20171009.nii.gz
+Liczność klas:
+  Klasa 0: 43345425 voxeli
+  Klasa 1: 8213 voxeli
+  Klasa 2: 9961 voxeli
+  Klasa 3: 10615 voxeli
+  Klasa 4: 4501 voxeli
+  Klasa 5: 12460 voxeli
+  Klasa 6: 13187 voxeli
+  Klasa 7: 5818 voxeli
+  Klasa 8: 5841 voxeli
+  Klasa 9: 7560 voxeli
+  Klasa 10: 5042 voxeli
+  Klasa 11: 7244 voxeli
+  Klasa 12: 5659 voxeli
+  Klasa 13: 4669 voxeli
+  Klasa 14: 2737 voxeli
+  Klasa 15: 2921 voxeli
+  Klasa 16: 7050 voxeli
+  Klasa 18: 2891 voxeli
+  Klasa 19: 7070 voxeli
+  Klasa 20: 3478 voxeli
+  Klasa 21: 4498 voxeli
+  Klasa 22: 7285 voxeli
+  Klasa 23: 7058 voxeli
+  Klasa 24: 5793 voxeli
+  Klasa 25: 12596 voxeli
+  Klasa 26: 10428 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1000889125_20171016.nii.gz
+Liczność klas:
+  Klasa 0: 40784969 voxeli
+  Klasa 1: 8176 voxeli
+  Klasa 2: 9998 voxeli
+  Klasa 3: 4591 voxeli
+  Klasa 4: 10548 voxeli
+  Klasa 5: 12499 voxeli
+  Klasa 6: 12967 voxeli
+  Klasa 7: 5715 voxeli
+  Klasa 8: 6125 voxeli
+  Klasa 9: 7339 voxeli
+  Klasa 10: 5207 voxeli
+  Klasa 11: 7204 voxeli
+  Klasa 12: 5946 voxeli
+  Klasa 13: 4445 voxeli
+  Klasa 14: 2847 voxeli
+  Klasa 15: 2849 voxeli
+  Klasa 16: 6869 voxeli
+  Klasa 17: 2861 voxeli
+  Klasa 18: 6829 voxeli
+  Klasa 19: 3604 voxeli
+  Klasa 21: 4378 voxeli
+  Klasa 23: 7376 voxeli
+  Klasa 25: 6937 voxeli
+  Klasa 27: 6047 voxeli
+  Klasa 28: 12800 voxeli
+  Klasa 29: 10874 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1000889125_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 52305900 voxeli
+  Klasa 1: 8477 voxeli
+  Klasa 2: 10012 voxeli
+  Klasa 3: 10495 voxeli
+  Klasa 4: 4508 voxeli
+  Klasa 5: 12060 voxeli
+  Klasa 6: 12469 voxeli
+  Klasa 7: 5809 voxeli
+  Klasa 8: 6080 voxeli
+  Klasa 9: 7053 voxeli
+  Klasa 10: 5204 voxeli
+  Klasa 11: 7125 voxeli
+  Klasa 12: 5631 voxeli
+  Klasa 13: 4438 voxeli
+  Klasa 14: 2758 voxeli
+  Klasa 15: 2816 voxeli
+  Klasa 16: 7034 voxeli
+  Klasa 17: 2914 voxeli
+  Klasa 18: 6962 voxeli
+  Klasa 19: 3708 voxeli
+  Klasa 20: 4517 voxeli
+  Klasa 21: 7472 voxeli
+  Klasa 22: 6973 voxeli
+  Klasa 23: 6063 voxeli
+  Klasa 25: 12744 voxeli
+  Klasa 26: 10778 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1000889125_20180521.nii.gz
+Liczność klas:
+  Klasa 0: 43345695 voxeli
+  Klasa 1: 8865 voxeli
+  Klasa 2: 10015 voxeli
+  Klasa 3: 10770 voxeli
+  Klasa 4: 4821 voxeli
+  Klasa 5: 11945 voxeli
+  Klasa 6: 12689 voxeli
+  Klasa 7: 5931 voxeli
+  Klasa 8: 6000 voxeli
+  Klasa 9: 7112 voxeli
+  Klasa 10: 5018 voxeli
+  Klasa 11: 7227 voxeli
+  Klasa 12: 5572 voxeli
+  Klasa 13: 4504 voxeli
+  Klasa 14: 2612 voxeli
+  Klasa 15: 2728 voxeli
+  Klasa 16: 6973 voxeli
+  Klasa 19: 2680 voxeli
+  Klasa 20: 6925 voxeli
+  Klasa 21: 3452 voxeli
+  Klasa 22: 4302 voxeli
+  Klasa 23: 7310 voxeli
+  Klasa 24: 7124 voxeli
+  Klasa 25: 6149 voxeli
+  Klasa 26: 12961 voxeli
+  Klasa 27: 10620 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1000889125_20181106.nii.gz
+Liczność klas:
+  Klasa 0: 44625588 voxeli
+  Klasa 1: 9079 voxeli
+  Klasa 2: 10272 voxeli
+  Klasa 3: 10589 voxeli
+  Klasa 4: 4464 voxeli
+  Klasa 5: 12152 voxeli
+  Klasa 6: 12358 voxeli
+  Klasa 7: 5791 voxeli
+  Klasa 8: 6016 voxeli
+  Klasa 9: 6977 voxeli
+  Klasa 10: 5167 voxeli
+  Klasa 11: 7125 voxeli
+  Klasa 12: 5561 voxeli
+  Klasa 13: 4532 voxeli
+  Klasa 14: 2680 voxeli
+  Klasa 15: 2823 voxeli
+  Klasa 16: 6991 voxeli
+  Klasa 17: 2814 voxeli
+  Klasa 18: 6873 voxeli
+  Klasa 19: 3628 voxeli
+  Klasa 20: 4471 voxeli
+  Klasa 21: 7389 voxeli
+  Klasa 22: 7174 voxeli
+  Klasa 23: 6128 voxeli
+  Klasa 25: 12692 voxeli
+  Klasa 26: 10666 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1000889125_20190408.nii.gz
+Liczność klas:
+  Klasa 0: 39506515 voxeli
+  Klasa 1: 8911 voxeli
+  Klasa 2: 10135 voxeli
+  Klasa 3: 10605 voxeli
+  Klasa 4: 4459 voxeli
+  Klasa 5: 12149 voxeli
+  Klasa 6: 12440 voxeli
+  Klasa 7: 5900 voxeli
+  Klasa 8: 5997 voxeli
+  Klasa 9: 7001 voxeli
+  Klasa 10: 5055 voxeli
+  Klasa 11: 7038 voxeli
+  Klasa 12: 5365 voxeli
+  Klasa 13: 4605 voxeli
+  Klasa 14: 2702 voxeli
+  Klasa 15: 2852 voxeli
+  Klasa 16: 6994 voxeli
+  Klasa 17: 2933 voxeli
+  Klasa 18: 6795 voxeli
+  Klasa 19: 3431 voxeli
+  Klasa 20: 4507 voxeli
+  Klasa 21: 7154 voxeli
+  Klasa 22: 7113 voxeli
+  Klasa 23: 6080 voxeli
+  Klasa 24: 12484 voxeli
+  Klasa 25: 10780 voxeli
+Największy numer klasy w pliku: 25
+
+Plik: 1000889125_20191101.nii.gz
+Liczność klas:
+  Klasa 0: 44614493 voxeli
+  Klasa 1: 8714 voxeli
+  Klasa 2: 10369 voxeli
+  Klasa 3: 10611 voxeli
+  Klasa 4: 4608 voxeli
+  Klasa 5: 12505 voxeli
+  Klasa 6: 12555 voxeli
+  Klasa 7: 5958 voxeli
+  Klasa 8: 6192 voxeli
+  Klasa 9: 7055 voxeli
+  Klasa 10: 5251 voxeli
+  Klasa 11: 7236 voxeli
+  Klasa 12: 5777 voxeli
+  Klasa 13: 4632 voxeli
+  Klasa 14: 2876 voxeli
+  Klasa 15: 2922 voxeli
+  Klasa 16: 6994 voxeli
+  Klasa 17: 2892 voxeli
+  Klasa 18: 6753 voxeli
+  Klasa 19: 3721 voxeli
+  Klasa 21: 4345 voxeli
+  Klasa 23: 7556 voxeli
+  Klasa 24: 4128 voxeli
+  Klasa 25: 7391 voxeli
+  Klasa 26: 6338 voxeli
+  Klasa 27: 4456 voxeli
+  Klasa 28: 12724 voxeli
+  Klasa 29: 10948 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1000889125_20200421.nii.gz
+Liczność klas:
+  Klasa 0: 44618185 voxeli
+  Klasa 1: 8650 voxeli
+  Klasa 2: 10220 voxeli
+  Klasa 3: 9986 voxeli
+  Klasa 4: 4307 voxeli
+  Klasa 5: 12202 voxeli
+  Klasa 6: 12553 voxeli
+  Klasa 7: 5842 voxeli
+  Klasa 8: 6047 voxeli
+  Klasa 9: 7089 voxeli
+  Klasa 10: 4998 voxeli
+  Klasa 11: 7106 voxeli
+  Klasa 12: 5501 voxeli
+  Klasa 13: 4524 voxeli
+  Klasa 14: 2829 voxeli
+  Klasa 15: 2886 voxeli
+  Klasa 16: 6974 voxeli
+  Klasa 17: 2975 voxeli
+  Klasa 18: 6823 voxeli
+  Klasa 19: 3419 voxeli
+  Klasa 21: 4343 voxeli
+  Klasa 23: 7429 voxeli
+  Klasa 24: 4120 voxeli
+  Klasa 25: 7218 voxeli
+  Klasa 26: 6285 voxeli
+  Klasa 27: 4302 voxeli
+  Klasa 28: 12465 voxeli
+  Klasa 29: 10722 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1000915187_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44566676 voxeli
+  Klasa 1: 9371 voxeli
+  Klasa 2: 12223 voxeli
+  Klasa 3: 8449 voxeli
+  Klasa 4: 12918 voxeli
+  Klasa 5: 10153 voxeli
+  Klasa 6: 6089 voxeli
+  Klasa 7: 6992 voxeli
+  Klasa 8: 5425 voxeli
+  Klasa 9: 8640 voxeli
+  Klasa 10: 6120 voxeli
+  Klasa 11: 5376 voxeli
+  Klasa 12: 3613 voxeli
+  Klasa 13: 6887 voxeli
+  Klasa 14: 2866 voxeli
+  Klasa 15: 2854 voxeli
+  Klasa 16: 6660 voxeli
+  Klasa 17: 3592 voxeli
+  Klasa 18: 5155 voxeli
+  Klasa 19: 6592 voxeli
+  Klasa 20: 9032 voxeli
+  Klasa 21: 5998 voxeli
+  Klasa 22: 8040 voxeli
+  Klasa 23: 6142 voxeli
+  Klasa 24: 14514 voxeli
+  Klasa 25: 12427 voxeli
+  Klasa 26: 8276 voxeli
+  Klasa 27: 6081 voxeli
+  Klasa 28: 11466 voxeli
+  Klasa 29: 10958 voxeli
+  Klasa 30: 10415 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1000915187_20191217.nii.gz
+Liczność klas:
+  Klasa 0: 45845056 voxeli
+  Klasa 1: 9893 voxeli
+  Klasa 2: 10304 voxeli
+  Klasa 3: 8257 voxeli
+  Klasa 4: 12036 voxeli
+  Klasa 5: 13179 voxeli
+  Klasa 6: 6797 voxeli
+  Klasa 7: 7520 voxeli
+  Klasa 8: 5148 voxeli
+  Klasa 9: 8443 voxeli
+  Klasa 10: 6007 voxeli
+  Klasa 11: 5275 voxeli
+  Klasa 12: 3496 voxeli
+  Klasa 13: 6829 voxeli
+  Klasa 14: 2763 voxeli
+  Klasa 15: 2730 voxeli
+  Klasa 16: 6550 voxeli
+  Klasa 17: 3600 voxeli
+  Klasa 18: 5065 voxeli
+  Klasa 19: 6460 voxeli
+  Klasa 20: 8717 voxeli
+  Klasa 21: 5937 voxeli
+  Klasa 22: 7662 voxeli
+  Klasa 23: 5869 voxeli
+  Klasa 24: 14282 voxeli
+  Klasa 25: 9575 voxeli
+  Klasa 26: 6416 voxeli
+  Klasa 27: 11964 voxeli
+  Klasa 28: 10054 voxeli
+  Klasa 29: 9252 voxeli
+  Klasa 30: 14864 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1000966359_20180113.nii.gz
+Liczność klas:
+  Klasa 0: 48371067 voxeli
+  Klasa 1: 9514 voxeli
+  Klasa 2: 13583 voxeli
+  Klasa 3: 7668 voxeli
+  Klasa 4: 12696 voxeli
+  Klasa 5: 14182 voxeli
+  Klasa 6: 14003 voxeli
+  Klasa 7: 7478 voxeli
+  Klasa 8: 7322 voxeli
+  Klasa 9: 8430 voxeli
+  Klasa 10: 6601 voxeli
+  Klasa 11: 7647 voxeli
+  Klasa 12: 6151 voxeli
+  Klasa 13: 5069 voxeli
+  Klasa 14: 3970 voxeli
+  Klasa 15: 7142 voxeli
+  Klasa 16: 3240 voxeli
+  Klasa 17: 3362 voxeli
+  Klasa 18: 7493 voxeli
+  Klasa 19: 4029 voxeli
+  Klasa 20: 5340 voxeli
+  Klasa 21: 6253 voxeli
+  Klasa 22: 7562 voxeli
+  Klasa 23: 6762 voxeli
+  Klasa 24: 8352 voxeli
+  Klasa 25: 7413 voxeli
+  Klasa 26: 7003 voxeli
+  Klasa 27: 13500 voxeli
+  Klasa 28: 12652 voxeli
+  Klasa 29: 14296 voxeli
+  Klasa 30: 7699 voxeli
+  Klasa 31: 13303 voxeli
+  Klasa 32: 9218 voxeli
+Największy numer klasy w pliku: 32
+
+Plik: 1000971031_20180112.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 39437824 voxeli
+  Klasa 1: 6669 voxeli
+  Klasa 10: 10677 voxeli
+  Klasa 11: 11625 voxeli
+  Klasa 12: 9430 voxeli
+  Klasa 13: 12713 voxeli
+  Klasa 14: 11522 voxeli
+  Klasa 15: 12929 voxeli
+  Klasa 16: 6164 voxeli
+  Klasa 17: 5987 voxeli
+  Klasa 19: 6758 voxeli
+  Klasa 21: 7648 voxeli
+  Klasa 23: 5294 voxeli
+  Klasa 24: 5176 voxeli
+  Klasa 26: 3586 voxeli
+  Klasa 28: 6811 voxeli
+  Klasa 29: 3369 voxeli
+  Klasa 30: 6830 voxeli
+  Klasa 31: 3515 voxeli
+  Klasa 33: 6592 voxeli
+  Klasa 34: 4732 voxeli
+  Klasa 37: 6224 voxeli
+  Klasa 38: 7848 voxeli
+  Klasa 39: 6238 voxeli
+  Klasa 40: 7526 voxeli
+  Klasa 41: 7231 voxeli
+  Klasa 44: 12845 voxeli
+  Klasa 45: 12549 voxeli
+  Klasa 46: 12126 voxeli
+  Klasa 47: 11343 voxeli
+  Klasa 48: 10219 voxeli
+Największy numer klasy w pliku: 48
+
+Plik: 1000983254_20180109.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 39492865 voxeli
+  Klasa 7: 10505 voxeli
+  Klasa 8: 10088 voxeli
+  Klasa 9: 13359 voxeli
+  Klasa 10: 2929 voxeli
+  Klasa 11: 6297 voxeli
+  Klasa 12: 6251 voxeli
+  Klasa 13: 4835 voxeli
+  Klasa 14: 4932 voxeli
+  Klasa 15: 7779 voxeli
+  Klasa 17: 6150 voxeli
+  Klasa 18: 4917 voxeli
+  Klasa 21: 4265 voxeli
+  Klasa 22: 8102 voxeli
+  Klasa 23: 3092 voxeli
+  Klasa 24: 3037 voxeli
+  Klasa 26: 7808 voxeli
+  Klasa 27: 4306 voxeli
+  Klasa 30: 5512 voxeli
+  Klasa 31: 6282 voxeli
+  Klasa 32: 8157 voxeli
+  Klasa 33: 5504 voxeli
+  Klasa 34: 6365 voxeli
+  Klasa 35: 5196 voxeli
+  Klasa 37: 6187 voxeli
+  Klasa 39: 11618 voxeli
+  Klasa 40: 12969 voxeli
+  Klasa 41: 10693 voxeli
+Największy numer klasy w pliku: 41
+
+Plik: 1000983254_20180904.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 35655076 voxeli
+  Klasa 6: 9978 voxeli
+  Klasa 7: 10065 voxeli
+  Klasa 8: 3161 voxeli
+  Klasa 9: 13202 voxeli
+  Klasa 10: 6685 voxeli
+  Klasa 11: 6495 voxeli
+  Klasa 12: 4972 voxeli
+  Klasa 13: 4952 voxeli
+  Klasa 14: 7739 voxeli
+  Klasa 16: 6169 voxeli
+  Klasa 18: 4944 voxeli
+  Klasa 19: 4166 voxeli
+  Klasa 20: 7877 voxeli
+  Klasa 21: 3055 voxeli
+  Klasa 23: 2988 voxeli
+  Klasa 24: 7814 voxeli
+  Klasa 25: 4209 voxeli
+  Klasa 27: 5445 voxeli
+  Klasa 28: 6214 voxeli
+  Klasa 29: 8151 voxeli
+  Klasa 30: 5432 voxeli
+  Klasa 31: 6344 voxeli
+  Klasa 32: 4804 voxeli
+  Klasa 34: 6361 voxeli
+  Klasa 35: 11325 voxeli
+  Klasa 36: 12068 voxeli
+  Klasa 37: 10309 voxeli
+Największy numer klasy w pliku: 37
+
+Plik: 1000995722_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 44568262 voxeli
+  Klasa 1: 13215 voxeli
+  Klasa 2: 12467 voxeli
+  Klasa 3: 12736 voxeli
+  Klasa 4: 11698 voxeli
+  Klasa 5: 9156 voxeli
+  Klasa 6: 6238 voxeli
+  Klasa 7: 7267 voxeli
+  Klasa 8: 8130 voxeli
+  Klasa 9: 6060 voxeli
+  Klasa 10: 7068 voxeli
+  Klasa 11: 5497 voxeli
+  Klasa 12: 4101 voxeli
+  Klasa 13: 7900 voxeli
+  Klasa 14: 3323 voxeli
+  Klasa 15: 3351 voxeli
+  Klasa 16: 8069 voxeli
+  Klasa 17: 4552 voxeli
+  Klasa 18: 5670 voxeli
+  Klasa 19: 7491 voxeli
+  Klasa 20: 8335 voxeli
+  Klasa 21: 6507 voxeli
+  Klasa 22: 8126 voxeli
+  Klasa 23: 7046 voxeli
+  Klasa 24: 12893 voxeli
+  Klasa 25: 8065 voxeli
+  Klasa 26: 11170 voxeli
+  Klasa 27: 12537 voxeli
+  Klasa 28: 13070 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001009635_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44599777 voxeli
+  Klasa 1: 11442 voxeli
+  Klasa 2: 9663 voxeli
+  Klasa 3: 9619 voxeli
+  Klasa 4: 11259 voxeli
+  Klasa 5: 6444 voxeli
+  Klasa 6: 6973 voxeli
+  Klasa 7: 6334 voxeli
+  Klasa 8: 5036 voxeli
+  Klasa 9: 8835 voxeli
+  Klasa 10: 6771 voxeli
+  Klasa 11: 4893 voxeli
+  Klasa 12: 3672 voxeli
+  Klasa 13: 6784 voxeli
+  Klasa 14: 2824 voxeli
+  Klasa 15: 2826 voxeli
+  Klasa 16: 6535 voxeli
+  Klasa 17: 3866 voxeli
+  Klasa 18: 5050 voxeli
+  Klasa 19: 7141 voxeli
+  Klasa 20: 5449 voxeli
+  Klasa 21: 8905 voxeli
+  Klasa 22: 5110 voxeli
+  Klasa 23: 5976 voxeli
+  Klasa 24: 6421 voxeli
+  Klasa 25: 8793 voxeli
+  Klasa 26: 10927 voxeli
+  Klasa 27: 11465 voxeli
+  Klasa 28: 11210 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001012179_20180110.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 105211291 voxeli
+  Klasa 4: 25884 voxeli
+  Klasa 5: 27379 voxeli
+  Klasa 6: 27949 voxeli
+  Klasa 7: 27125 voxeli
+  Klasa 8: 17033 voxeli
+  Klasa 9: 14507 voxeli
+  Klasa 10: 17617 voxeli
+  Klasa 12: 13188 voxeli
+  Klasa 13: 17850 voxeli
+  Klasa 15: 13838 voxeli
+  Klasa 16: 10272 voxeli
+  Klasa 17: 7709 voxeli
+  Klasa 19: 16338 voxeli
+  Klasa 20: 6920 voxeli
+  Klasa 24: 6746 voxeli
+  Klasa 25: 16421 voxeli
+  Klasa 26: 8180 voxeli
+  Klasa 27: 10539 voxeli
+  Klasa 28: 14804 voxeli
+  Klasa 30: 18493 voxeli
+  Klasa 32: 13266 voxeli
+  Klasa 33: 28316 voxeli
+  Klasa 34: 17630 voxeli
+  Klasa 35: 28560 voxeli
+  Klasa 36: 26059 voxeli
+  Klasa 37: 28550 voxeli
+  Klasa 38: 27069 voxeli
+  Klasa 48: 14619 voxeli
+  Klasa 49: 10776 voxeli
+Największy numer klasy w pliku: 49
+
+Plik: 1001012179_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44592505 voxeli
+  Klasa 1: 10739 voxeli
+  Klasa 2: 10435 voxeli
+  Klasa 3: 5601 voxeli
+  Klasa 4: 10395 voxeli
+  Klasa 5: 10564 voxeli
+  Klasa 6: 6432 voxeli
+  Klasa 7: 5523 voxeli
+  Klasa 8: 6839 voxeli
+  Klasa 9: 5005 voxeli
+  Klasa 10: 6995 voxeli
+  Klasa 11: 6001 voxeli
+  Klasa 12: 4043 voxeli
+  Klasa 13: 3083 voxeli
+  Klasa 14: 6332 voxeli
+  Klasa 15: 2596 voxeli
+  Klasa 16: 2572 voxeli
+  Klasa 17: 6428 voxeli
+  Klasa 18: 3161 voxeli
+  Klasa 19: 4096 voxeli
+  Klasa 20: 5922 voxeli
+  Klasa 21: 4938 voxeli
+  Klasa 22: 7133 voxeli
+  Klasa 23: 5664 voxeli
+  Klasa 24: 6854 voxeli
+  Klasa 25: 11374 voxeli
+  Klasa 26: 6744 voxeli
+  Klasa 27: 10844 voxeli
+  Klasa 28: 9720 voxeli
+  Klasa 29: 10958 voxeli
+  Klasa 30: 10504 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001020384_20180114.nii.gz
+Liczność klas:
+  Klasa 0: 44556424 voxeli
+  Klasa 1: 11611 voxeli
+  Klasa 2: 12798 voxeli
+  Klasa 3: 13353 voxeli
+  Klasa 4: 12760 voxeli
+  Klasa 5: 6343 voxeli
+  Klasa 6: 5557 voxeli
+  Klasa 7: 7329 voxeli
+  Klasa 8: 6516 voxeli
+  Klasa 9: 8608 voxeli
+  Klasa 10: 7807 voxeli
+  Klasa 11: 5699 voxeli
+  Klasa 12: 4214 voxeli
+  Klasa 13: 7841 voxeli
+  Klasa 14: 3262 voxeli
+  Klasa 15: 3300 voxeli
+  Klasa 16: 7956 voxeli
+  Klasa 17: 4314 voxeli
+  Klasa 18: 8140 voxeli
+  Klasa 19: 5641 voxeli
+  Klasa 20: 6494 voxeli
+  Klasa 21: 8503 voxeli
+  Klasa 22: 6149 voxeli
+  Klasa 23: 13087 voxeli
+  Klasa 24: 6815 voxeli
+  Klasa 25: 13194 voxeli
+  Klasa 26: 6365 voxeli
+  Klasa 27: 12529 voxeli
+  Klasa 28: 14919 voxeli
+  Klasa 29: 12472 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001022839_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44532883 voxeli
+  Klasa 1: 11937 voxeli
+  Klasa 2: 12372 voxeli
+  Klasa 3: 11871 voxeli
+  Klasa 4: 12982 voxeli
+  Klasa 5: 13153 voxeli
+  Klasa 6: 13788 voxeli
+  Klasa 7: 7366 voxeli
+  Klasa 8: 6911 voxeli
+  Klasa 9: 6379 voxeli
+  Klasa 10: 7800 voxeli
+  Klasa 11: 6091 voxeli
+  Klasa 12: 6166 voxeli
+  Klasa 13: 4817 voxeli
+  Klasa 14: 3795 voxeli
+  Klasa 15: 6755 voxeli
+  Klasa 16: 2772 voxeli
+  Klasa 17: 6342 voxeli
+  Klasa 18: 4511 voxeli
+  Klasa 19: 5912 voxeli
+  Klasa 20: 7288 voxeli
+  Klasa 21: 5850 voxeli
+  Klasa 22: 6535 voxeli
+  Klasa 23: 6818 voxeli
+  Klasa 24: 7454 voxeli
+  Klasa 25: 14080 voxeli
+  Klasa 26: 13839 voxeli
+  Klasa 27: 9510 voxeli
+  Klasa 28: 11557 voxeli
+  Klasa 29: 13388 voxeli
+  Klasa 30: 12751 voxeli
+  Klasa 31: 2616 voxeli
+  Klasa 32: 3711 voxeli
+Największy numer klasy w pliku: 32
+
+Plik: 1001022839_20180225.nii.gz
+Liczność klas:
+  Klasa 0: 44548307 voxeli
+  Klasa 1: 14060 voxeli
+  Klasa 2: 13013 voxeli
+  Klasa 3: 14487 voxeli
+  Klasa 4: 14319 voxeli
+  Klasa 5: 7613 voxeli
+  Klasa 6: 6430 voxeli
+  Klasa 7: 8165 voxeli
+  Klasa 8: 6767 voxeli
+  Klasa 9: 2543 voxeli
+  Klasa 10: 8205 voxeli
+  Klasa 11: 6235 voxeli
+  Klasa 12: 5117 voxeli
+  Klasa 13: 8188 voxeli
+  Klasa 14: 8309 voxeli
+  Klasa 15: 3836 voxeli
+  Klasa 16: 3960 voxeli
+  Klasa 17: 7871 voxeli
+  Klasa 18: 5332 voxeli
+  Klasa 19: 5518 voxeli
+  Klasa 20: 9017 voxeli
+  Klasa 21: 7429 voxeli
+  Klasa 22: 8937 voxeli
+  Klasa 23: 7593 voxeli
+  Klasa 24: 6485 voxeli
+  Klasa 25: 7195 voxeli
+  Klasa 26: 15286 voxeli
+  Klasa 27: 13678 voxeli
+  Klasa 28: 12604 voxeli
+  Klasa 29: 13501 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001028863_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44591100 voxeli
+  Klasa 1: 10830 voxeli
+  Klasa 2: 12325 voxeli
+  Klasa 3: 13783 voxeli
+  Klasa 4: 14047 voxeli
+  Klasa 5: 6681 voxeli
+  Klasa 6: 6052 voxeli
+  Klasa 7: 7398 voxeli
+  Klasa 8: 6258 voxeli
+  Klasa 9: 6919 voxeli
+  Klasa 10: 6223 voxeli
+  Klasa 11: 4789 voxeli
+  Klasa 12: 4232 voxeli
+  Klasa 13: 6727 voxeli
+  Klasa 14: 3245 voxeli
+  Klasa 15: 3410 voxeli
+  Klasa 16: 6813 voxeli
+  Klasa 17: 4323 voxeli
+  Klasa 18: 4750 voxeli
+  Klasa 19: 6557 voxeli
+  Klasa 20: 6372 voxeli
+  Klasa 21: 6872 voxeli
+  Klasa 22: 8218 voxeli
+  Klasa 23: 6769 voxeli
+  Klasa 24: 7415 voxeli
+  Klasa 25: 11087 voxeli
+  Klasa 26: 13264 voxeli
+  Klasa 27: 13541 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001055861_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 96056986 voxeli
+  Klasa 1: 25904 voxeli
+  Klasa 2: 26770 voxeli
+  Klasa 3: 33219 voxeli
+  Klasa 4: 11725 voxeli
+  Klasa 5: 17703 voxeli
+  Klasa 6: 11768 voxeli
+  Klasa 7: 18856 voxeli
+  Klasa 8: 14176 voxeli
+  Klasa 9: 19359 voxeli
+  Klasa 10: 15274 voxeli
+  Klasa 11: 11258 voxeli
+  Klasa 12: 9952 voxeli
+  Klasa 13: 17586 voxeli
+  Klasa 14: 7600 voxeli
+  Klasa 15: 7573 voxeli
+  Klasa 16: 15854 voxeli
+  Klasa 17: 10310 voxeli
+  Klasa 18: 6715 voxeli
+  Klasa 19: 14151 voxeli
+  Klasa 20: 17586 voxeli
+  Klasa 21: 14593 voxeli
+  Klasa 22: 21082 voxeli
+  Klasa 23: 29848 voxeli
+  Klasa 24: 32786 voxeli
+  Klasa 25: 25700 voxeli
+  Klasa 26: 16411 voxeli
+  Klasa 27: 20711 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001068663_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44667222 voxeli
+  Klasa 3: 10789 voxeli
+  Klasa 4: 9850 voxeli
+  Klasa 5: 10135 voxeli
+  Klasa 6: 6032 voxeli
+  Klasa 7: 6046 voxeli
+  Klasa 8: 3534 voxeli
+  Klasa 9: 5447 voxeli
+  Klasa 10: 4298 voxeli
+  Klasa 12: 3577 voxeli
+  Klasa 13: 3094 voxeli
+  Klasa 14: 5056 voxeli
+  Klasa 15: 2310 voxeli
+  Klasa 16: 2375 voxeli
+  Klasa 17: 5187 voxeli
+  Klasa 19: 3086 voxeli
+  Klasa 20: 3430 voxeli
+  Klasa 21: 4417 voxeli
+  Klasa 23: 5834 voxeli
+  Klasa 24: 3317 voxeli
+  Klasa 25: 6191 voxeli
+  Klasa 26: 7182 voxeli
+  Klasa 27: 11333 voxeli
+  Klasa 28: 10258 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001111103_20180114.nii.gz
+Liczność klas:
+  Klasa 0: 52253797 voxeli
+  Klasa 1: 6888 voxeli
+  Klasa 2: 12056 voxeli
+  Klasa 3: 12536 voxeli
+  Klasa 4: 13002 voxeli
+  Klasa 5: 13495 voxeli
+  Klasa 6: 7715 voxeli
+  Klasa 7: 7317 voxeli
+  Klasa 8: 8592 voxeli
+  Klasa 9: 6859 voxeli
+  Klasa 10: 5247 voxeli
+  Klasa 11: 6342 voxeli
+  Klasa 12: 3335 voxeli
+  Klasa 13: 6922 voxeli
+  Klasa 14: 3279 voxeli
+  Klasa 15: 6959 voxeli
+  Klasa 16: 4020 voxeli
+  Klasa 17: 7102 voxeli
+  Klasa 18: 5000 voxeli
+  Klasa 19: 7311 voxeli
+  Klasa 20: 8645 voxeli
+  Klasa 21: 7271 voxeli
+  Klasa 22: 7728 voxeli
+  Klasa 23: 13433 voxeli
+  Klasa 24: 13118 voxeli
+  Klasa 25: 12738 voxeli
+  Klasa 26: 13064 voxeli
+  Klasa 27: 6229 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001127112_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 44599132 voxeli
+  Klasa 1: 10991 voxeli
+  Klasa 2: 12847 voxeli
+  Klasa 3: 13992 voxeli
+  Klasa 4: 7259 voxeli
+  Klasa 5: 7256 voxeli
+  Klasa 6: 5917 voxeli
+  Klasa 7: 7606 voxeli
+  Klasa 8: 6879 voxeli
+  Klasa 9: 5846 voxeli
+  Klasa 10: 3361 voxeli
+  Klasa 11: 6261 voxeli
+  Klasa 12: 2901 voxeli
+  Klasa 13: 2923 voxeli
+  Klasa 14: 7623 voxeli
+  Klasa 15: 3638 voxeli
+  Klasa 16: 4450 voxeli
+  Klasa 17: 7663 voxeli
+  Klasa 18: 7823 voxeli
+  Klasa 19: 5967 voxeli
+  Klasa 20: 6550 voxeli
+  Klasa 21: 6962 voxeli
+  Klasa 22: 6353 voxeli
+  Klasa 23: 12191 voxeli
+  Klasa 24: 14439 voxeli
+  Klasa 25: 12884 voxeli
+  Klasa 26: 10286 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001133637_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44567500 voxeli
+  Klasa 1: 11403 voxeli
+  Klasa 2: 8086 voxeli
+  Klasa 3: 11739 voxeli
+  Klasa 4: 13583 voxeli
+  Klasa 5: 12839 voxeli
+  Klasa 6: 7280 voxeli
+  Klasa 7: 5803 voxeli
+  Klasa 8: 7511 voxeli
+  Klasa 9: 5841 voxeli
+  Klasa 10: 8476 voxeli
+  Klasa 11: 7170 voxeli
+  Klasa 12: 4646 voxeli
+  Klasa 13: 3722 voxeli
+  Klasa 14: 7402 voxeli
+  Klasa 15: 3219 voxeli
+  Klasa 16: 3136 voxeli
+  Klasa 17: 7472 voxeli
+  Klasa 18: 3932 voxeli
+  Klasa 19: 4425 voxeli
+  Klasa 20: 7124 voxeli
+  Klasa 21: 5612 voxeli
+  Klasa 22: 8101 voxeli
+  Klasa 23: 6257 voxeli
+  Klasa 24: 7445 voxeli
+  Klasa 25: 6588 voxeli
+  Klasa 26: 13162 voxeli
+  Klasa 27: 13327 voxeli
+  Klasa 28: 13106 voxeli
+  Klasa 29: 14093 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001142392_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44657246 voxeli
+  Klasa 1: 11038 voxeli
+  Klasa 2: 12075 voxeli
+  Klasa 3: 5404 voxeli
+  Klasa 4: 5307 voxeli
+  Klasa 5: 5384 voxeli
+  Klasa 6: 6350 voxeli
+  Klasa 7: 4165 voxeli
+  Klasa 8: 3400 voxeli
+  Klasa 9: 5899 voxeli
+  Klasa 10: 3097 voxeli
+  Klasa 11: 7222 voxeli
+  Klasa 12: 2087 voxeli
+  Klasa 13: 2062 voxeli
+  Klasa 14: 6175 voxeli
+  Klasa 15: 4951 voxeli
+  Klasa 16: 6271 voxeli
+  Klasa 17: 5419 voxeli
+  Klasa 18: 5361 voxeli
+  Klasa 19: 5596 voxeli
+  Klasa 20: 12313 voxeli
+  Klasa 21: 11291 voxeli
+  Klasa 22: 2304 voxeli
+  Klasa 23: 4849 voxeli
+  Klasa 24: 4734 voxeli
+Największy numer klasy w pliku: 24
+
+Plik: 1001142392_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44643897 voxeli
+  Klasa 1: 11207 voxeli
+  Klasa 2: 5191 voxeli
+  Klasa 3: 5254 voxeli
+  Klasa 4: 12087 voxeli
+  Klasa 5: 5368 voxeli
+  Klasa 6: 5088 voxeli
+  Klasa 7: 5422 voxeli
+  Klasa 8: 6574 voxeli
+  Klasa 9: 4080 voxeli
+  Klasa 10: 5820 voxeli
+  Klasa 11: 3875 voxeli
+  Klasa 12: 3295 voxeli
+  Klasa 13: 2343 voxeli
+  Klasa 14: 3121 voxeli
+  Klasa 15: 4942 voxeli
+  Klasa 16: 6231 voxeli
+  Klasa 17: 5355 voxeli
+  Klasa 18: 6255 voxeli
+  Klasa 19: 5369 voxeli
+  Klasa 20: 5559 voxeli
+  Klasa 21: 5700 voxeli
+  Klasa 22: 12478 voxeli
+  Klasa 23: 11077 voxeli
+  Klasa 24: 2465 voxeli
+  Klasa 25: 7257 voxeli
+  Klasa 26: 4690 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001142392_20180511.nii.gz
+Liczność klas:
+  Klasa 0: 44646522 voxeli
+  Klasa 1: 11121 voxeli
+  Klasa 2: 5142 voxeli
+  Klasa 3: 5485 voxeli
+  Klasa 4: 12038 voxeli
+  Klasa 5: 4760 voxeli
+  Klasa 6: 5231 voxeli
+  Klasa 7: 5511 voxeli
+  Klasa 8: 6490 voxeli
+  Klasa 9: 4056 voxeli
+  Klasa 10: 6022 voxeli
+  Klasa 11: 3607 voxeli
+  Klasa 12: 3342 voxeli
+  Klasa 13: 2310 voxeli
+  Klasa 14: 4899 voxeli
+  Klasa 15: 3145 voxeli
+  Klasa 16: 6340 voxeli
+  Klasa 17: 5197 voxeli
+  Klasa 18: 6291 voxeli
+  Klasa 19: 5342 voxeli
+  Klasa 20: 5484 voxeli
+  Klasa 21: 5853 voxeli
+  Klasa 22: 12216 voxeli
+  Klasa 23: 11116 voxeli
+  Klasa 24: 1912 voxeli
+  Klasa 25: 5950 voxeli
+  Klasa 26: 4618 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001152328_20150714.nii.gz
+Liczność klas:
+  Klasa 0: 44641706 voxeli
+  Klasa 1: 14023 voxeli
+  Klasa 2: 14216 voxeli
+  Klasa 3: 6604 voxeli
+  Klasa 4: 6630 voxeli
+  Klasa 5: 6078 voxeli
+  Klasa 6: 9390 voxeli
+  Klasa 7: 7905 voxeli
+  Klasa 8: 5346 voxeli
+  Klasa 9: 3615 voxeli
+  Klasa 10: 7641 voxeli
+  Klasa 11: 2854 voxeli
+  Klasa 12: 2790 voxeli
+  Klasa 13: 7961 voxeli
+  Klasa 14: 3624 voxeli
+  Klasa 15: 5220 voxeli
+  Klasa 16: 7935 voxeli
+  Klasa 17: 9518 voxeli
+  Klasa 18: 6174 voxeli
+  Klasa 19: 3810 voxeli
+  Klasa 20: 6651 voxeli
+  Klasa 21: 6712 voxeli
+  Klasa 22: 13597 voxeli
+Największy numer klasy w pliku: 22
+
+Plik: 1001152328_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 44633388 voxeli
+  Klasa 1: 13974 voxeli
+  Klasa 2: 8574 voxeli
+  Klasa 3: 13520 voxeli
+  Klasa 4: 9409 voxeli
+  Klasa 5: 13985 voxeli
+  Klasa 6: 6725 voxeli
+  Klasa 7: 6196 voxeli
+  Klasa 8: 10494 voxeli
+  Klasa 9: 8138 voxeli
+  Klasa 10: 5056 voxeli
+  Klasa 11: 3628 voxeli
+  Klasa 12: 7632 voxeli
+  Klasa 13: 2743 voxeli
+  Klasa 14: 2690 voxeli
+  Klasa 15: 7826 voxeli
+  Klasa 16: 3442 voxeli
+  Klasa 17: 5127 voxeli
+  Klasa 18: 7458 voxeli
+  Klasa 19: 6068 voxeli
+  Klasa 20: 9664 voxeli
+  Klasa 21: 6875 voxeli
+  Klasa 22: 7388 voxeli
+Największy numer klasy w pliku: 22
+
+Plik: 1001152328_20180306.nii.gz
+Liczność klas:
+  Klasa 0: 44621698 voxeli
+  Klasa 1: 14306 voxeli
+  Klasa 2: 8195 voxeli
+  Klasa 3: 9115 voxeli
+  Klasa 4: 13841 voxeli
+  Klasa 5: 13291 voxeli
+  Klasa 6: 6500 voxeli
+  Klasa 7: 6766 voxeli
+  Klasa 8: 6337 voxeli
+  Klasa 9: 8886 voxeli
+  Klasa 10: 8311 voxeli
+  Klasa 11: 5436 voxeli
+  Klasa 12: 3636 voxeli
+  Klasa 13: 8168 voxeli
+  Klasa 14: 2734 voxeli
+  Klasa 15: 2687 voxeli
+  Klasa 16: 7941 voxeli
+  Klasa 17: 3555 voxeli
+  Klasa 18: 5482 voxeli
+  Klasa 19: 7892 voxeli
+  Klasa 20: 6570 voxeli
+  Klasa 21: 9841 voxeli
+  Klasa 22: 2412 voxeli
+  Klasa 23: 7157 voxeli
+  Klasa 24: 2492 voxeli
+  Klasa 25: 1917 voxeli
+  Klasa 26: 2477 voxeli
+  Klasa 27: 2357 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001152328_20180910.nii.gz
+Liczność klas:
+  Klasa 0: 52299395 voxeli
+  Klasa 1: 13727 voxeli
+  Klasa 2: 8606 voxeli
+  Klasa 3: 10990 voxeli
+  Klasa 4: 13148 voxeli
+  Klasa 5: 13803 voxeli
+  Klasa 6: 6631 voxeli
+  Klasa 7: 6259 voxeli
+  Klasa 8: 8492 voxeli
+  Klasa 9: 8235 voxeli
+  Klasa 10: 5493 voxeli
+  Klasa 11: 3549 voxeli
+  Klasa 12: 8077 voxeli
+  Klasa 13: 2750 voxeli
+  Klasa 14: 2724 voxeli
+  Klasa 15: 7903 voxeli
+  Klasa 16: 3579 voxeli
+  Klasa 17: 5471 voxeli
+  Klasa 18: 8318 voxeli
+  Klasa 19: 6682 voxeli
+  Klasa 20: 10032 voxeli
+  Klasa 21: 2529 voxeli
+  Klasa 22: 7125 voxeli
+  Klasa 23: 2610 voxeli
+  Klasa 24: 2586 voxeli
+  Klasa 25: 2055 voxeli
+  Klasa 26: 2612 voxeli
+  Klasa 27: 6619 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001162439_20140520.nii.gz
+Liczność klas:
+  Klasa 0: 52285946 voxeli
+  Klasa 1: 10077 voxeli
+  Klasa 2: 10902 voxeli
+  Klasa 3: 13475 voxeli
+  Klasa 4: 8859 voxeli
+  Klasa 5: 9468 voxeli
+  Klasa 6: 5807 voxeli
+  Klasa 7: 5696 voxeli
+  Klasa 8: 6131 voxeli
+  Klasa 9: 4559 voxeli
+  Klasa 10: 7296 voxeli
+  Klasa 11: 5976 voxeli
+  Klasa 12: 4550 voxeli
+  Klasa 13: 2979 voxeli
+  Klasa 14: 5852 voxeli
+  Klasa 15: 2481 voxeli
+  Klasa 16: 2620 voxeli
+  Klasa 17: 5554 voxeli
+  Klasa 18: 3021 voxeli
+  Klasa 19: 4271 voxeli
+  Klasa 20: 6234 voxeli
+  Klasa 21: 7021 voxeli
+  Klasa 22: 4976 voxeli
+  Klasa 23: 6027 voxeli
+  Klasa 24: 5388 voxeli
+  Klasa 25: 5676 voxeli
+  Klasa 26: 10225 voxeli
+  Klasa 27: 8869 voxeli
+  Klasa 28: 10468 voxeli
+  Klasa 29: 9596 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001162439_20150708.nii.gz
+Liczność klas:
+  Klasa 0: 43336316 voxeli
+  Klasa 1: 10433 voxeli
+  Klasa 2: 11060 voxeli
+  Klasa 3: 13064 voxeli
+  Klasa 4: 9409 voxeli
+  Klasa 5: 9268 voxeli
+  Klasa 6: 5628 voxeli
+  Klasa 7: 5714 voxeli
+  Klasa 8: 6001 voxeli
+  Klasa 9: 4730 voxeli
+  Klasa 10: 7271 voxeli
+  Klasa 11: 5870 voxeli
+  Klasa 12: 4383 voxeli
+  Klasa 13: 2948 voxeli
+  Klasa 14: 5711 voxeli
+  Klasa 15: 2482 voxeli
+  Klasa 16: 2587 voxeli
+  Klasa 17: 5625 voxeli
+  Klasa 18: 2960 voxeli
+  Klasa 19: 4247 voxeli
+  Klasa 20: 6230 voxeli
+  Klasa 21: 6806 voxeli
+  Klasa 22: 4769 voxeli
+  Klasa 23: 5888 voxeli
+  Klasa 24: 5247 voxeli
+  Klasa 25: 5678 voxeli
+  Klasa 26: 10024 voxeli
+  Klasa 27: 10503 voxeli
+  Klasa 28: 9148 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001162439_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44592139 voxeli
+  Klasa 1: 10740 voxeli
+  Klasa 2: 11354 voxeli
+  Klasa 3: 13014 voxeli
+  Klasa 4: 9851 voxeli
+  Klasa 5: 5858 voxeli
+  Klasa 6: 6079 voxeli
+  Klasa 7: 5779 voxeli
+  Klasa 8: 4864 voxeli
+  Klasa 9: 7211 voxeli
+  Klasa 10: 5798 voxeli
+  Klasa 11: 4419 voxeli
+  Klasa 12: 3228 voxeli
+  Klasa 13: 5773 voxeli
+  Klasa 14: 2546 voxeli
+  Klasa 15: 2786 voxeli
+  Klasa 16: 5545 voxeli
+  Klasa 17: 2920 voxeli
+  Klasa 18: 4187 voxeli
+  Klasa 19: 6219 voxeli
+  Klasa 20: 6909 voxeli
+  Klasa 21: 5256 voxeli
+  Klasa 22: 5983 voxeli
+  Klasa 23: 5912 voxeli
+  Klasa 24: 5460 voxeli
+  Klasa 25: 16749 voxeli
+  Klasa 26: 10230 voxeli
+  Klasa 27: 11948 voxeli
+  Klasa 28: 10490 voxeli
+  Klasa 29: 10753 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001162439_20200910.nii.gz
+Liczność klas:
+  Klasa 0: 44596799 voxeli
+  Klasa 1: 9989 voxeli
+  Klasa 2: 10309 voxeli
+  Klasa 3: 11684 voxeli
+  Klasa 4: 9198 voxeli
+  Klasa 5: 6350 voxeli
+  Klasa 6: 5523 voxeli
+  Klasa 7: 5132 voxeli
+  Klasa 8: 4808 voxeli
+  Klasa 9: 6710 voxeli
+  Klasa 10: 5618 voxeli
+  Klasa 11: 4267 voxeli
+  Klasa 12: 3139 voxeli
+  Klasa 13: 5689 voxeli
+  Klasa 14: 2646 voxeli
+  Klasa 15: 5574 voxeli
+  Klasa 16: 2848 voxeli
+  Klasa 17: 4131 voxeli
+  Klasa 18: 5857 voxeli
+  Klasa 19: 6734 voxeli
+  Klasa 20: 5044 voxeli
+  Klasa 21: 5792 voxeli
+  Klasa 22: 5264 voxeli
+  Klasa 23: 5629 voxeli
+  Klasa 24: 15784 voxeli
+  Klasa 25: 14680 voxeli
+  Klasa 26: 10011 voxeli
+  Klasa 27: 10198 voxeli
+  Klasa 28: 14593 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001172283_20180110.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 44542990 voxeli
+  Klasa 3: 11437 voxeli
+  Klasa 4: 9488 voxeli
+  Klasa 5: 13279 voxeli
+  Klasa 6: 13813 voxeli
+  Klasa 7: 12767 voxeli
+  Klasa 8: 7110 voxeli
+  Klasa 9: 6080 voxeli
+  Klasa 10: 7103 voxeli
+  Klasa 11: 5342 voxeli
+  Klasa 12: 9096 voxeli
+  Klasa 13: 6166 voxeli
+  Klasa 15: 5042 voxeli
+  Klasa 16: 3325 voxeli
+  Klasa 17: 6793 voxeli
+  Klasa 18: 2641 voxeli
+  Klasa 19: 2863 voxeli
+  Klasa 20: 7139 voxeli
+  Klasa 21: 3542 voxeli
+  Klasa 22: 6147 voxeli
+  Klasa 23: 4918 voxeli
+  Klasa 25: 5855 voxeli
+  Klasa 27: 8808 voxeli
+  Klasa 28: 6099 voxeli
+  Klasa 29: 7174 voxeli
+  Klasa 30: 6426 voxeli
+  Klasa 31: 13218 voxeli
+  Klasa 32: 13150 voxeli
+  Klasa 33: 14595 voxeli
+  Klasa 34: 14584 voxeli
+  Klasa 36: 9954 voxeli
+  Klasa 37: 13056 voxeli
+Największy numer klasy w pliku: 37
+
+Plik: 1001172283_20190622.nii.gz
+Liczność klas:
+  Klasa 0: 44608680 voxeli
+  Klasa 1: 12434 voxeli
+  Klasa 2: 13109 voxeli
+  Klasa 3: 13037 voxeli
+  Klasa 4: 6391 voxeli
+  Klasa 5: 6401 voxeli
+  Klasa 6: 5994 voxeli
+  Klasa 7: 5383 voxeli
+  Klasa 8: 8112 voxeli
+  Klasa 9: 5945 voxeli
+  Klasa 10: 4608 voxeli
+  Klasa 11: 3163 voxeli
+  Klasa 12: 6529 voxeli
+  Klasa 13: 2640 voxeli
+  Klasa 14: 2748 voxeli
+  Klasa 15: 6483 voxeli
+  Klasa 16: 3410 voxeli
+  Klasa 17: 4534 voxeli
+  Klasa 18: 6048 voxeli
+  Klasa 19: 8112 voxeli
+  Klasa 20: 5862 voxeli
+  Klasa 21: 6409 voxeli
+  Klasa 22: 5908 voxeli
+  Klasa 23: 6037 voxeli
+  Klasa 24: 13296 voxeli
+  Klasa 25: 14163 voxeli
+  Klasa 26: 14564 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001173165_20171205.nii.gz
+Liczność klas:
+  Klasa 0: 44586053 voxeli
+  Klasa 1: 11871 voxeli
+  Klasa 2: 11900 voxeli
+  Klasa 3: 12418 voxeli
+  Klasa 4: 6477 voxeli
+  Klasa 5: 6252 voxeli
+  Klasa 6: 7446 voxeli
+  Klasa 7: 4050 voxeli
+  Klasa 8: 8557 voxeli
+  Klasa 9: 6582 voxeli
+  Klasa 10: 5473 voxeli
+  Klasa 11: 3619 voxeli
+  Klasa 12: 7107 voxeli
+  Klasa 13: 3174 voxeli
+  Klasa 14: 3088 voxeli
+  Klasa 15: 6877 voxeli
+  Klasa 16: 3735 voxeli
+  Klasa 17: 5249 voxeli
+  Klasa 18: 6476 voxeli
+  Klasa 19: 8380 voxeli
+  Klasa 20: 5396 voxeli
+  Klasa 21: 7018 voxeli
+  Klasa 22: 8230 voxeli
+  Klasa 23: 6380 voxeli
+  Klasa 24: 12126 voxeli
+  Klasa 25: 7644 voxeli
+  Klasa 26: 11957 voxeli
+  Klasa 27: 13278 voxeli
+  Klasa 28: 13187 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001173165_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44585830 voxeli
+  Klasa 1: 12908 voxeli
+  Klasa 2: 2438 voxeli
+  Klasa 3: 12217 voxeli
+  Klasa 4: 2427 voxeli
+  Klasa 5: 12543 voxeli
+  Klasa 6: 6543 voxeli
+  Klasa 7: 6643 voxeli
+  Klasa 8: 7190 voxeli
+  Klasa 9: 4442 voxeli
+  Klasa 10: 8198 voxeli
+  Klasa 11: 6620 voxeli
+  Klasa 12: 5417 voxeli
+  Klasa 13: 3568 voxeli
+  Klasa 14: 7071 voxeli
+  Klasa 15: 3057 voxeli
+  Klasa 16: 2949 voxeli
+  Klasa 17: 6880 voxeli
+  Klasa 18: 3628 voxeli
+  Klasa 19: 5240 voxeli
+  Klasa 20: 5762 voxeli
+  Klasa 21: 7852 voxeli
+  Klasa 22: 5322 voxeli
+  Klasa 23: 6735 voxeli
+  Klasa 24: 6659 voxeli
+  Klasa 25: 6459 voxeli
+  Klasa 26: 12653 voxeli
+  Klasa 27: 6014 voxeli
+  Klasa 28: 13970 voxeli
+  Klasa 29: 12133 voxeli
+  Klasa 30: 10632 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001173165_20180521.nii.gz
+Liczność klas:
+  Klasa 0: 52265484 voxeli
+  Klasa 1: 12377 voxeli
+  Klasa 2: 2555 voxeli
+  Klasa 3: 12285 voxeli
+  Klasa 4: 2351 voxeli
+  Klasa 5: 12591 voxeli
+  Klasa 6: 6708 voxeli
+  Klasa 7: 7444 voxeli
+  Klasa 8: 4430 voxeli
+  Klasa 9: 8719 voxeli
+  Klasa 10: 6627 voxeli
+  Klasa 11: 5369 voxeli
+  Klasa 12: 3669 voxeli
+  Klasa 13: 7071 voxeli
+  Klasa 14: 3142 voxeli
+  Klasa 15: 3012 voxeli
+  Klasa 16: 6936 voxeli
+  Klasa 17: 3825 voxeli
+  Klasa 18: 5132 voxeli
+  Klasa 19: 6373 voxeli
+  Klasa 20: 8029 voxeli
+  Klasa 21: 5073 voxeli
+  Klasa 22: 6899 voxeli
+  Klasa 23: 6164 voxeli
+  Klasa 24: 6235 voxeli
+  Klasa 25: 11528 voxeli
+  Klasa 26: 6930 voxeli
+  Klasa 27: 14051 voxeli
+  Klasa 28: 11701 voxeli
+  Klasa 29: 10832 voxeli
+  Klasa 30: 6458 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001213121_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44600530 voxeli
+  Klasa 1: 8944 voxeli
+  Klasa 2: 6268 voxeli
+  Klasa 3: 9257 voxeli
+  Klasa 4: 10124 voxeli
+  Klasa 5: 10261 voxeli
+  Klasa 6: 5735 voxeli
+  Klasa 7: 6713 voxeli
+  Klasa 8: 5041 voxeli
+  Klasa 9: 6951 voxeli
+  Klasa 10: 5293 voxeli
+  Klasa 11: 5334 voxeli
+  Klasa 12: 4107 voxeli
+  Klasa 13: 3343 voxeli
+  Klasa 14: 5578 voxeli
+  Klasa 15: 2609 voxeli
+  Klasa 16: 2673 voxeli
+  Klasa 17: 5769 voxeli
+  Klasa 18: 3615 voxeli
+  Klasa 19: 4119 voxeli
+  Klasa 20: 5667 voxeli
+  Klasa 21: 7020 voxeli
+  Klasa 22: 5227 voxeli
+  Klasa 23: 6612 voxeli
+  Klasa 24: 3599 voxeli
+  Klasa 25: 5702 voxeli
+  Klasa 26: 9404 voxeli
+  Klasa 27: 10599 voxeli
+  Klasa 28: 9026 voxeli
+  Klasa 29: 10047 voxeli
+  Klasa 30: 6061 voxeli
+  Klasa 31: 8772 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001218388_20161024.nii.gz
+Liczność klas:
+  Klasa 0: 42086174 voxeli
+  Klasa 1: 11552 voxeli
+  Klasa 2: 12464 voxeli
+  Klasa 3: 6402 voxeli
+  Klasa 4: 5723 voxeli
+  Klasa 5: 4971 voxeli
+  Klasa 6: 4873 voxeli
+  Klasa 7: 6714 voxeli
+  Klasa 8: 5207 voxeli
+  Klasa 9: 4062 voxeli
+  Klasa 10: 3194 voxeli
+  Klasa 11: 5194 voxeli
+  Klasa 12: 2470 voxeli
+  Klasa 13: 5061 voxeli
+  Klasa 14: 2544 voxeli
+  Klasa 15: 2838 voxeli
+  Klasa 16: 4165 voxeli
+  Klasa 17: 5292 voxeli
+  Klasa 18: 6664 voxeli
+  Klasa 19: 5101 voxeli
+  Klasa 20: 6134 voxeli
+  Klasa 21: 6260 voxeli
+  Klasa 22: 5214 voxeli
+  Klasa 23: 11551 voxeli
+  Klasa 24: 10661 voxeli
+  Klasa 25: 9515 voxeli
+Największy numer klasy w pliku: 25
+
+Plik: 1001218388_20171102.nii.gz
+Liczność klas:
+  Klasa 0: 40791751 voxeli
+  Klasa 1: 10116 voxeli
+  Klasa 2: 12039 voxeli
+  Klasa 3: 11979 voxeli
+  Klasa 4: 6566 voxeli
+  Klasa 5: 4763 voxeli
+  Klasa 6: 5787 voxeli
+  Klasa 7: 4612 voxeli
+  Klasa 8: 6494 voxeli
+  Klasa 9: 5070 voxeli
+  Klasa 10: 3928 voxeli
+  Klasa 11: 2974 voxeli
+  Klasa 12: 5144 voxeli
+  Klasa 13: 2432 voxeli
+  Klasa 14: 5097 voxeli
+  Klasa 15: 2584 voxeli
+  Klasa 16: 2682 voxeli
+  Klasa 17: 4384 voxeli
+  Klasa 18: 5269 voxeli
+  Klasa 19: 6580 voxeli
+  Klasa 20: 4860 voxeli
+  Klasa 21: 5811 voxeli
+  Klasa 22: 6237 voxeli
+  Klasa 23: 5304 voxeli
+  Klasa 24: 11448 voxeli
+  Klasa 25: 14571 voxeli
+  Klasa 26: 11518 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001218388_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 44633324 voxeli
+  Klasa 1: 11026 voxeli
+  Klasa 2: 11882 voxeli
+  Klasa 3: 12396 voxeli
+  Klasa 4: 6684 voxeli
+  Klasa 5: 4444 voxeli
+  Klasa 6: 5705 voxeli
+  Klasa 7: 4628 voxeli
+  Klasa 8: 6506 voxeli
+  Klasa 9: 5076 voxeli
+  Klasa 10: 4006 voxeli
+  Klasa 11: 2953 voxeli
+  Klasa 12: 5122 voxeli
+  Klasa 13: 2407 voxeli
+  Klasa 14: 5150 voxeli
+  Klasa 15: 2456 voxeli
+  Klasa 16: 2645 voxeli
+  Klasa 17: 4454 voxeli
+  Klasa 18: 5299 voxeli
+  Klasa 19: 6669 voxeli
+  Klasa 20: 4810 voxeli
+  Klasa 21: 6078 voxeli
+  Klasa 22: 6616 voxeli
+  Klasa 23: 5409 voxeli
+  Klasa 24: 11717 voxeli
+  Klasa 25: 11163 voxeli
+  Klasa 26: 11375 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001223657_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 40763904 voxeli
+  Klasa 1: 12476 voxeli
+  Klasa 2: 12238 voxeli
+  Klasa 3: 12292 voxeli
+  Klasa 4: 12502 voxeli
+  Klasa 5: 6208 voxeli
+  Klasa 6: 5060 voxeli
+  Klasa 7: 7417 voxeli
+  Klasa 8: 5706 voxeli
+  Klasa 9: 4878 voxeli
+  Klasa 10: 4001 voxeli
+  Klasa 11: 6457 voxeli
+  Klasa 12: 3008 voxeli
+  Klasa 13: 2962 voxeli
+  Klasa 14: 6397 voxeli
+  Klasa 15: 3906 voxeli
+  Klasa 16: 5091 voxeli
+  Klasa 17: 5854 voxeli
+  Klasa 18: 5535 voxeli
+  Klasa 19: 7442 voxeli
+  Klasa 20: 6190 voxeli
+  Klasa 21: 12109 voxeli
+  Klasa 22: 11999 voxeli
+  Klasa 23: 12362 voxeli
+  Klasa 24: 12198 voxeli
+  Klasa 25: 11808 voxeli
+Największy numer klasy w pliku: 25
+
+Plik: 1001224969_20180330.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 44566665 voxeli
+  Klasa 2: 12070 voxeli
+  Klasa 3: 12108 voxeli
+  Klasa 4: 14230 voxeli
+  Klasa 5: 9342 voxeli
+  Klasa 6: 8660 voxeli
+  Klasa 7: 4733 voxeli
+  Klasa 8: 8167 voxeli
+  Klasa 9: 7220 voxeli
+  Klasa 10: 8714 voxeli
+  Klasa 11: 8928 voxeli
+  Klasa 13: 6384 voxeli
+  Klasa 15: 4298 voxeli
+  Klasa 16: 2852 voxeli
+  Klasa 17: 3909 voxeli
+  Klasa 21: 3723 voxeli
+  Klasa 22: 2333 voxeli
+  Klasa 23: 4730 voxeli
+  Klasa 25: 6226 voxeli
+  Klasa 27: 9102 voxeli
+  Klasa 28: 9740 voxeli
+  Klasa 29: 6861 voxeli
+  Klasa 30: 8347 voxeli
+  Klasa 31: 6960 voxeli
+  Klasa 32: 8740 voxeli
+  Klasa 33: 14775 voxeli
+  Klasa 34: 13988 voxeli
+  Klasa 35: 13308 voxeli
+  Klasa 36: 12887 voxeli
+Największy numer klasy w pliku: 36
+
+Plik: 1001232054_20171211.nii.gz
+Liczność klas:
+  Klasa 0: 44607972 voxeli
+  Klasa 1: 8280 voxeli
+  Klasa 2: 8944 voxeli
+  Klasa 3: 8440 voxeli
+  Klasa 4: 10946 voxeli
+  Klasa 5: 12540 voxeli
+  Klasa 6: 5142 voxeli
+  Klasa 7: 5781 voxeli
+  Klasa 8: 5114 voxeli
+  Klasa 9: 6718 voxeli
+  Klasa 10: 4807 voxeli
+  Klasa 11: 5702 voxeli
+  Klasa 12: 4506 voxeli
+  Klasa 13: 3352 voxeli
+  Klasa 14: 5981 voxeli
+  Klasa 15: 2846 voxeli
+  Klasa 16: 2829 voxeli
+  Klasa 17: 6151 voxeli
+  Klasa 18: 3504 voxeli
+  Klasa 19: 4351 voxeli
+  Klasa 20: 5756 voxeli
+  Klasa 21: 6435 voxeli
+  Klasa 22: 5069 voxeli
+  Klasa 23: 6010 voxeli
+  Klasa 24: 4913 voxeli
+  Klasa 25: 11365 voxeli
+  Klasa 26: 10002 voxeli
+  Klasa 27: 8167 voxeli
+  Klasa 28: 9170 voxeli
+  Klasa 29: 9207 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001232054_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 40762857 voxeli
+  Klasa 1: 8480 voxeli
+  Klasa 2: 8990 voxeli
+  Klasa 3: 8886 voxeli
+  Klasa 4: 10917 voxeli
+  Klasa 5: 12376 voxeli
+  Klasa 6: 5192 voxeli
+  Klasa 7: 5925 voxeli
+  Klasa 8: 5001 voxeli
+  Klasa 9: 7023 voxeli
+  Klasa 10: 5003 voxeli
+  Klasa 11: 5877 voxeli
+  Klasa 12: 4618 voxeli
+  Klasa 13: 3173 voxeli
+  Klasa 14: 6093 voxeli
+  Klasa 15: 2726 voxeli
+  Klasa 16: 2783 voxeli
+  Klasa 17: 6228 voxeli
+  Klasa 18: 3240 voxeli
+  Klasa 19: 4406 voxeli
+  Klasa 20: 5782 voxeli
+  Klasa 21: 6724 voxeli
+  Klasa 22: 5197 voxeli
+  Klasa 23: 5898 voxeli
+  Klasa 24: 5074 voxeli
+  Klasa 25: 2383 voxeli
+  Klasa 26: 11405 voxeli
+  Klasa 27: 8021 voxeli
+  Klasa 28: 11024 voxeli
+  Klasa 29: 9274 voxeli
+  Klasa 30: 9424 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001247962_20180115.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 52281448 voxeli
+  Klasa 4: 14796 voxeli
+  Klasa 7: 15473 voxeli
+  Klasa 8: 7058 voxeli
+  Klasa 9: 14437 voxeli
+  Klasa 10: 7555 voxeli
+  Klasa 11: 7221 voxeli
+  Klasa 14: 9853 voxeli
+  Klasa 15: 6241 voxeli
+  Klasa 16: 5884 voxeli
+  Klasa 17: 8373 voxeli
+  Klasa 19: 8411 voxeli
+  Klasa 20: 3404 voxeli
+  Klasa 22: 3087 voxeli
+  Klasa 23: 7827 voxeli
+  Klasa 25: 4023 voxeli
+  Klasa 26: 5519 voxeli
+  Klasa 28: 7895 voxeli
+  Klasa 29: 9757 voxeli
+  Klasa 30: 6552 voxeli
+  Klasa 32: 6725 voxeli
+  Klasa 33: 7401 voxeli
+  Klasa 35: 15583 voxeli
+  Klasa 36: 15477 voxeli
+Największy numer klasy w pliku: 36
+
+Plik: 1001250407_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44539014 voxeli
+  Klasa 1: 13953 voxeli
+  Klasa 2: 14691 voxeli
+  Klasa 3: 12884 voxeli
+  Klasa 4: 11997 voxeli
+  Klasa 5: 14201 voxeli
+  Klasa 6: 8435 voxeli
+  Klasa 7: 5474 voxeli
+  Klasa 8: 6447 voxeli
+  Klasa 9: 9323 voxeli
+  Klasa 10: 6652 voxeli
+  Klasa 11: 8298 voxeli
+  Klasa 12: 5137 voxeli
+  Klasa 13: 3472 voxeli
+  Klasa 14: 8444 voxeli
+  Klasa 15: 7087 voxeli
+  Klasa 16: 8491 voxeli
+  Klasa 17: 3747 voxeli
+  Klasa 18: 5839 voxeli
+  Klasa 19: 8676 voxeli
+  Klasa 20: 10263 voxeli
+  Klasa 21: 6712 voxeli
+  Klasa 22: 7688 voxeli
+  Klasa 23: 6772 voxeli
+  Klasa 24: 7583 voxeli
+  Klasa 25: 13756 voxeli
+  Klasa 26: 13627 voxeli
+  Klasa 27: 14833 voxeli
+  Klasa 28: 16504 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001250407_20190306.nii.gz
+Liczność klas:
+  Klasa 0: 52217076 voxeli
+  Klasa 1: 13841 voxeli
+  Klasa 2: 13856 voxeli
+  Klasa 3: 13181 voxeli
+  Klasa 4: 12089 voxeli
+  Klasa 5: 4678 voxeli
+  Klasa 6: 7179 voxeli
+  Klasa 7: 6286 voxeli
+  Klasa 8: 10067 voxeli
+  Klasa 9: 6385 voxeli
+  Klasa 10: 7834 voxeli
+  Klasa 11: 5327 voxeli
+  Klasa 12: 3831 voxeli
+  Klasa 13: 8395 voxeli
+  Klasa 14: 4891 voxeli
+  Klasa 15: 8390 voxeli
+  Klasa 16: 3638 voxeli
+  Klasa 17: 5552 voxeli
+  Klasa 18: 8432 voxeli
+  Klasa 19: 9956 voxeli
+  Klasa 20: 6743 voxeli
+  Klasa 21: 6743 voxeli
+  Klasa 22: 7305 voxeli
+  Klasa 24: 13725 voxeli
+  Klasa 25: 4442 voxeli
+  Klasa 26: 24130 voxeli
+  Klasa 27: 13072 voxeli
+  Klasa 28: 17266 voxeli
+  Klasa 29: 15690 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001250407_20190923.nii.gz
+Liczność klas:
+  Klasa 0: 52208861 voxeli
+  Klasa 1: 2373 voxeli
+  Klasa 2: 13423 voxeli
+  Klasa 3: 14036 voxeli
+  Klasa 4: 2990 voxeli
+  Klasa 5: 13338 voxeli
+  Klasa 6: 12487 voxeli
+  Klasa 7: 4808 voxeli
+  Klasa 8: 7413 voxeli
+  Klasa 9: 6309 voxeli
+  Klasa 10: 9783 voxeli
+  Klasa 11: 6401 voxeli
+  Klasa 12: 8002 voxeli
+  Klasa 13: 5276 voxeli
+  Klasa 14: 3410 voxeli
+  Klasa 15: 8231 voxeli
+  Klasa 16: 8514 voxeli
+  Klasa 17: 8323 voxeli
+  Klasa 18: 3340 voxeli
+  Klasa 19: 5377 voxeli
+  Klasa 20: 8374 voxeli
+  Klasa 21: 9884 voxeli
+  Klasa 22: 6568 voxeli
+  Klasa 23: 7232 voxeli
+  Klasa 24: 6731 voxeli
+  Klasa 26: 6691 voxeli
+  Klasa 27: 13463 voxeli
+  Klasa 28: 24915 voxeli
+  Klasa 29: 13294 voxeli
+  Klasa 30: 15572 voxeli
+  Klasa 31: 14581 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001250407_20200403.nii.gz
+Liczność klas:
+  Klasa 0: 44531667 voxeli
+  Klasa 1: 14445 voxeli
+  Klasa 2: 13137 voxeli
+  Klasa 3: 2378 voxeli
+  Klasa 4: 13251 voxeli
+  Klasa 5: 3018 voxeli
+  Klasa 6: 11865 voxeli
+  Klasa 7: 4933 voxeli
+  Klasa 8: 6364 voxeli
+  Klasa 9: 7363 voxeli
+  Klasa 10: 10212 voxeli
+  Klasa 11: 6415 voxeli
+  Klasa 12: 8166 voxeli
+  Klasa 13: 5223 voxeli
+  Klasa 14: 3319 voxeli
+  Klasa 15: 8280 voxeli
+  Klasa 16: 5635 voxeli
+  Klasa 17: 8259 voxeli
+  Klasa 18: 3511 voxeli
+  Klasa 19: 5290 voxeli
+  Klasa 20: 8363 voxeli
+  Klasa 21: 9791 voxeli
+  Klasa 22: 6563 voxeli
+  Klasa 23: 6648 voxeli
+  Klasa 24: 6984 voxeli
+  Klasa 26: 13528 voxeli
+  Klasa 27: 6425 voxeli
+  Klasa 28: 23317 voxeli
+  Klasa 29: 13398 voxeli
+  Klasa 30: 16648 voxeli
+  Klasa 31: 15604 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001261667_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 40768102 voxeli
+  Klasa 1: 11254 voxeli
+  Klasa 2: 10601 voxeli
+  Klasa 3: 11240 voxeli
+  Klasa 4: 6999 voxeli
+  Klasa 5: 5166 voxeli
+  Klasa 6: 7383 voxeli
+  Klasa 7: 6132 voxeli
+  Klasa 8: 7602 voxeli
+  Klasa 9: 6695 voxeli
+  Klasa 10: 6370 voxeli
+  Klasa 11: 4170 voxeli
+  Klasa 12: 7519 voxeli
+  Klasa 13: 3675 voxeli
+  Klasa 14: 3489 voxeli
+  Klasa 15: 8282 voxeli
+  Klasa 16: 3842 voxeli
+  Klasa 17: 6178 voxeli
+  Klasa 18: 6400 voxeli
+  Klasa 19: 7413 voxeli
+  Klasa 20: 5159 voxeli
+  Klasa 21: 7071 voxeli
+  Klasa 22: 7121 voxeli
+  Klasa 23: 11560 voxeli
+  Klasa 24: 17013 voxeli
+  Klasa 25: 13564 voxeli
+Największy numer klasy w pliku: 25
+
+Plik: 1001261667_20210221.nii.gz
+Liczność klas:
+  Klasa 0: 44582203 voxeli
+  Klasa 1: 11064 voxeli
+  Klasa 2: 12262 voxeli
+  Klasa 3: 5264 voxeli
+  Klasa 4: 16147 voxeli
+  Klasa 5: 7456 voxeli
+  Klasa 6: 5961 voxeli
+  Klasa 7: 5535 voxeli
+  Klasa 8: 6523 voxeli
+  Klasa 9: 6886 voxeli
+  Klasa 10: 5643 voxeli
+  Klasa 11: 3642 voxeli
+  Klasa 12: 5694 voxeli
+  Klasa 13: 3457 voxeli
+  Klasa 14: 7072 voxeli
+  Klasa 15: 3220 voxeli
+  Klasa 16: 7482 voxeli
+  Klasa 17: 3768 voxeli
+  Klasa 18: 6066 voxeli
+  Klasa 19: 6300 voxeli
+  Klasa 20: 5549 voxeli
+  Klasa 21: 6462 voxeli
+  Klasa 22: 7495 voxeli
+  Klasa 23: 8037 voxeli
+  Klasa 24: 9392 voxeli
+  Klasa 25: 14931 voxeli
+  Klasa 26: 13530 voxeli
+  Klasa 27: 9962 voxeli
+  Klasa 28: 12997 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001263197_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44636131 voxeli
+  Klasa 1: 9661 voxeli
+  Klasa 2: 8123 voxeli
+  Klasa 3: 9540 voxeli
+  Klasa 4: 6181 voxeli
+  Klasa 5: 5015 voxeli
+  Klasa 6: 6152 voxeli
+  Klasa 7: 7118 voxeli
+  Klasa 8: 4832 voxeli
+  Klasa 9: 5873 voxeli
+  Klasa 10: 4188 voxeli
+  Klasa 11: 3455 voxeli
+  Klasa 12: 5989 voxeli
+  Klasa 13: 2957 voxeli
+  Klasa 14: 2899 voxeli
+  Klasa 15: 6317 voxeli
+  Klasa 16: 3361 voxeli
+  Klasa 17: 4728 voxeli
+  Klasa 18: 6094 voxeli
+  Klasa 19: 5344 voxeli
+  Klasa 20: 7421 voxeli
+  Klasa 21: 5201 voxeli
+  Klasa 22: 5475 voxeli
+  Klasa 23: 5747 voxeli
+  Klasa 24: 11656 voxeli
+  Klasa 25: 10028 voxeli
+  Klasa 26: 10514 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001263197_20180208.nii.gz
+Liczność klas:
+  Klasa 0: 44619996 voxeli
+  Klasa 1: 2477 voxeli
+  Klasa 2: 9971 voxeli
+  Klasa 3: 8191 voxeli
+  Klasa 4: 2348 voxeli
+  Klasa 5: 4907 voxeli
+  Klasa 6: 9533 voxeli
+  Klasa 7: 6371 voxeli
+  Klasa 8: 6085 voxeli
+  Klasa 9: 5221 voxeli
+  Klasa 10: 7133 voxeli
+  Klasa 11: 5004 voxeli
+  Klasa 12: 4163 voxeli
+  Klasa 13: 6083 voxeli
+  Klasa 14: 3500 voxeli
+  Klasa 15: 5909 voxeli
+  Klasa 16: 2883 voxeli
+  Klasa 17: 2905 voxeli
+  Klasa 18: 6179 voxeli
+  Klasa 19: 3476 voxeli
+  Klasa 20: 4637 voxeli
+  Klasa 21: 6055 voxeli
+  Klasa 22: 5362 voxeli
+  Klasa 23: 7442 voxeli
+  Klasa 24: 5490 voxeli
+  Klasa 25: 5261 voxeli
+  Klasa 26: 5660 voxeli
+  Klasa 27: 4951 voxeli
+  Klasa 28: 11922 voxeli
+  Klasa 29: 10378 voxeli
+  Klasa 30: 10507 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001263197_20180730.nii.gz
+Liczność klas:
+  Klasa 0: 44626102 voxeli
+  Klasa 1: 2582 voxeli
+  Klasa 2: 9736 voxeli
+  Klasa 3: 8135 voxeli
+  Klasa 4: 9404 voxeli
+  Klasa 5: 2600 voxeli
+  Klasa 6: 5218 voxeli
+  Klasa 7: 6179 voxeli
+  Klasa 8: 5179 voxeli
+  Klasa 9: 5899 voxeli
+  Klasa 10: 7183 voxeli
+  Klasa 11: 5182 voxeli
+  Klasa 12: 6094 voxeli
+  Klasa 13: 4049 voxeli
+  Klasa 14: 3425 voxeli
+  Klasa 15: 5764 voxeli
+  Klasa 16: 2882 voxeli
+  Klasa 17: 2770 voxeli
+  Klasa 18: 6198 voxeli
+  Klasa 19: 3426 voxeli
+  Klasa 20: 4533 voxeli
+  Klasa 21: 6068 voxeli
+  Klasa 22: 5373 voxeli
+  Klasa 23: 7423 voxeli
+  Klasa 24: 5264 voxeli
+  Klasa 25: 5434 voxeli
+  Klasa 26: 5507 voxeli
+  Klasa 27: 12058 voxeli
+  Klasa 28: 9838 voxeli
+  Klasa 29: 10495 voxeli
+Największy numer klasy w pliku: 29
+
+Plik: 1001275319_20180114.nii.gz
+Liczność klas:
+  Klasa 0: 44557203 voxeli
+  Klasa 1: 13687 voxeli
+  Klasa 2: 11796 voxeli
+  Klasa 3: 13065 voxeli
+  Klasa 4: 13220 voxeli
+  Klasa 5: 8209 voxeli
+  Klasa 6: 6970 voxeli
+  Klasa 7: 8760 voxeli
+  Klasa 8: 8310 voxeli
+  Klasa 9: 8518 voxeli
+  Klasa 10: 7821 voxeli
+  Klasa 11: 4310 voxeli
+  Klasa 12: 4359 voxeli
+  Klasa 13: 8418 voxeli
+  Klasa 14: 3450 voxeli
+  Klasa 15: 3564 voxeli
+  Klasa 16: 8274 voxeli
+  Klasa 17: 4109 voxeli
+  Klasa 18: 4776 voxeli
+  Klasa 19: 8213 voxeli
+  Klasa 20: 8722 voxeli
+  Klasa 21: 7672 voxeli
+  Klasa 22: 8876 voxeli
+  Klasa 23: 6745 voxeli
+  Klasa 24: 7957 voxeli
+  Klasa 25: 13357 voxeli
+  Klasa 26: 13691 voxeli
+  Klasa 27: 12067 voxeli
+  Klasa 28: 13881 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001277267_20180112.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 42013280 voxeli
+  Klasa 1: 9399 voxeli
+  Klasa 2: 12687 voxeli
+  Klasa 3: 11844 voxeli
+  Klasa 5: 13401 voxeli
+  Klasa 6: 13015 voxeli
+  Klasa 7: 6146 voxeli
+  Klasa 9: 7241 voxeli
+  Klasa 10: 5207 voxeli
+  Klasa 11: 8246 voxeli
+  Klasa 12: 6134 voxeli
+  Klasa 14: 7046 voxeli
+  Klasa 15: 4714 voxeli
+  Klasa 16: 3237 voxeli
+  Klasa 17: 7049 voxeli
+  Klasa 18: 2687 voxeli
+  Klasa 21: 2522 voxeli
+  Klasa 22: 6658 voxeli
+  Klasa 23: 3049 voxeli
+  Klasa 24: 4762 voxeli
+  Klasa 25: 7291 voxeli
+  Klasa 26: 8551 voxeli
+  Klasa 27: 6530 voxeli
+  Klasa 28: 7343 voxeli
+  Klasa 29: 5741 voxeli
+  Klasa 30: 6313 voxeli
+  Klasa 31: 13691 voxeli
+  Klasa 32: 13738 voxeli
+  Klasa 33: 12459 voxeli
+  Klasa 34: 10019 voxeli
+Największy numer klasy w pliku: 34
+
+Plik: 1001282649_20180104.nii.gz
+Liczność klas:
+  Klasa 0: 44604727 voxeli
+  Klasa 1: 11100 voxeli
+  Klasa 2: 11731 voxeli
+  Klasa 3: 11782 voxeli
+  Klasa 4: 6007 voxeli
+  Klasa 5: 11312 voxeli
+  Klasa 6: 6657 voxeli
+  Klasa 7: 5700 voxeli
+  Klasa 8: 7111 voxeli
+  Klasa 9: 5777 voxeli
+  Klasa 10: 5065 voxeli
+  Klasa 11: 5881 voxeli
+  Klasa 12: 3725 voxeli
+  Klasa 13: 6271 voxeli
+  Klasa 14: 3075 voxeli
+  Klasa 15: 6350 voxeli
+  Klasa 16: 3185 voxeli
+  Klasa 17: 5003 voxeli
+  Klasa 18: 3855 voxeli
+  Klasa 19: 5817 voxeli
+  Klasa 20: 7196 voxeli
+  Klasa 21: 6074 voxeli
+  Klasa 22: 7243 voxeli
+  Klasa 23: 5838 voxeli
+  Klasa 24: 6722 voxeli
+  Klasa 25: 12144 voxeli
+  Klasa 26: 12473 voxeli
+  Klasa 27: 12179 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001287535_20180108.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 39453159 voxeli
+  Klasa 4: 12268 voxeli
+  Klasa 5: 14951 voxeli
+  Klasa 6: 14613 voxeli
+  Klasa 7: 6245 voxeli
+  Klasa 8: 7771 voxeli
+  Klasa 9: 6749 voxeli
+  Klasa 11: 6826 voxeli
+  Klasa 13: 9834 voxeli
+  Klasa 16: 9081 voxeli
+  Klasa 17: 6330 voxeli
+  Klasa 20: 4734 voxeli
+  Klasa 21: 8760 voxeli
+  Klasa 23: 3420 voxeli
+  Klasa 25: 3404 voxeli
+  Klasa 26: 8678 voxeli
+  Klasa 28: 4761 voxeli
+  Klasa 30: 6023 voxeli
+  Klasa 31: 8908 voxeli
+  Klasa 32: 9769 voxeli
+  Klasa 33: 6092 voxeli
+  Klasa 36: 7462 voxeli
+  Klasa 37: 7789 voxeli
+  Klasa 40: 8050 voxeli
+  Klasa 43: 15164 voxeli
+  Klasa 46: 16223 voxeli
+  Klasa 47: 12930 voxeli
+  Klasa 51: 6 voxeli
+Największy numer klasy w pliku: 51
+
+Plik: 1001287535_20180116.nii.gz
+Liczność klas:
+  Klasa 0: 44580749 voxeli
+  Klasa 1: 3712 voxeli
+  Klasa 2: 12231 voxeli
+  Klasa 3: 15115 voxeli
+  Klasa 4: 12566 voxeli
+  Klasa 5: 5401 voxeli
+  Klasa 6: 6775 voxeli
+  Klasa 7: 7631 voxeli
+  Klasa 8: 6538 voxeli
+  Klasa 9: 9234 voxeli
+  Klasa 10: 8561 voxeli
+  Klasa 11: 6131 voxeli
+  Klasa 12: 4509 voxeli
+  Klasa 13: 8705 voxeli
+  Klasa 14: 3138 voxeli
+  Klasa 15: 3293 voxeli
+  Klasa 16: 8659 voxeli
+  Klasa 17: 4333 voxeli
+  Klasa 18: 8632 voxeli
+  Klasa 19: 6073 voxeli
+  Klasa 20: 5311 voxeli
+  Klasa 21: 9429 voxeli
+  Klasa 22: 7367 voxeli
+  Klasa 23: 7484 voxeli
+  Klasa 24: 7399 voxeli
+  Klasa 25: 14141 voxeli
+  Klasa 26: 14877 voxeli
+  Klasa 27: 12006 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001291347_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 40710035 voxeli
+  Klasa 1: 15336 voxeli
+  Klasa 2: 15491 voxeli
+  Klasa 3: 11409 voxeli
+  Klasa 4: 7833 voxeli
+  Klasa 5: 8370 voxeli
+  Klasa 6: 6946 voxeli
+  Klasa 7: 9658 voxeli
+  Klasa 8: 6399 voxeli
+  Klasa 9: 8215 voxeli
+  Klasa 10: 6066 voxeli
+  Klasa 11: 4378 voxeli
+  Klasa 12: 8130 voxeli
+  Klasa 13: 3570 voxeli
+  Klasa 14: 3644 voxeli
+  Klasa 15: 8095 voxeli
+  Klasa 16: 4182 voxeli
+  Klasa 17: 5979 voxeli
+  Klasa 18: 8156 voxeli
+  Klasa 19: 8751 voxeli
+  Klasa 20: 6299 voxeli
+  Klasa 21: 7885 voxeli
+  Klasa 22: 6543 voxeli
+  Klasa 23: 8191 voxeli
+  Klasa 24: 14903 voxeli
+  Klasa 25: 13909 voxeli
+  Klasa 26: 14035 voxeli
+  Klasa 27: 13867 voxeli
+  Klasa 28: 13725 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001327709_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44602534 voxeli
+  Klasa 1: 9104 voxeli
+  Klasa 2: 9109 voxeli
+  Klasa 3: 9087 voxeli
+  Klasa 4: 7652 voxeli
+  Klasa 5: 10951 voxeli
+  Klasa 6: 11296 voxeli
+  Klasa 7: 6037 voxeli
+  Klasa 8: 4464 voxeli
+  Klasa 9: 6643 voxeli
+  Klasa 10: 6231 voxeli
+  Klasa 11: 4584 voxeli
+  Klasa 12: 4978 voxeli
+  Klasa 13: 3178 voxeli
+  Klasa 14: 2768 voxeli
+  Klasa 15: 5846 voxeli
+  Klasa 16: 2351 voxeli
+  Klasa 17: 2240 voxeli
+  Klasa 18: 5314 voxeli
+  Klasa 19: 2931 voxeli
+  Klasa 20: 2337 voxeli
+  Klasa 21: 4692 voxeli
+  Klasa 22: 5739 voxeli
+  Klasa 23: 5966 voxeli
+  Klasa 24: 5018 voxeli
+  Klasa 25: 5646 voxeli
+  Klasa 26: 8453 voxeli
+  Klasa 27: 11150 voxeli
+  Klasa 28: 8803 voxeli
+  Klasa 29: 8978 voxeli
+  Klasa 30: 8349 voxeli
+  Klasa 31: 7571 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001377656_20171105.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 39461550 voxeli
+  Klasa 2: 11256 voxeli
+  Klasa 3: 10587 voxeli
+  Klasa 4: 10672 voxeli
+  Klasa 5: 6491 voxeli
+  Klasa 6: 12237 voxeli
+  Klasa 7: 11371 voxeli
+  Klasa 8: 6552 voxeli
+  Klasa 9: 5068 voxeli
+  Klasa 10: 7263 voxeli
+  Klasa 11: 5959 voxeli
+  Klasa 12: 7237 voxeli
+  Klasa 13: 5344 voxeli
+  Klasa 14: 3894 voxeli
+  Klasa 16: 3126 voxeli
+  Klasa 17: 2474 voxeli
+  Klasa 19: 2252 voxeli
+  Klasa 21: 6056 voxeli
+  Klasa 22: 2660 voxeli
+  Klasa 23: 3498 voxeli
+  Klasa 24: 5784 voxeli
+  Klasa 25: 7086 voxeli
+  Klasa 26: 5059 voxeli
+  Klasa 27: 7197 voxeli
+  Klasa 28: 6360 voxeli
+  Klasa 29: 10516 voxeli
+  Klasa 30: 12111 voxeli
+  Klasa 31: 10341 voxeli
+  Klasa 32: 9840 voxeli
+  Klasa 33: 9818 voxeli
+  Klasa 34: 10341 voxeli
+Największy numer klasy w pliku: 34
+
+Plik: 1001377656_20180116.nii.gz - uwaga
+Liczność klas:
+  Klasa 0: 44575645 voxeli
+  Klasa 2: 10779 voxeli
+  Klasa 3: 10797 voxeli
+  Klasa 4: 10593 voxeli
+  Klasa 5: 6516 voxeli
+  Klasa 6: 12544 voxeli
+  Klasa 7: 11290 voxeli
+  Klasa 8: 6452 voxeli
+  Klasa 9: 5139 voxeli
+  Klasa 10: 7218 voxeli
+  Klasa 11: 6025 voxeli
+  Klasa 12: 7542 voxeli
+  Klasa 13: 5431 voxeli
+  Klasa 14: 4121 voxeli
+  Klasa 16: 3072 voxeli
+  Klasa 17: 2454 voxeli
+  Klasa 21: 1981 voxeli
+  Klasa 22: 5736 voxeli
+  Klasa 23: 2505 voxeli
+  Klasa 24: 3534 voxeli
+  Klasa 25: 4980 voxeli
+  Klasa 26: 6988 voxeli
+  Klasa 27: 6044 voxeli
+  Klasa 28: 7046 voxeli
+  Klasa 29: 5034 voxeli
+  Klasa 30: 6520 voxeli
+  Klasa 31: 11015 voxeli
+  Klasa 32: 12090 voxeli
+  Klasa 33: 10191 voxeli
+  Klasa 34: 9593 voxeli
+  Klasa 35: 10698 voxeli
+  Klasa 36: 10427 voxeli
+Największy numer klasy w pliku: 36
+
+Plik: 1001381644_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 40755947 voxeli
+  Klasa 2: 12337 voxeli
+  Klasa 4: 11647 voxeli
+  Klasa 5: 9978 voxeli
+  Klasa 6: 13276 voxeli
+  Klasa 7: 7039 voxeli
+  Klasa 8: 12785 voxeli
+  Klasa 9: 7274 voxeli
+  Klasa 10: 6129 voxeli
+  Klasa 12: 7623 voxeli
+  Klasa 13: 5788 voxeli
+  Klasa 14: 5726 voxeli
+  Klasa 15: 5001 voxeli
+  Klasa 16: 3411 voxeli
+  Klasa 17: 7077 voxeli
+  Klasa 19: 3504 voxeli
+  Klasa 20: 3570 voxeli
+  Klasa 21: 7046 voxeli
+  Klasa 22: 3565 voxeli
+  Klasa 24: 6265 voxeli
+  Klasa 25: 4305 voxeli
+  Klasa 26: 5795 voxeli
+  Klasa 27: 7076 voxeli
+  Klasa 28: 6327 voxeli
+  Klasa 29: 7218 voxeli
+  Klasa 30: 13576 voxeli
+  Klasa 31: 9242 voxeli
+  Klasa 32: 11473 voxeli
+Największy numer klasy w pliku: 32
+
+Plik: 1001382496_20180112.nii.gz
+Liczność klas:
+  Klasa 0: 39400700 voxeli
+  Klasa 1: 14086 voxeli
+  Klasa 2: 11711 voxeli
+  Klasa 3: 14481 voxeli
+  Klasa 4: 10815 voxeli
+  Klasa 5: 13863 voxeli
+  Klasa 6: 15059 voxeli
+  Klasa 7: 7833 voxeli
+  Klasa 8: 7164 voxeli
+  Klasa 9: 8706 voxeli
+  Klasa 10: 7162 voxeli
+  Klasa 11: 9293 voxeli
+  Klasa 12: 7270 voxeli
+  Klasa 13: 5560 voxeli
+  Klasa 14: 3498 voxeli
+  Klasa 15: 7608 voxeli
+  Klasa 16: 3333 voxeli
+  Klasa 17: 3491 voxeli
+  Klasa 18: 7069 voxeli
+  Klasa 19: 3986 voxeli
+  Klasa 20: 5210 voxeli
+  Klasa 21: 7611 voxeli
+  Klasa 22: 7085 voxeli
+  Klasa 23: 9373 voxeli
+  Klasa 24: 7011 voxeli
+  Klasa 25: 7935 voxeli
+  Klasa 26: 6935 voxeli
+  Klasa 27: 13849 voxeli
+  Klasa 28: 12118 voxeli
+  Klasa 29: 13401 voxeli
+  Klasa 30: 13777 voxeli
+  Klasa 31: 13007 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001382496_20180423.nii.gz
+Liczność klas:
+  Klasa 0: 44557860 voxeli
+  Klasa 1: 12993 voxeli
+  Klasa 2: 11937 voxeli
+  Klasa 3: 10769 voxeli
+  Klasa 4: 13958 voxeli
+  Klasa 5: 15050 voxeli
+  Klasa 6: 14004 voxeli
+  Klasa 7: 8024 voxeli
+  Klasa 8: 7195 voxeli
+  Klasa 9: 8629 voxeli
+  Klasa 10: 7402 voxeli
+  Klasa 11: 9339 voxeli
+  Klasa 12: 7528 voxeli
+  Klasa 13: 5535 voxeli
+  Klasa 14: 3450 voxeli
+  Klasa 15: 7604 voxeli
+  Klasa 16: 3298 voxeli
+  Klasa 17: 3506 voxeli
+  Klasa 18: 6950 voxeli
+  Klasa 19: 4077 voxeli
+  Klasa 20: 5359 voxeli
+  Klasa 21: 7520 voxeli
+  Klasa 22: 7250 voxeli
+  Klasa 23: 9567 voxeli
+  Klasa 24: 7267 voxeli
+  Klasa 25: 8046 voxeli
+  Klasa 26: 6983 voxeli
+  Klasa 27: 14919 voxeli
+  Klasa 28: 13981 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001382496_20201206.nii.gz
+Liczność klas:
+  Klasa 0: 52240997 voxeli
+  Klasa 1: 13517 voxeli
+  Klasa 2: 11859 voxeli
+  Klasa 3: 12385 voxeli
+  Klasa 4: 10346 voxeli
+  Klasa 5: 13725 voxeli
+  Klasa 6: 14726 voxeli
+  Klasa 7: 7861 voxeli
+  Klasa 8: 7076 voxeli
+  Klasa 9: 8540 voxeli
+  Klasa 10: 7200 voxeli
+  Klasa 11: 9184 voxeli
+  Klasa 12: 7590 voxeli
+  Klasa 13: 5519 voxeli
+  Klasa 14: 3285 voxeli
+  Klasa 15: 3234 voxeli
+  Klasa 16: 7423 voxeli
+  Klasa 17: 3354 voxeli
+  Klasa 18: 7139 voxeli
+  Klasa 19: 3885 voxeli
+  Klasa 20: 7934 voxeli
+  Klasa 21: 5072 voxeli
+  Klasa 22: 7269 voxeli
+  Klasa 23: 9174 voxeli
+  Klasa 24: 7277 voxeli
+  Klasa 25: 8030 voxeli
+  Klasa 26: 6904 voxeli
+  Klasa 27: 15211 voxeli
+  Klasa 28: 14284 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001384881_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44676459 voxeli
+  Klasa 2: 12856 voxeli
+  Klasa 3: 14323 voxeli
+  Klasa 4: 7161 voxeli
+  Klasa 5: 7463 voxeli
+  Klasa 6: 9025 voxeli
+  Klasa 7: 4435 voxeli
+  Klasa 8: 6422 voxeli
+  Klasa 9: 6296 voxeli
+  Klasa 10: 4648 voxeli
+  Klasa 11: 9271 voxeli
+  Klasa 12: 7772 voxeli
+  Klasa 13: 7280 voxeli
+  Klasa 14: 13761 voxeli
+  Klasa 15: 12828 voxeli
+Największy numer klasy w pliku: 15
+
+Plik: 1001398270_20180111.nii.gz
+Liczność klas:
+  Klasa 0: 44648451 voxeli
+  Klasa 1: 7470 voxeli
+  Klasa 2: 10271 voxeli
+  Klasa 3: 6830 voxeli
+  Klasa 4: 5683 voxeli
+  Klasa 5: 6472 voxeli
+  Klasa 6: 7892 voxeli
+  Klasa 7: 4354 voxeli
+  Klasa 8: 7844 voxeli
+  Klasa 9: 3733 voxeli
+  Klasa 10: 5376 voxeli
+  Klasa 11: 8042 voxeli
+  Klasa 12: 10423 voxeli
+  Klasa 13: 5569 voxeli
+  Klasa 14: 7964 voxeli
+  Klasa 15: 7602 voxeli
+  Klasa 16: 17555 voxeli
+  Klasa 17: 15972 voxeli
+  Klasa 18: 12497 voxeli
+Największy numer klasy w pliku: 18
+
+Plik: 1001420874_20180113.nii.gz
+Liczność klas:
+  Klasa 0: 52225220 voxeli
+  Klasa 1: 8516 voxeli
+  Klasa 2: 7775 voxeli
+  Klasa 3: 15254 voxeli
+  Klasa 4: 15061 voxeli
+  Klasa 5: 15665 voxeli
+  Klasa 6: 14685 voxeli
+  Klasa 7: 8790 voxeli
+  Klasa 8: 6655 voxeli
+  Klasa 9: 7728 voxeli
+  Klasa 10: 6553 voxeli
+  Klasa 11: 5644 voxeli
+  Klasa 12: 4489 voxeli
+  Klasa 13: 7615 voxeli
+  Klasa 14: 3395 voxeli
+  Klasa 15: 3246 voxeli
+  Klasa 16: 7769 voxeli
+  Klasa 17: 3750 voxeli
+  Klasa 18: 5864 voxeli
+  Klasa 19: 6617 voxeli
+  Klasa 20: 8265 voxeli
+  Klasa 21: 6819 voxeli
+  Klasa 22: 8164 voxeli
+  Klasa 23: 15422 voxeli
+  Klasa 24: 14869 voxeli
+  Klasa 25: 15335 voxeli
+  Klasa 26: 15342 voxeli
+  Klasa 27: 7233 voxeli
+  Klasa 28: 8260 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001439714_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 105297093 voxeli
+  Klasa 1: 23996 voxeli
+  Klasa 2: 16329 voxeli
+  Klasa 3: 28522 voxeli
+  Klasa 4: 20782 voxeli
+  Klasa 5: 16766 voxeli
+  Klasa 6: 10730 voxeli
+  Klasa 7: 12598 voxeli
+  Klasa 8: 10211 voxeli
+  Klasa 9: 15989 voxeli
+  Klasa 10: 12604 voxeli
+  Klasa 11: 11022 voxeli
+  Klasa 12: 8383 voxeli
+  Klasa 13: 14743 voxeli
+  Klasa 14: 6933 voxeli
+  Klasa 15: 6958 voxeli
+  Klasa 16: 14510 voxeli
+  Klasa 17: 8639 voxeli
+  Klasa 18: 9413 voxeli
+  Klasa 19: 13004 voxeli
+  Klasa 20: 15485 voxeli
+  Klasa 21: 11462 voxeli
+  Klasa 22: 11816 voxeli
+  Klasa 23: 10337 voxeli
+  Klasa 24: 17847 voxeli
+  Klasa 25: 27607 voxeli
+  Klasa 26: 25844 voxeli
+  Klasa 27: 22284 voxeli
+  Klasa 28: 23021 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001439714_20180518.nii.gz
+Liczność klas:
+  Klasa 0: 44644915 voxeli
+  Klasa 1: 10083 voxeli
+  Klasa 2: 6308 voxeli
+  Klasa 3: 10736 voxeli
+  Klasa 4: 8095 voxeli
+  Klasa 5: 6528 voxeli
+  Klasa 6: 3554 voxeli
+  Klasa 7: 5189 voxeli
+  Klasa 8: 6473 voxeli
+  Klasa 9: 5019 voxeli
+  Klasa 10: 4445 voxeli
+  Klasa 11: 3378 voxeli
+  Klasa 12: 6021 voxeli
+  Klasa 13: 2792 voxeli
+  Klasa 14: 2819 voxeli
+  Klasa 15: 6025 voxeli
+  Klasa 16: 3451 voxeli
+  Klasa 17: 3951 voxeli
+  Klasa 18: 5292 voxeli
+  Klasa 19: 4343 voxeli
+  Klasa 20: 6307 voxeli
+  Klasa 21: 4766 voxeli
+  Klasa 22: 3596 voxeli
+  Klasa 23: 10954 voxeli
+  Klasa 24: 8045 voxeli
+  Klasa 25: 7369 voxeli
+  Klasa 26: 9546 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001443866_20180111.nii.gz -- uwaga
+Liczność klas:
+  Klasa 0: 44528021 voxeli
+  Klasa 1: 11190 voxeli
+  Klasa 2: 13658 voxeli
+  Klasa 3: 13055 voxeli
+  Klasa 4: 13257 voxeli
+  Klasa 5: 14908 voxeli
+  Klasa 6: 7643 voxeli
+  Klasa 7: 6590 voxeli
+  Klasa 9: 8438 voxeli
+  Klasa 10: 9284 voxeli
+  Klasa 11: 6106 voxeli
+  Klasa 13: 5605 voxeli
+  Klasa 14: 8128 voxeli
+  Klasa 15: 6023 voxeli
+  Klasa 16: 4041 voxeli
+  Klasa 17: 7407 voxeli
+  Klasa 18: 3380 voxeli
+  Klasa 19: 3523 voxeli
+  Klasa 20: 7445 voxeli
+  Klasa 21: 4275 voxeli
+  Klasa 22: 6099 voxeli
+  Klasa 24: 8778 voxeli
+  Klasa 26: 10645 voxeli
+  Klasa 27: 6994 voxeli
+  Klasa 28: 7565 voxeli
+  Klasa 29: 14037 voxeli
+  Klasa 30: 6406 voxeli
+  Klasa 31: 6555 voxeli
+  Klasa 32: 13007 voxeli
+  Klasa 33: 12223 voxeli
+  Klasa 34: 13163 voxeli
+  Klasa 35: 12551 voxeli
+Największy numer klasy w pliku: 35
+
+Plik: 1001453825_20171003.nii.gz
+Liczność klas:
+  Klasa 0: 44586942 voxeli
+  Klasa 1: 11665 voxeli
+  Klasa 2: 11934 voxeli
+  Klasa 3: 10545 voxeli
+  Klasa 4: 12302 voxeli
+  Klasa 6: 6367 voxeli
+  Klasa 7: 13499 voxeli
+  Klasa 8: 6619 voxeli
+  Klasa 9: 4899 voxeli
+  Klasa 10: 8713 voxeli
+  Klasa 11: 6973 voxeli
+  Klasa 12: 5231 voxeli
+  Klasa 14: 4031 voxeli
+  Klasa 16: 2947 voxeli
+  Klasa 17: 6621 voxeli
+  Klasa 18: 3098 voxeli
+  Klasa 19: 6547 voxeli
+  Klasa 20: 4116 voxeli
+  Klasa 21: 7445 voxeli
+  Klasa 22: 5458 voxeli
+  Klasa 23: 5475 voxeli
+  Klasa 24: 8371 voxeli
+  Klasa 25: 6450 voxeli
+  Klasa 26: 6291 voxeli
+  Klasa 27: 11534 voxeli
+  Klasa 28: 11985 voxeli
+  Klasa 29: 11492 voxeli
+  Klasa 30: 12450 voxeli
+Największy numer klasy w pliku: 30
+
+Plik: 1001453825_20180114.nii.gz
+Liczność klas:
+  Klasa 0: 44584717 voxeli
+  Klasa 1: 12068 voxeli
+  Klasa 2: 11875 voxeli
+  Klasa 3: 12263 voxeli
+  Klasa 4: 11001 voxeli
+  Klasa 5: 6376 voxeli
+  Klasa 6: 13028 voxeli
+  Klasa 8: 6661 voxeli
+  Klasa 10: 5447 voxeli
+  Klasa 11: 8870 voxeli
+  Klasa 12: 7096 voxeli
+  Klasa 13: 5077 voxeli
+  Klasa 14: 4088 voxeli
+  Klasa 18: 6473 voxeli
+  Klasa 19: 2949 voxeli
+  Klasa 20: 2954 voxeli
+  Klasa 21: 6307 voxeli
+  Klasa 22: 3892 voxeli
+  Klasa 23: 5338 voxeli
+  Klasa 24: 7352 voxeli
+  Klasa 25: 5415 voxeli
+  Klasa 26: 2264 voxeli
+  Klasa 27: 8322 voxeli
+  Klasa 28: 6371 voxeli
+  Klasa 29: 6277 voxeli
+  Klasa 30: 11542 voxeli
+  Klasa 31: 12080 voxeli
+  Klasa 32: 11429 voxeli
+  Klasa 33: 12468 voxeli
+Największy numer klasy w pliku: 33
+
+Plik: 1001463689_20180104.nii.gz
+Liczność klas:
+  Klasa 0: 42053036 voxeli
+  Klasa 1: 7458 voxeli
+  Klasa 2: 10085 voxeli
+  Klasa 3: 11332 voxeli
+  Klasa 4: 6000 voxeli
+  Klasa 5: 5766 voxeli
+  Klasa 6: 6539 voxeli
+  Klasa 7: 6028 voxeli
+  Klasa 8: 8474 voxeli
+  Klasa 9: 7222 voxeli
+  Klasa 10: 4703 voxeli
+  Klasa 11: 3463 voxeli
+  Klasa 12: 6715 voxeli
+  Klasa 13: 3291 voxeli
+  Klasa 14: 3013 voxeli
+  Klasa 15: 6903 voxeli
+  Klasa 16: 3574 voxeli
+  Klasa 17: 4488 voxeli
+  Klasa 18: 6251 voxeli
+  Klasa 19: 8001 voxeli
+  Klasa 20: 4883 voxeli
+  Klasa 21: 7009 voxeli
+  Klasa 22: 6200 voxeli
+  Klasa 23: 5759 voxeli
+  Klasa 24: 11084 voxeli
+  Klasa 25: 13670 voxeli
+  Klasa 26: 10652 voxeli
+  Klasa 27: 8401 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001463689_20180110.nii.gz
+Liczność klas:
+  Klasa 0: 44615549 voxeli
+  Klasa 1: 7342 voxeli
+  Klasa 2: 11739 voxeli
+  Klasa 3: 5397 voxeli
+  Klasa 4: 5904 voxeli
+  Klasa 5: 6630 voxeli
+  Klasa 6: 5502 voxeli
+  Klasa 7: 8618 voxeli
+  Klasa 8: 5796 voxeli
+  Klasa 9: 7138 voxeli
+  Klasa 10: 4759 voxeli
+  Klasa 11: 3398 voxeli
+  Klasa 12: 6847 voxeli
+  Klasa 13: 3121 voxeli
+  Klasa 14: 2958 voxeli
+  Klasa 15: 6799 voxeli
+  Klasa 16: 3529 voxeli
+  Klasa 17: 4519 voxeli
+  Klasa 18: 6405 voxeli
+  Klasa 19: 7860 voxeli
+  Klasa 20: 5371 voxeli
+  Klasa 21: 6857 voxeli
+  Klasa 22: 6451 voxeli
+  Klasa 23: 5421 voxeli
+  Klasa 24: 10868 voxeli
+  Klasa 25: 2686 voxeli
+  Klasa 26: 13609 voxeli
+  Klasa 27: 10834 voxeli
+  Klasa 28: 8093 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001463689_20180711.nii.gz
+Liczność klas:
+  Klasa 0: 44615271 voxeli
+  Klasa 1: 7270 voxeli
+  Klasa 2: 5166 voxeli
+  Klasa 3: 11887 voxeli
+  Klasa 4: 5905 voxeli
+  Klasa 5: 6514 voxeli
+  Klasa 6: 5440 voxeli
+  Klasa 7: 8637 voxeli
+  Klasa 8: 5855 voxeli
+  Klasa 9: 7006 voxeli
+  Klasa 10: 4846 voxeli
+  Klasa 11: 3410 voxeli
+  Klasa 12: 6799 voxeli
+  Klasa 13: 3205 voxeli
+  Klasa 14: 2974 voxeli
+  Klasa 15: 6746 voxeli
+  Klasa 16: 3520 voxeli
+  Klasa 17: 4441 voxeli
+  Klasa 18: 6334 voxeli
+  Klasa 19: 7895 voxeli
+  Klasa 20: 5455 voxeli
+  Klasa 21: 6744 voxeli
+  Klasa 22: 6327 voxeli
+  Klasa 23: 5495 voxeli
+  Klasa 24: 2771 voxeli
+  Klasa 25: 11372 voxeli
+  Klasa 26: 13140 voxeli
+  Klasa 27: 10941 voxeli
+  Klasa 28: 8634 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001463689_20191029.nii.gz
+Liczność klas:
+  Klasa 0: 52291624 voxeli
+  Klasa 1: 7294 voxeli
+  Klasa 2: 7520 voxeli
+  Klasa 3: 13104 voxeli
+  Klasa 4: 11020 voxeli
+  Klasa 5: 6392 voxeli
+  Klasa 6: 5333 voxeli
+  Klasa 7: 8490 voxeli
+  Klasa 8: 5808 voxeli
+  Klasa 9: 7033 voxeli
+  Klasa 10: 4703 voxeli
+  Klasa 11: 3433 voxeli
+  Klasa 12: 6736 voxeli
+  Klasa 13: 3260 voxeli
+  Klasa 14: 2897 voxeli
+  Klasa 15: 6904 voxeli
+  Klasa 16: 3548 voxeli
+  Klasa 17: 4497 voxeli
+  Klasa 18: 6402 voxeli
+  Klasa 19: 7968 voxeli
+  Klasa 20: 5104 voxeli
+  Klasa 21: 6618 voxeli
+  Klasa 22: 6160 voxeli
+  Klasa 23: 10218 voxeli
+  Klasa 24: 5215 voxeli
+  Klasa 25: 12886 voxeli
+  Klasa 26: 9477 voxeli
+  Klasa 27: 10356 voxeli
+Największy numer klasy w pliku: 27
+
+Plik: 1001463689_20200506.nii.gz
+Liczność klas:
+  Klasa 0: 52302425 voxeli
+  Klasa 1: 7639 voxeli
+  Klasa 2: 7399 voxeli
+  Klasa 3: 12559 voxeli
+  Klasa 4: 6588 voxeli
+  Klasa 5: 5433 voxeli
+  Klasa 6: 8573 voxeli
+  Klasa 7: 5908 voxeli
+  Klasa 8: 7184 voxeli
+  Klasa 9: 4751 voxeli
+  Klasa 10: 3379 voxeli
+  Klasa 11: 6782 voxeli
+  Klasa 12: 3282 voxeli
+  Klasa 13: 6834 voxeli
+  Klasa 14: 3000 voxeli
+  Klasa 15: 3603 voxeli
+  Klasa 16: 4500 voxeli
+  Klasa 17: 6632 voxeli
+  Klasa 18: 7851 voxeli
+  Klasa 19: 5024 voxeli
+  Klasa 20: 7077 voxeli
+  Klasa 21: 6194 voxeli
+  Klasa 22: 5164 voxeli
+  Klasa 23: 9475 voxeli
+  Klasa 24: 13015 voxeli
+  Klasa 25: 9357 voxeli
+  Klasa 26: 10372 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001470164_20180114.nii.gz
+Liczność klas:
+  Klasa 0: 44537329 voxeli
+  Klasa 1: 11341 voxeli
+  Klasa 2: 9370 voxeli
+  Klasa 3: 14489 voxeli
+  Klasa 4: 14911 voxeli
+  Klasa 5: 15528 voxeli
+  Klasa 6: 15226 voxeli
+  Klasa 7: 7715 voxeli
+  Klasa 8: 8989 voxeli
+  Klasa 9: 6776 voxeli
+  Klasa 10: 7169 voxeli
+  Klasa 11: 6454 voxeli
+  Klasa 12: 3639 voxeli
+  Klasa 13: 7350 voxeli
+  Klasa 14: 2869 voxeli
+  Klasa 15: 2863 voxeli
+  Klasa 16: 7278 voxeli
+  Klasa 17: 3544 voxeli
+  Klasa 18: 6499 voxeli
+  Klasa 19: 7680 voxeli
+  Klasa 20: 8409 voxeli
+  Klasa 21: 6801 voxeli
+  Klasa 22: 7787 voxeli
+  Klasa 23: 15536 voxeli
+  Klasa 24: 14472 voxeli
+  Klasa 25: 15061 voxeli
+  Klasa 26: 9279 voxeli
+  Klasa 27: 15120 voxeli
+  Klasa 28: 10516 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001470284_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44593187 voxeli
+  Klasa 1: 6476 voxeli
+  Klasa 2: 15865 voxeli
+  Klasa 3: 4482 voxeli
+  Klasa 4: 8814 voxeli
+  Klasa 5: 9866 voxeli
+  Klasa 6: 11103 voxeli
+  Klasa 7: 8565 voxeli
+  Klasa 8: 5680 voxeli
+  Klasa 9: 10588 voxeli
+  Klasa 10: 5282 voxeli
+  Klasa 11: 8455 voxeli
+  Klasa 12: 3828 voxeli
+  Klasa 13: 3867 voxeli
+  Klasa 14: 8797 voxeli
+  Klasa 15: 5356 voxeli
+  Klasa 16: 6109 voxeli
+  Klasa 17: 10144 voxeli
+  Klasa 18: 8269 voxeli
+  Klasa 19: 11373 voxeli
+  Klasa 20: 8672 voxeli
+  Klasa 21: 16692 voxeli
+  Klasa 22: 15497 voxeli
+  Klasa 23: 13033 voxeli
+Największy numer klasy w pliku: 23
+
+Plik: 1001484858_20150118.nii.gz
+Liczność klas:
+  Klasa 0: 36939259 voxeli
+  Klasa 1: 12423 voxeli
+  Klasa 2: 10443 voxeli
+  Klasa 3: 8798 voxeli
+  Klasa 4: 10604 voxeli
+  Klasa 5: 6925 voxeli
+  Klasa 6: 5959 voxeli
+  Klasa 7: 7292 voxeli
+  Klasa 8: 5944 voxeli
+  Klasa 9: 6763 voxeli
+  Klasa 10: 5684 voxeli
+  Klasa 11: 5091 voxeli
+  Klasa 12: 4020 voxeli
+  Klasa 13: 7202 voxeli
+  Klasa 14: 3156 voxeli
+  Klasa 15: 6793 voxeli
+  Klasa 16: 3215 voxeli
+  Klasa 17: 3740 voxeli
+  Klasa 18: 4743 voxeli
+  Klasa 19: 5790 voxeli
+  Klasa 20: 6440 voxeli
+  Klasa 21: 5258 voxeli
+  Klasa 22: 7761 voxeli
+  Klasa 23: 6181 voxeli
+  Klasa 24: 6916 voxeli
+  Klasa 25: 11520 voxeli
+  Klasa 26: 12080 voxeli
+Największy numer klasy w pliku: 26
+
+Plik: 1001484858_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 38228859 voxeli
+  Klasa 1: 12341 voxeli
+  Klasa 2: 10275 voxeli
+  Klasa 3: 10513 voxeli
+  Klasa 4: 6968 voxeli
+  Klasa 5: 6079 voxeli
+  Klasa 6: 7251 voxeli
+  Klasa 7: 6047 voxeli
+  Klasa 8: 6738 voxeli
+  Klasa 9: 5753 voxeli
+  Klasa 10: 4859 voxeli
+  Klasa 11: 3860 voxeli
+  Klasa 12: 7219 voxeli
+  Klasa 13: 3224 voxeli
+  Klasa 14: 3179 voxeli
+  Klasa 15: 6780 voxeli
+  Klasa 16: 3657 voxeli
+  Klasa 17: 4753 voxeli
+  Klasa 18: 5870 voxeli
+  Klasa 19: 6328 voxeli
+  Klasa 20: 5717 voxeli
+  Klasa 21: 7492 voxeli
+  Klasa 22: 6324 voxeli
+  Klasa 23: 6633 voxeli
+  Klasa 24: 11635 voxeli
+  Klasa 25: 11646 voxeli
+Największy numer klasy w pliku: 25
+
+Plik: 1001486953_20180109.nii.gz -- uwaga + dziwne
+Liczność klas:
+  Klasa 0: 40745252 voxeli
+  Klasa 2: 13185 voxeli
+  Klasa 3: 14369 voxeli
+  Klasa 4: 11092 voxeli
+  Klasa 5: 5945 voxeli
+  Klasa 6: 7092 voxeli
+  Klasa 8: 8195 voxeli
+  Klasa 10: 6835 voxeli
+  Klasa 11: 8239 voxeli
+  Klasa 12: 6885 voxeli
+  Klasa 13: 5506 voxeli
+  Klasa 14: 3605 voxeli
+  Klasa 18: 6828 voxeli
+  Klasa 19: 3431 voxeli
+  Klasa 20: 3343 voxeli
+  Klasa 21: 7603 voxeli
+  Klasa 23: 3799 voxeli
+  Klasa 24: 5634 voxeli
+  Klasa 25: 7012 voxeli
+  Klasa 26: 8434 voxeli
+  Klasa 27: 7991 voxeli
+  Klasa 28: 6521 voxeli
+  Klasa 29: 5710 voxeli
+  Klasa 30: 7263 voxeli
+  Klasa 31: 10557 voxeli
+  Klasa 32: 14212 voxeli
+  Klasa 33: 13724 voxeli
+  Klasa 35: 11735 voxeli
+  Klasa 37: 3 voxeli
+Największy numer klasy w pliku: 37
+
+Plik: 1001487462_20170505.nii.gz
+Liczność klas:
+  Klasa 0: 47116666 voxeli
+  Klasa 1: 13712 voxeli
+  Klasa 2: 14372 voxeli
+  Klasa 3: 16190 voxeli
+  Klasa 4: 15133 voxeli
+  Klasa 5: 7901 voxeli
+  Klasa 6: 6204 voxeli
+  Klasa 7: 6703 voxeli
+  Klasa 8: 5839 voxeli
+  Klasa 9: 8126 voxeli
+  Klasa 10: 6532 voxeli
+  Klasa 11: 6324 voxeli
+  Klasa 12: 4221 voxeli
+  Klasa 13: 7582 voxeli
+  Klasa 14: 3576 voxeli
+  Klasa 15: 3350 voxeli
+  Klasa 16: 8042 voxeli
+  Klasa 17: 4281 voxeli
+  Klasa 18: 6231 voxeli
+  Klasa 19: 6779 voxeli
+  Klasa 20: 8145 voxeli
+  Klasa 21: 5654 voxeli
+  Klasa 22: 7031 voxeli
+  Klasa 23: 6301 voxeli
+  Klasa 24: 7098 voxeli
+  Klasa 25: 14891 voxeli
+  Klasa 26: 15899 voxeli
+  Klasa 27: 13300 voxeli
+  Klasa 28: 13917 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001487462_20180109.nii.gz
+Liczność klas:
+  Klasa 0: 52237272 voxeli
+  Klasa 1: 13809 voxeli
+  Klasa 2: 14540 voxeli
+  Klasa 3: 15164 voxeli
+  Klasa 4: 15250 voxeli
+  Klasa 5: 7689 voxeli
+  Klasa 6: 6240 voxeli
+  Klasa 7: 6670 voxeli
+  Klasa 8: 5820 voxeli
+  Klasa 9: 8171 voxeli
+  Klasa 10: 6593 voxeli
+  Klasa 11: 6077 voxeli
+  Klasa 12: 4260 voxeli
+  Klasa 13: 7367 voxeli
+  Klasa 14: 3463 voxeli
+  Klasa 15: 3398 voxeli
+  Klasa 16: 7623 voxeli
+  Klasa 17: 4390 voxeli
+  Klasa 18: 6279 voxeli
+  Klasa 19: 6948 voxeli
+  Klasa 20: 8094 voxeli
+  Klasa 21: 5619 voxeli
+  Klasa 22: 7087 voxeli
+  Klasa 23: 6320 voxeli
+  Klasa 24: 7045 voxeli
+  Klasa 25: 15395 voxeli
+  Klasa 26: 15251 voxeli
+  Klasa 27: 13878 voxeli
+  Klasa 28: 14288 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001487462_20180527.nii.gz
+Liczność klas:
+  Klasa 0: 44559765 voxeli
+  Klasa 1: 13530 voxeli
+  Klasa 2: 14107 voxeli
+  Klasa 3: 15776 voxeli
+  Klasa 4: 14544 voxeli
+  Klasa 5: 7975 voxeli
+  Klasa 6: 6091 voxeli
+  Klasa 7: 6685 voxeli
+  Klasa 8: 5868 voxeli
+  Klasa 9: 8034 voxeli
+  Klasa 10: 6516 voxeli
+  Klasa 11: 5948 voxeli
+  Klasa 12: 4281 voxeli
+  Klasa 13: 7161 voxeli
+  Klasa 14: 3367 voxeli
+  Klasa 15: 3191 voxeli
+  Klasa 16: 7322 voxeli
+  Klasa 17: 4491 voxeli
+  Klasa 18: 6149 voxeli
+  Klasa 19: 6941 voxeli
+  Klasa 20: 8130 voxeli
+  Klasa 21: 5580 voxeli
+  Klasa 22: 7178 voxeli
+  Klasa 23: 6265 voxeli
+  Klasa 24: 7033 voxeli
+  Klasa 25: 15629 voxeli
+  Klasa 26: 14760 voxeli
+  Klasa 27: 13281 voxeli
+  Klasa 28: 14402 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001487462_20190427.nii.gz
+Liczność klas:
+  Klasa 0: 44557895 voxeli
+  Klasa 1: 13554 voxeli
+  Klasa 2: 14584 voxeli
+  Klasa 3: 15532 voxeli
+  Klasa 4: 15375 voxeli
+  Klasa 5: 7637 voxeli
+  Klasa 6: 6730 voxeli
+  Klasa 7: 6087 voxeli
+  Klasa 8: 5920 voxeli
+  Klasa 9: 8148 voxeli
+  Klasa 10: 6557 voxeli
+  Klasa 11: 6237 voxeli
+  Klasa 12: 4110 voxeli
+  Klasa 13: 7284 voxeli
+  Klasa 14: 3353 voxeli
+  Klasa 15: 3273 voxeli
+  Klasa 16: 7412 voxeli
+  Klasa 17: 4305 voxeli
+  Klasa 18: 6181 voxeli
+  Klasa 19: 6949 voxeli
+  Klasa 20: 8106 voxeli
+  Klasa 21: 5647 voxeli
+  Klasa 22: 7111 voxeli
+  Klasa 23: 6251 voxeli
+  Klasa 24: 6914 voxeli
+  Klasa 25: 15338 voxeli
+  Klasa 26: 15280 voxeli
+  Klasa 27: 14064 voxeli
+  Klasa 28: 14166 voxeli
+Największy numer klasy w pliku: 28
+
+Plik: 1001495301_20180115.nii.gz -- dziwne
+Liczność klas:
+  Klasa 0: 44782094 voxeli
+  Klasa 2: 12056 voxeli
+  Klasa 6: 5850 voxeli
+Największy numer klasy w pliku: 6
+
+Plik: 1001500462_20180113.nii.gz
+Liczność klas:
+  Klasa 0: 48370926 voxeli
+  Klasa 2: 9526 voxeli
+  Klasa 3: 8532 voxeli
+  Klasa 4: 13468 voxeli
+  Klasa 5: 13066 voxeli
+  Klasa 6: 15467 voxeli
+  Klasa 7: 14327 voxeli
+  Klasa 8: 7308 voxeli
+  Klasa 9: 7364 voxeli
+  Klasa 10: 9358 voxeli
+  Klasa 11: 7253 voxeli
+  Klasa 12: 7222 voxeli
+  Klasa 13: 8344 voxeli
+  Klasa 14: 4543 voxeli
+  Klasa 15: 7667 voxeli
+  Klasa 16: 3241 voxeli
+  Klasa 17: 7604 voxeli
+  Klasa 18: 3338 voxeli
+  Klasa 19: 4200 voxeli
+  Klasa 20: 6436 voxeli
+  Klasa 21: 7732 voxeli
+  Klasa 22: 9222 voxeli
+  Klasa 23: 6374 voxeli
+  Klasa 24: 6585 voxeli
+  Klasa 25: 14414 voxeli
+  Klasa 26: 7039 voxeli
+  Klasa 27: 15439 voxeli
+  Klasa 28: 13069 voxeli
+  Klasa 29: 8897 voxeli
+  Klasa 30: 13638 voxeli
+  Klasa 31: 8401 voxeli
+Największy numer klasy w pliku: 31
+
+Plik: 1001531605_20180115.nii.gz
+Liczność klas:
+  Klasa 0: 44573485 voxeli
+  Klasa 1: 8550 voxeli
+  Klasa 2: 13033 voxeli
+  Klasa 3: 11542 voxeli
+  Klasa 4: 3995 voxeli
+  Klasa 5: 13648 voxeli
+  Klasa 6: 13494 voxeli
+  Klasa 7: 7535 voxeli
+  Klasa 8: 7202 voxeli
+  Klasa 9: 7933 voxeli
+  Klasa 10: 6782 voxeli
+  Klasa 11: 8266 voxeli
+  Klasa 12: 6554 voxeli
+  Klasa 13: 5450 voxeli
+  Klasa 14: 3663 voxeli
+  Klasa 15: 6432 voxeli
+  Klasa 16: 3299 voxeli
+  Klasa 17: 3291 voxeli
+  Klasa 18: 7145 voxeli
+  Klasa 19: 3716 voxeli
+  Klasa 20: 7594 voxeli
+  Klasa 21: 7991 voxeli
+  Klasa 22: 6964 voxeli
+  Klasa 23: 7288 voxeli
+  Klasa 24: 7437 voxeli
+  Klasa 25: 12523 voxeli
+  Klasa 26: 13056 voxeli
+  Klasa 27: 11337 voxeli
+  Klasa 28: 10795 voxeli
+Największy numer klasy w pliku: 28
+
+========== PODSUMOWANIE GLOBALNE ==========
+Łączna liczność klas we wszystkich plikach:
+  Klasa 0: 4647628992 voxeli
+  Klasa 1: 920343 voxeli
+  Klasa 2: 1024424 voxeli
+  Klasa 3: 1045924 voxeli
+  Klasa 4: 957074 voxeli
+  Klasa 5: 913187 voxeli
+  Klasa 6: 852628 voxeli
+  Klasa 7: 706559 voxeli
+  Klasa 8: 656568 voxeli
+  Klasa 9: 696267 voxeli
+  Klasa 10: 635063 voxeli
+  Klasa 11: 579443 voxeli
+  Klasa 12: 525460 voxeli
+  Klasa 13: 534189 voxeli
+  Klasa 14: 423562 voxeli
+  Klasa 15: 468406 voxeli
+  Klasa 16: 513892 voxeli
+  Klasa 17: 492107 voxeli
+  Klasa 18: 509500 voxeli
+  Klasa 19: 548175 voxeli
+  Klasa 20: 586805 voxeli
+  Klasa 21: 631698 voxeli
+  Klasa 22: 613760 voxeli
+  Klasa 23: 677507 voxeli
+  Klasa 24: 731444 voxeli
+  Klasa 25: 881089 voxeli
+  Klasa 26: 859287 voxeli
+  Klasa 27: 761480 voxeli
+  Klasa 28: 729936 voxeli
+  Klasa 29: 399172 voxeli
+  Klasa 30: 307095 voxeli
+  Klasa 31: 202563 voxeli
+  Klasa 32: 163329 voxeli
+  Klasa 33: 154158 voxeli
+  Klasa 34: 106776 voxeli
+  Klasa 35: 108956 voxeli
+  Klasa 36: 94334 voxeli
+  Klasa 37: 72118 voxeli
+  Klasa 38: 34917 voxeli
+  Klasa 39: 17856 voxeli
+  Klasa 40: 28545 voxeli
+  Klasa 41: 17924 voxeli
+  Klasa 43: 15164 voxeli
+  Klasa 44: 12845 voxeli
+  Klasa 45: 12549 voxeli
+  Klasa 46: 28349 voxeli
+  Klasa 47: 24273 voxeli
+  Klasa 48: 24838 voxeli
+  Klasa 49: 10776 voxeli
+  Klasa 51: 6 voxeli
+Największy numer klasy ogółem: 51

@@ -6,11 +6,12 @@ from pathlib import Path
 from Algorithms.Unet3D.unet3D import UNet3D
 from Algorithms.trainer import UnetTrainer
 import numpy as np
+import config
 
 # === Parametry ===
-PATCH_SIZE = (128, 128, 128)
-BATCH_SIZE = 1
-histogram_landmarks_path = "landmarks.npy"
+#PATCH_SIZE = (128, 128, 128)
+#BATCH_SIZE = 1
+histogram_landmarks_path = ""
 
 # === Tworzenie Subjectów ===
 def create_subjects_by_exact_filename(image_dir, mask_dir):
@@ -18,10 +19,10 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
     mask_dir = Path(mask_dir)
 
     # Mapa: nazwa pliku -> pełna ścieżka do maski
-    mask_map = {mask_path.name: mask_path for mask_path in mask_dir.glob('*.nii.gz')}
+    mask_map = {mask_path.name: mask_path for mask_path in mask_dir.glob('*' + config.FILE_FORMAT)}
 
     subjects = []
-    for image_path in image_dir.glob('*.nii.gz'):
+    for image_path in image_dir.glob('*'+ config.FILE_FORMAT):
         image_filename = image_path.name
         if image_filename in mask_map:
             mask_path = mask_map[image_filename]
@@ -37,53 +38,53 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
 
 
 
+def print_configuration():
+    print("🔧 CONFIGURATION:")
+    print(f" - PATCH_SIZE:     {config.PATCH_SIZE}")
+    print(f" - BATCH_SIZE:     {config.BATCH_SIZE}")
+    print(f" - EPOCH_COUNT:    {config.EPOCH_COUNT}")
+    print(f" - CLASS_NUMBER:   {config.CLASS_NUMBER}")
+    print(f" - LEARNING_RATE:  {config.LEARNING_RATE}")
+    print(f" - RANDOM_STATE:   {config.RANDOM_STATE}")
+
 
 if __name__ == "__main__":
 
     # pobranie 
     # image_paths = sorted(glob.glob("Data/ChinaCBCT/img/*.nii.gz")) 
     # mask_paths = sorted(glob.glob("Data/ChinaCBCT/label/*.nii.gz")) 
+    print_configuration()
 
-
-    subject_list = create_subjects_by_exact_filename("Data/ChinaCBCT/img","Data/ChinaCBCT/label")
+    #subject_list = create_subjects_by_exact_filename(config.IMG_PATH,config.LABEL_PATH)
 
     # podział danych na walidacje oraz treningowe
-    train_subjects = subject_list[:8]
-    val_subjects = subject_list[8:10]
+    train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
+    val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
 
 
     paths = [str(s['image'].path) for s in train_subjects]
     print(paths)
 
-    landmarks = tio.HistogramStandardization.train(
-        [s['image'].path for s in train_subjects],
-        output_path=histogram_landmarks_path
-        )
-    print('\nTrained landmarks:', landmarks)
 
-
-
-    landmark_dict = {'image': landmarks}
     # Transformacje wykonywane na danych treninigowych
     training_transform = tio.Compose([
-        tio.ToCanonical(),
-        tio.HistogramStandardization(landmark_dict),
-        tio.ZNormalization(masking_method=tio.ZNormalization.mean),
-        tio.RandomFlip(axes=(0, 1, 2)),
+        # tio.ToCanonical(),
+        # tio.HistogramStandardization(landmark_dict),
+        # tio.ZNormalization(masking_method=tio.ZNormalization.mean),
+        #tio.RandomFlip(axes=(0, 1, 2)), # Do usunięcia
         tio.RandomNoise(std=0.01),
         tio.RandomAffine(scales=0.1, degrees=10),
     ])
 
-    val_transform = tio.Compose(
-        [
-            tio.ToCanonical(),
-            tio.HistogramStandardization(landmark_dict),
-            tio.ZNormalization(masking_method=tio.ZNormalization.mean)
-        ]
-    )
+    # val_transform = tio.Compose(
+    #     [
+    #         tio.ToCanonical(),
+    #         tio.HistogramStandardization(landmark_dict),
+    #         tio.ZNormalization(masking_method=tio.ZNormalization.mean)
+    #     ]
+    # )
 
     #print(subject_list)
-    print(len(subject_list))
     print(f"Liczebność zbioru treningowego: {len(train_subjects)}")
     print(f"Liczebność zbioru treningowego: {len(val_subjects)}")
 
@@ -92,27 +93,27 @@ if __name__ == "__main__":
     # Kolejka treningowa
     train_queue = tio.Queue(
         train_dataset,
-        64,
-        8,
-        sampler=tio.data.LabelSampler(PATCH_SIZE),
-        num_workers=6,
+        config.QUE_MAX_LENGTH_TRAIN,
+        config.QUE_SAMPLES_PER_VOLUME_TRAIN,
+        sampler=tio.data.LabelSampler(config.PATCH_SIZE),
+        num_workers=config.NUM_WORKERS_TRAIN,
         shuffle_subjects=True,
         shuffle_patches=True,
     )
 
-    train_loader = DataLoader(train_queue,batch_size=BATCH_SIZE)
+    train_loader = DataLoader(train_queue,batch_size=config.BATCH_SIZE)
 
     print("--- Tworzenie modelu Unet3D ---")
-    model = UNet3D(in_channels=1, out_channels=33)
+    model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
 
     print("--- Tworzenie walidacyjnego datasetu---")
-    val_dataset = tio.SubjectsDataset(val_subjects,transform=val_transform)
+    val_dataset = tio.SubjectsDataset(val_subjects)
     val_queue = tio.Queue(
         val_dataset,
-        24,
-        8,
-        sampler=tio.data.LabelSampler(PATCH_SIZE),
-        num_workers=2,
+        config.QUE_MAX_LENGTH_VAL,
+        config.QUE_SAMPLES_PER_VOLUME_VAL   ,
+        sampler=tio.data.LabelSampler(config.PATCH_SIZE),
+        num_workers=config.NUM_WORKERS_VAL,
         shuffle_subjects=True,
         shuffle_patches=True
     )
@@ -127,10 +128,10 @@ if __name__ == "__main__":
         model = model,
         train_dataset=train_loader,
         val_dataset=val_loader,
-        classes_number=33,
-        batch_size=1,
-        learning_rate=1e-4,
-        num_epochs=30,
+        classes_number=config.CLASS_NUMBER,
+        batch_size=config.BATCH_SIZE,
+        learning_rate=config.LEARNING_RATE,
+        num_epochs=config.EPOCH_COUNT,
         device='cuda' if torch.cuda.is_available() else 'cpu'
     )
 

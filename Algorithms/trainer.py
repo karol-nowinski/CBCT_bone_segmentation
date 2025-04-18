@@ -31,9 +31,10 @@ class UnetTrainer:
         for batch_idx, batch in enumerate(self.train_loader):
 
             print(f"\n📦 Batch {batch_idx + 1}/{len(self.train_loader)}")
-            images = batch['image'][tio.DATA].to(self.device).float()
+            images = batch['image'][tio.DATA].to(self.device)
             labels = batch['mask'][tio.DATA].to(self.device)
 
+            print(images.shape)
             print("Optimizer")
             #start = time.time()
             self.optimizer.zero_grad()
@@ -74,8 +75,10 @@ class UnetTrainer:
             for batch_idx, batch in enumerate(self.val_loader):
                 print(f"\n🧪 Walidacja — Batch {batch_idx + 1}/{len(self.val_loader)}")
 
-                images = batch['image'][tio.DATA].to(self.device, non_blocking=True).float()
+                images = batch['image'][tio.DATA].to(self.device, non_blocking=True)
                 labels = batch['mask'][tio.DATA].to(self.device, non_blocking=True)
+
+                print(images.shape)
 
                 # Forward pass
                 val_outputs = self.model(images)

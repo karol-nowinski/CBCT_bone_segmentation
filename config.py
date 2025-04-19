@@ -38,5 +38,6 @@ VAL_LABEL_PATH = "Data\ChinaCBCTClean\labelPrepared\\validation"
 TEST_LABEL_PATH = "Data\ChinaCBCTClean\labelPrepared\\test"
 MODEL_PATH = "" # path to folder where models will be saved
 FILE_FORMAT = ".nii.gz"
+MODEL_PATH="Models\\Unet3D"
 
 

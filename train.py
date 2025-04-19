@@ -7,11 +7,8 @@ from Algorithms.Unet3D.unet3D import UNet3D
 from Algorithms.trainer import UnetTrainer
 import numpy as np
 import config
+import gc
 
-# === Parametry ===
-#PATCH_SIZE = (128, 128, 128)
-#BATCH_SIZE = 1
-histogram_landmarks_path = ""
 
 # === Tworzenie Subjectów ===
 def create_subjects_by_exact_filename(image_dir, mask_dir):
@@ -60,33 +57,26 @@ if __name__ == "__main__":
     # podział danych na walidacje oraz treningowe
     train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
     val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
-
+    # train_subjects = train_subjects[:8]
+    # val_subjects = val_subjects[:2]
 
     paths = [str(s['image'].path) for s in train_subjects]
-    print(paths)
+    #print(paths)
 
 
     # Transformacje wykonywane na danych treninigowych
     training_transform = tio.Compose([
-        # tio.ToCanonical(),
-        # tio.HistogramStandardization(landmark_dict),
-        # tio.ZNormalization(masking_method=tio.ZNormalization.mean),
-        #tio.RandomFlip(axes=(0, 1, 2)), # Do usunięcia
         tio.RandomNoise(std=0.01),
         tio.RandomAffine(scales=0.1, degrees=10),
     ])
 
-    # val_transform = tio.Compose(
-    #     [
-    #         tio.ToCanonical(),
-    #         tio.HistogramStandardization(landmark_dict),
-    #         tio.ZNormalization(masking_method=tio.ZNormalization.mean)
-    #     ]
-    # )
-
     #print(subject_list)
     print(f"Liczebność zbioru treningowego: {len(train_subjects)}")
     print(f"Liczebność zbioru treningowego: {len(val_subjects)}")
+    class_propabilities = {
+        0: 0.5,
+        1: 0.5
+    }
 
     train_dataset = tio.SubjectsDataset(train_subjects, transform=training_transform)
 
@@ -95,7 +85,7 @@ if __name__ == "__main__":
         train_dataset,
         config.QUE_MAX_LENGTH_TRAIN,
         config.QUE_SAMPLES_PER_VOLUME_TRAIN,
-        sampler=tio.data.LabelSampler(config.PATCH_SIZE),
+        sampler=tio.data.LabelSampler(config.PATCH_SIZE,label_name='mask',label_probabilities=class_propabilities),
         num_workers=config.NUM_WORKERS_TRAIN,
         shuffle_subjects=True,
         shuffle_patches=True,
@@ -106,13 +96,15 @@ if __name__ == "__main__":
     print("--- Tworzenie modelu Unet3D ---")
     model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
 
+
+
     print("--- Tworzenie walidacyjnego datasetu---")
     val_dataset = tio.SubjectsDataset(val_subjects)
     val_queue = tio.Queue(
         val_dataset,
         config.QUE_MAX_LENGTH_VAL,
         config.QUE_SAMPLES_PER_VOLUME_VAL   ,
-        sampler=tio.data.LabelSampler(config.PATCH_SIZE),
+        sampler=tio.data.UniformSampler(config.PATCH_SIZE),
         num_workers=config.NUM_WORKERS_VAL,
         shuffle_subjects=True,
         shuffle_patches=True

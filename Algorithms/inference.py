@@ -1,0 +1,54 @@
+import torch
+import torchio as tio
+from pathlib import Path
+import config
+from torch.utils.data import DataLoader
+
+
+
+class UnetInference:
+    def __init__(self,model,device = None,patch_size = (128,128,128),patch_overlap = (64,64,64),batch_size = 1):
+        self.model = model
+        self.device = device or torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.patch_size = patch_size
+        self.patch_overlap = patch_overlap
+        self.batch_size = batch_size
+        self.model.to(self.device)
+        self.model.eval()
+
+
+    def predict_subject(self,subject):
+
+        sampler = tio.inference.GridSampler(subject=subject,patch_size=self.patch_size,patch_overlap=self.patch_overlap)
+        aggregator = tio.inference.GridAggregator(sampler=sampler)
+        loader = DataLoader(sampler,batch_size=self.batch_size)
+
+        with torch.no_grad:
+            for batch in loader:
+                input = batch['image'][tio.DATA].to(self.device)
+                location = batch[tio.LOCATION]
+                prediction = self.model(input)
+                aggregator.add_batch(prediction.cpu(),locations=location)
+
+        return aggregator.get_output_tensor()
+    
+    def predict_and_save(self,image_path,output_path,save=True):
+
+        subject = tio.Subject(
+            image = tio.ScalarImage(str(image_path))
+        )
+
+        output_tensor = self.predict_subject(subject)
+
+        segmentation = output_tensor.argmax(dim=0, keepdim=True)
+
+
+
+        if save:
+            label_map = tio.LabelMap(
+                tensor=segmentation,
+                affine=subject.image.affine
+            )
+            label_map.save(output_path)
+
+        pass

@@ -41,3 +41,6 @@ FILE_FORMAT = ".nii.gz"
 MODEL_PATH="Models\\Unet3D"
 
 
+# inferecne
+INFERENCE_FILE = ""
+PATCH_OVERLAP = (64,64,64)

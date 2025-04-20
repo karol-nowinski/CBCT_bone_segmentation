@@ -47,11 +47,10 @@ class UnetTrainer:
 
             if(self.model.deep_supervision == True):
                 loss = (
-                        0.1 * self.criterion(outputs[0],labels) +
-                        0.2 * self.criterion(outputs[1],labels) +
-                        0.3 * self.criterion(outputs[2],labels) +
-                        0.4 * self.criterion(outputs[3],labels)
-                        )
+                    0.2 * self.criterion(outputs[0], labels) +
+                    0.3 * self.criterion(outputs[1], labels) +
+                    0.5 * self.criterion(outputs[2], labels)
+                )
             else:
                 loss = self.criterion(outputs, labels)
 
@@ -161,7 +160,7 @@ class UnetTrainer:
     def log_epoch_results(self,file_path,epoch,train_loss,val_loss):
         if not os.path.exists(file_path):
             with open(file_path,mode='w',newline='') as file:
-                writer = csv.writer(file_path)
+                writer = csv.writer(file)
                 writer.writerow(['epoch','training_loss','validation_loss'])
         
 

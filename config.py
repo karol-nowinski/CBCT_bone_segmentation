@@ -1,6 +1,6 @@
 
 # hyperparameters
-PATCH_SIZE = (128,128,128)
+PATCH_SIZE = (96,96,96)
 BATCH_SIZE = 1 # has to be 1 becouse of the huge memory usage
 EPOCH_COUNT = 30
 CLASS_NUMBER = 2 # 33
@@ -43,4 +43,4 @@ MODEL_PATH="Models\\Unet3D"
 
 # inferecne
 INFERENCE_FILE = ""
-PATCH_OVERLAP = (64,64,64)
+PATCH_OVERLAP = (48,48,48)

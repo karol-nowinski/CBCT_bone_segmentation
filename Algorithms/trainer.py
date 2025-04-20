@@ -21,8 +21,13 @@ class UnetTrainer:
         self.best_loss = float('inf')
         self.start_epoch = 0
 
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        self.experiment_folder = os.path.join(config.MODEL_PATH, f"experiment_{timestamp}")
+
         if model_path is not None:
             self.load_checkpoint(model_path)
+            self.experiment_folder = os.path.dirname(model_path)
+
         
 
 
@@ -40,13 +45,22 @@ class UnetTrainer:
 
             outputs = self.model(images)
 
-            loss = self.criterion(outputs, labels)
+            if(self.model.deep_supervision == True):
+                loss = (
+                        0.1 * self.criterion(outputs[0],labels) +
+                        0.2 * self.criterion(outputs[1],labels) +
+                        0.3 * self.criterion(outputs[2],labels) +
+                        0.4 * self.criterion(outputs[3],labels)
+                        )
+            else:
+                loss = self.criterion(outputs, labels)
 
             torch.cuda.synchronize()
             running_loss += loss.item()
             loss.backward()
 
             self.optimizer.step()
+
             # Zabezpieczenie: opcjonalnie czyszczenie cache
             del images, labels, outputs, loss
             torch.cuda.empty_cache()
@@ -69,7 +83,10 @@ class UnetTrainer:
                 val_outputs = self.model(images)
                 
                 # Calculate validation loss
-                val_loss = self.criterion(val_outputs, labels)
+                if(self.model.deep_supervision == True):
+                    val_loss = self.criterion(val_outputs[-1], labels)
+                else:
+                    val_loss = self.criterion(val_outputs, labels)
                 running_loss += val_loss.item()
 
                 del images, labels, val_outputs, val_loss
@@ -82,13 +99,10 @@ class UnetTrainer:
     def train(self):
 
 
-        timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-        experiment_folder = os.path.join(config.MODEL_PATH, f"experiment_{timestamp}")
+        if not os.path.exists(self.experiment_folder):
+            os.makedirs(self.experiment_folder)  
 
-        if not os.path.exists(experiment_folder):
-            os.makedirs(experiment_folder)  
-
-        log_file_path = os.path.join(experiment_folder, 'training_log.csv')
+        log_file_path = os.path.join(self.experiment_folder, 'training_log.csv')
 
         with open(log_file_path,mode='w',newline='') as file:
             writer = csv.writer(file)
@@ -105,27 +119,30 @@ class UnetTrainer:
                 val_loss = self.validate()
                 print(f"Validation loss: {val_loss}")
 
-                if val_loss < self.best_loss:
-                    self.best_loss = val_loss
-                    print("Validation loss improved, saving model...")
+                # if val_loss < self.best_loss:
+                    #self.best_loss = val_loss
+                    #print("Validation loss improved, saving model...")
 
                     # Get current date and time to add to filename
-                    timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-                    model_filename = f"unet3d_model_{epoch+1}_{timestamp}.pth"
-                    model_file_path = os.path.join(experiment_folder, model_filename)
-                    torch.save(self.model.state_dict(), model_file_path)
-                    print(f"Model saved as {model_filename}")
+                timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+                model_filename = f"{self.model.GetName()}_model_{epoch+1}_{timestamp}.pth"
+                self.save_checkpoint(epoch+1,self.experiment_folder,model_filename,train_loss,val_loss)
+                # model_file_path = os.path.join(experiment_folder, model_filename)
+                #torch.save(self.model.state_dict(), model_file_path)
+                print(f"Model saved as {model_filename}")
 
                 writer.writerow([epoch+1,train_loss,val_loss])
 
 
 
-    def save_checkpoint(self,epoch,folder_path,name):
+    def save_checkpoint(self,epoch,folder_path,name,train_loss,val_loss):
         model_file_path = os.path.join(folder_path, name)
         checkpoint = {
             'epoch': epoch+1,
             'model_state_dict': self.model.state_dict(),
             'optimizer_state_dict': self.optimizer.state_dict(),
+            'train_loss': train_loss,
+            'val_loss': val_loss
         }
         torch.save(checkpoint,model_file_path)
         print(f"Model saved as {name}")
@@ -135,6 +152,8 @@ class UnetTrainer:
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         self.start_epoch = checkpoint.get('epoch',0)
+        self.start_epoch = self.start_epoch -1
+        print(f"Current start epoch: {self.start_epoch}")
         print(f"Model loaded successfully from {path}")
 
 

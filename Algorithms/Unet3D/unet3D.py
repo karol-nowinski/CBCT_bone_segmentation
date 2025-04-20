@@ -75,7 +75,8 @@ class UNet3D(nn.Module):
         
         return self.final_conv(dec1)
 
-
+    def GetName(self):
+        return "Unet3D"
 
 
 # class Unet3DTrainer:

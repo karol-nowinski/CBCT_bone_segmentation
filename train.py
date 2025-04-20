@@ -4,6 +4,7 @@ import torchio as tio
 import glob
 from pathlib import Path
 from Algorithms.Unet3D.unet3D import UNet3D
+from Algorithms.UnetPP3D.unetPlusPlus3D import UNetPP3D
 from Algorithms.trainer import UnetTrainer
 import numpy as np
 import config
@@ -57,8 +58,8 @@ if __name__ == "__main__":
     # podział danych na walidacje oraz treningowe
     train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
     val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
-    # train_subjects = train_subjects[:8]
-    # val_subjects = val_subjects[:2]
+    train_subjects = train_subjects[:8]
+    val_subjects = val_subjects[:2]
 
     paths = [str(s['image'].path) for s in train_subjects]
     #print(paths)
@@ -94,8 +95,8 @@ if __name__ == "__main__":
     train_loader = DataLoader(train_queue,batch_size=config.BATCH_SIZE)
 
     print("--- Tworzenie modelu Unet3D ---")
-    model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-
+    #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
+    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
 
 
     print("--- Tworzenie walidacyjnego datasetu---")
@@ -124,7 +125,8 @@ if __name__ == "__main__":
         batch_size=config.BATCH_SIZE,
         learning_rate=config.LEARNING_RATE,
         num_epochs=config.EPOCH_COUNT,
-        device='cuda' if torch.cuda.is_available() else 'cpu'
+        device='cuda' if torch.cuda.is_available() else 'cpu',
+        model_path="Models\\Unet3D\\experiment_2025-04-20_09-57-23\\unet3d_model_3_2025-04-20_13-04-10.pth"
     )
 
     print("\n--- Trenowanie---")

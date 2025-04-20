@@ -104,34 +104,30 @@ class UnetTrainer:
 
         log_file_path = os.path.join(self.experiment_folder, 'training_log.csv')
 
-        with open(log_file_path,mode='w',newline='') as file:
-            writer = csv.writer(file)
-            writer.writerow(['epoch', 'training_loss', 'validation_loss'])
-                
-            for epoch in range(self.start_epoch,self.num_epochs):
-                print(f"Epoch {epoch + 1}/{self.num_epochs}:")
+        for epoch in range(self.start_epoch,self.num_epochs):
+            print(f"Epoch {epoch + 1}/{self.num_epochs}:")
 
-                #training
-                train_loss= self.train_epoch()
-                print(f"Training loss: {train_loss}")
+            #training
+            train_loss= self.train_epoch()
+            print(f"Training loss: {train_loss}")
 
-                # validation
-                val_loss = self.validate()
-                print(f"Validation loss: {val_loss}")
+            # validation
+            val_loss = self.validate()
+            print(f"Validation loss: {val_loss}")
 
-                # if val_loss < self.best_loss:
-                    #self.best_loss = val_loss
-                    #print("Validation loss improved, saving model...")
+            # if val_loss < self.best_loss:
+                #self.best_loss = val_loss
+                #print("Validation loss improved, saving model...")
 
-                    # Get current date and time to add to filename
-                timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-                model_filename = f"{self.model.GetName()}_model_{epoch+1}_{timestamp}.pth"
-                self.save_checkpoint(epoch+1,self.experiment_folder,model_filename,train_loss,val_loss)
-                # model_file_path = os.path.join(experiment_folder, model_filename)
-                #torch.save(self.model.state_dict(), model_file_path)
-                print(f"Model saved as {model_filename}")
+                # Get current date and time to add to filename
+            timestamp = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            model_filename = f"{self.model.GetName()}_model_{epoch+1}_{timestamp}.pth"
+            self.save_checkpoint(epoch+1,self.experiment_folder,model_filename,train_loss,val_loss)
+            # model_file_path = os.path.join(experiment_folder, model_filename)
+            #torch.save(self.model.state_dict(), model_file_path)
+            print(f"Model saved as {model_filename}")
 
-                writer.writerow([epoch+1,train_loss,val_loss])
+            self.log_epoch_results(log_file_path,epoch+1,train_loss,val_loss)
 
 
 
@@ -161,4 +157,15 @@ class UnetTrainer:
         # Load the model weights
         self.model.load_state_dict(torch.load(model_path))
         print("Model loaded successfully from", model_path)
+
+    def log_epoch_results(self,file_path,epoch,train_loss,val_loss):
+        if not os.path.exists(file_path):
+            with open(file_path,mode='w',newline='') as file:
+                writer = csv.writer(file_path)
+                writer.writerow(['epoch','training_loss','validation_loss'])
+        
+
+        with open(file_path,mode='a',newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([epoch,train_loss,val_loss])
 

@@ -29,6 +29,8 @@ class UNet3D(nn.Module):
     def __init__(self, in_channels=1, out_channels=1, base_channels=32):
         super(UNet3D, self).__init__()
         
+        self.deep_supervision = False
+
         self.encoder1 = DoubleConv(in_channels, base_channels)
         self.encoder2 = DoubleConv(base_channels, base_channels * 2)
         self.encoder3 = DoubleConv(base_channels * 2, base_channels * 4)

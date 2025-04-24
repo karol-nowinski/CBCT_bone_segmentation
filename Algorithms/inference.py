@@ -23,8 +23,11 @@ class UnetInference:
         aggregator = tio.inference.GridAggregator(sampler=sampler)
         loader = DataLoader(sampler,batch_size=self.batch_size)
 
-        with torch.no_grad:
-            for batch in loader:
+        with torch.no_grad():
+            print("no grad")
+            total_batches = str(len(loader))
+            for idx, batch in enumerate(loader):
+                print(f"⏳ Patch {str(idx+1)}/{total_batches}", end='\r')
                 input = batch['image'][tio.DATA].to(self.device)
                 location = batch[tio.LOCATION]
                 prediction = self.model(input)
@@ -41,8 +44,6 @@ class UnetInference:
         output_tensor = self.predict_subject(subject)
 
         segmentation = output_tensor.argmax(dim=0, keepdim=True)
-
-
 
         if save:
             label_map = tio.LabelMap(

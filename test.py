@@ -15,18 +15,14 @@ def load_model(checkpoint_path,device):
     # print(checkpoint)
     model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
 
-    state = checkpoint
-    print(state)
-
-
-    model.load_state_dict(state)
+    model.load_state_dict(checkpoint['model_state_dict'])
     print(f"Załaodwano state_dict do modelu")
 
     return model
 
 
-def Load_subject():
-    pass
+def prepare_test_loader():
+    
 
 
 
@@ -38,8 +34,10 @@ if __name__ == "__main__":
     print("--- Ładowanie modelu ---")
     model_path = r"Models\Unet3D\experiment_2025-04-18_19-10-40\unet3d_model_27_2025-04-19_00-44-21.pth"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-
     model = load_model(model_path,device=device)
+
+    print("--- Przygotowanie danych testowych ---")
+    subject_test_dir = 
 
     print("--- Tworzenie klasy inferencji ---")
 

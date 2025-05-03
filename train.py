@@ -21,7 +21,7 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
 
     subjects = []
     for image_path in image_dir.glob('*'+ config.FILE_FORMAT):
-        image_filename = image_path.name
+        image_filename = image_path.stem[:-5] + config.FILE_FORMAT
         if image_filename in mask_map:
             mask_path = mask_map[image_filename]
             subject = tio.Subject(
@@ -58,8 +58,11 @@ if __name__ == "__main__":
     # podział danych na walidacje oraz treningowe
     train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
     val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
-    train_subjects = train_subjects[:8]
-    val_subjects = val_subjects[:2]
+    train_subjects = train_subjects[:150]
+    val_subjects = val_subjects[:30]
+    #train_subjects = train_subjects[:30]
+    #val_subjects = val_subjects[:6]
+
 
     paths = [str(s['image'].path) for s in train_subjects]
     #print(paths)
@@ -74,10 +77,15 @@ if __name__ == "__main__":
     #print(subject_list)
     print(f"Liczebność zbioru treningowego: {len(train_subjects)}")
     print(f"Liczebność zbioru treningowego: {len(val_subjects)}")
-    class_propabilities = {
-        0: 0.5,
-        1: 0.5
-    }
+
+    background_weight = 0.2
+    tooth_weight =  (1.0 - background_weight) / (config.CLASS_NUMBER-1)
+
+    class_propabilities = {0: background_weight}
+    for i in range(1, config.CLASS_NUMBER):
+        class_propabilities[i] = tooth_weight
+
+    print(class_propabilities)
 
     train_dataset = tio.SubjectsDataset(train_subjects, transform=training_transform)
 
@@ -95,8 +103,8 @@ if __name__ == "__main__":
     train_loader = DataLoader(train_queue,batch_size=config.BATCH_SIZE)
 
     print("--- Tworzenie modelu Unet3D ---")
-    model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
+    #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
+    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
 
 
     print("--- Tworzenie walidacyjnego datasetu---")
@@ -126,7 +134,7 @@ if __name__ == "__main__":
         learning_rate=config.LEARNING_RATE,
         num_epochs=config.EPOCH_COUNT,
         device='cuda' if torch.cuda.is_available() else 'cpu',
-        model_path="Models\\Unet3D\\experiment_2025-04-20_15-20-41\\Unet3D_model_8_2025-04-20_17-06-37.pth"
+        #model_path="Models\\UnetPP3D\\experiment_2025-04-20_21-12-23\\UnetPP3D_model_28_2025-04-21_03-50-53.pth"
     )
 
     print("\n--- Trenowanie---")

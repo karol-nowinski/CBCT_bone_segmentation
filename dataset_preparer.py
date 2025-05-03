@@ -3,22 +3,23 @@ from pathlib import Path
 import os
 import torch
 import numpy as np
+import random
 
 
 
 # configuration
-RAW_IMG_FOLDER_PATH = Path('Data\ChinaCBCTClean\img')
-RAW_LABEL_FOLDER_PATH = Path('Data\ChinaCBCTClean\label')
+RAW_IMG_FOLDER_PATH = Path('Data\ToothFairy2\imagesTr')
+RAW_LABEL_FOLDER_PATH = Path('Data\ToothFairy2\labelsTr')
 
-OUT_IMG_FOLDER_PATH_TRAIN = Path('Data\ChinaCBCTClean\imgPrepared\\train')
-OUT_IMG_FOLDER_PATH_VAL = Path('Data\ChinaCBCTClean\imgPrepared\\validation')
-OUT_IMG_FOLDER_PATH_TEST = Path('Data\ChinaCBCTClean\imgPrepared\\test')
-OUT_LABEL_FOLDER_PATH_TRAIN = Path('Data\ChinaCBCTClean\labelPrepared\\train')
-OUT_LABEL_FOLDER_PATH_VAL = Path('Data\ChinaCBCTClean\labelPrepared\\validation')
-OUT_LABEL_FOLDER_PATH_TEST = Path('Data\ChinaCBCTClean\labelPrepared\\test')
-LANDMARKS_PATH = Path('Data\ChinaCBCTClean\hs_landmarks.npy')
+OUT_IMG_FOLDER_PATH_TRAIN = Path('Data\CleanToothFairy2\imagesTr\\train')
+OUT_IMG_FOLDER_PATH_VAL = Path('Data\CleanToothFairy2\imagesTr\\validation')
+OUT_IMG_FOLDER_PATH_TEST = Path('Data\CleanToothFairy2\imagesTr\\test')
+OUT_LABEL_FOLDER_PATH_TRAIN = Path('Data\CleanToothFairy2\labelsTr\\train')
+OUT_LABEL_FOLDER_PATH_VAL = Path('Data\CleanToothFairy2\labelsTr\\validation')
+OUT_LABEL_FOLDER_PATH_TEST = Path('Data\CleanToothFairy2\labelsTr\\test')
+LANDMARKS_PATH = Path('Data\CleanToothFairy2\hs_landmarks.npy')
 
-FILE_FORMAT = ".nii.gz"
+FILE_FORMAT = ".mha"
 
 
 # subject creation
@@ -29,7 +30,7 @@ def create_subjects_by_exact_filename():
 
     subjects = []
     for image_path in RAW_IMG_FOLDER_PATH.glob('*'+ FILE_FORMAT):
-        image_filename = image_path.name
+        image_filename = image_path.stem[:-5] + FILE_FORMAT
         if image_filename in mask_map:
             mask_path = mask_map[image_filename]
             subject = tio.Subject(
@@ -51,13 +52,18 @@ if __name__ == "__main__":
     #     print(file['image'].path)
 
 
-    training_subjects = subjects[:64]
-    validation_subject = subjects[64:74]
-    test_subjects = subjects[74:]
+    random.seed(42)
+    random.shuffle(subjects)
+
+    training_subjects = subjects[:380]
+    validation_subject = subjects[380:430]
+    test_subjects = subjects[430:]
 
     print(f"Train count: {str(len(training_subjects))}")
     print(f"Validation count: {len(validation_subject)}")
     print(f"Test count: {len(test_subjects)}")
+
+    
 
     # landmarks training or loading
     if not LANDMARKS_PATH.exists():

@@ -7,6 +7,7 @@ import torchio as tio
 import gc
 import csv
 import config
+from tqdm import tqdm
 
 # Ze wzgledu na korzytsanie z overlaptilestrategy batch_size musi byc 1
 class UnetTrainer:
@@ -17,7 +18,9 @@ class UnetTrainer:
         self.val_loader = val_dataset
         self.num_epochs = num_epochs
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=learning_rate)
-        self.criterion = crit.MultiClassDiceLoss(classes_number)
+        weights = torch.tensor([0.1] + [1.0]*(classes_number-1), device='cuda')
+        self.criterion = crit.CombinedLoss(classes_number,class_weights=weights) #crit.MultiClassDiceLoss(classes_number)
+        self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer,mode='min',factor=0.5,patience=10,verbose=True)
         self.best_loss = float('inf')
         self.start_epoch = 0
 
@@ -34,10 +37,10 @@ class UnetTrainer:
     def train_epoch(self):
         self.model.train()
         running_loss = 0.0
+        
+        for batch_idx, batch in enumerate(tqdm(self.train_loader,desc='Training - batch')):
 
-        for batch_idx, batch in enumerate(self.train_loader):
-
-            print(f"\n📦 Batch {batch_idx + 1}/{len(self.train_loader)}")
+            #print(f"\n📦 Batch {batch_idx + 1}/{len(self.train_loader)}")
             images = batch['image'][tio.DATA].to(self.device)
             labels = batch['mask'][tio.DATA].to(self.device)
 
@@ -72,8 +75,8 @@ class UnetTrainer:
         self.model.eval() 
         running_loss = 0.0
         with torch.no_grad():  # Disable gradient computation during validation
-            for batch_idx, batch in enumerate(self.val_loader):
-                print(f"\n🧪 Walidacja — Batch {batch_idx + 1}/{len(self.val_loader)}")
+            for batch_idx, batch in enumerate(tqdm(self.val_loader,desc='Validation - batch')):
+                #print(f"\n🧪 Walidacja — Batch {batch_idx + 1}/{len(self.val_loader)}")
 
                 images = batch['image'][tio.DATA].to(self.device, non_blocking=True)
                 labels = batch['mask'][tio.DATA].to(self.device, non_blocking=True)
@@ -113,7 +116,7 @@ class UnetTrainer:
             # validation
             val_loss = self.validate()
             print(f"Validation loss: {val_loss}")
-
+            self.scheduler.step(val_loss)
             # if val_loss < self.best_loss:
                 #self.best_loss = val_loss
                 #print("Validation loss improved, saving model...")

@@ -4,6 +4,7 @@ import torchio as tio
 import config
 from torch.utils.data import DataLoader
 from Algorithms.Unet3D.unet3D import UNet3D
+from Algorithms.UnetPP3D.unetPlusPlus3D import UNetPP3D
 from Algorithms.inference import UnetInference
 from pathlib import Path
 
@@ -14,7 +15,7 @@ def load_model(checkpoint_path,device):
 
     checkpoint = torch.load(checkpoint_path,map_location=device)
     model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-
+    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
     model.load_state_dict(checkpoint['model_state_dict'])
     print(f"Załaodwano state_dict do modelu")
 
@@ -47,19 +48,17 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu inferencji ---")
 
     print("--- Ładowanie modelu ---")
-    model_path = "Models\\Unet3D\\experiment_2025-04-20_21-13-13\\Unet3D_model_101_2025-04-24_07-16-51.pth"
+    model_path = "Models\\Unet3D\\experiment_2025-04-30_07-35-51\\Unet3D_model_100_2025-05-01_10-15-46.pth"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = load_model(model_path,device=device)
 
     print("--- Przygotowanie danych testowych ---")
-    #subject_test_dir = 
-    image_path = "Data\\ChinaCBCTClean\\imgPrepared\\test\\1001463689_20200506.nii.gz"
+    output_dir = "Results\\CleanToothFairy_Unet3D96_mainclasses"
+    pairs = prepare_paths(config.TEST_IMG_PATH,output_dir,config.FILE_FORMAT)
 
     print("--- Tworzenie klasy inferencji ---")
     infer = UnetInference(model,device,config.PATCH_SIZE,config.PATCH_OVERLAP,1)
 
-    output_dir = "Results\\CleanChinaCBCT_unet3d"
-    pairs = prepare_paths(config.TEST_IMG_PATH,output_dir,config.FILE_FORMAT)
     #print(pairs)
     for pair in pairs:
         print(pair)

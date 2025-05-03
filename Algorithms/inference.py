@@ -31,7 +31,10 @@ class UnetInference:
                 input = batch['image'][tio.DATA].to(self.device)
                 location = batch[tio.LOCATION]
                 prediction = self.model(input)
-                aggregator.add_batch(prediction.cpu(),locations=location)
+                if self.model.deep_supervision == True:
+                    aggregator.add_batch(prediction[-1].cpu(),locations=location)
+                else:
+                    aggregator.add_batch(prediction.cpu(),locations=location)
 
         return aggregator.get_output_tensor()
     
@@ -44,6 +47,11 @@ class UnetInference:
         output_tensor = self.predict_subject(subject)
 
         segmentation = output_tensor.argmax(dim=0, keepdim=True)
+
+        print("Output tensor shape:", output_tensor.shape)
+        _, D, H, W = output_tensor.shape  # zakładamy (C, D, H, W)
+        print("🔍 example logits (środek):", output_tensor[:, D//2, H//2, W//2])
+        print("Unikalne klasy po argmax:", segmentation.unique())
 
         if save:
             label_map = tio.LabelMap(

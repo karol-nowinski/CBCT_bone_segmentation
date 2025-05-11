@@ -34,9 +34,9 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu wyliczania metryk ---")
 
 
-    class_number = 2
-    ground_truth_path = "Data\\ChinaCBCTClean\\labelPrepared\\test\\1001463689_20200506.nii.gz"
-    predicted_path = "Results\\CleanChinaCBCT_unet3d\\1001463689_20200506_prediction.nii.gz"
+    class_number = 29
+    ground_truth_path = "Data\\CleanToothFairy2\\labelsTeethAll\\test\\ToothFairy2F_004.mha"
+    predicted_path = "Results\\CleanToothFairy_mergedTeeth_Unet3D96\\ToothFairy2F_004_0000_prediction.mha"
 
     print("--- Wczytywanie obrazów ---")
     gt = nib.load(ground_truth_path).get_fdata().astype(np.uint8)

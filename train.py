@@ -35,6 +35,20 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
     return subjects
 
 
+def get_kfold_split(data,k,index):
+    if index <= 0 or index > k:
+        raise ValueError("Nie można pobrac kfolda")
+    
+    size = len(data) // k   
+
+    start = index * size + min(index,0)
+    end = start + size
+
+    val_data = data[start:end]
+    train_data = data[:start] + data[:end]
+
+    return train_data, val_data
+
 
 def print_configuration():
     print("🔧 CONFIGURATION:")
@@ -59,6 +73,11 @@ if __name__ == "__main__":
     train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
     val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
     train_subjects = train_subjects[:150]
+
+    # Podzielenie na k-fold
+
+
+
     val_subjects = val_subjects[:30]
     #train_subjects = train_subjects[:30]
     #val_subjects = val_subjects[:6]
@@ -104,7 +123,7 @@ if __name__ == "__main__":
 
     print("--- Tworzenie modelu Unet3D ---")
     #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
+    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
 
 
     print("--- Tworzenie walidacyjnego datasetu---")

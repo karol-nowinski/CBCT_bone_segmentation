@@ -3,7 +3,7 @@
 PATCH_SIZE = (96,96,96)
 BATCH_SIZE = 1 # has to be 1 becouse of the huge memory usage
 EPOCH_COUNT = 200
-CLASS_NUMBER = 9#2 # 33 # 36
+CLASS_NUMBER = 36#9#2 # 33 # 36
 LEARNING_RATE = 1e-3
 RANDOM_STATE = 42
 
@@ -49,18 +49,22 @@ VAL_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\validation"
 TEST_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\test"
 
 # Dla scalonych zebów plus reszty
-TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\train"
-VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\validation"
-TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
+#TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\train"
+#VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\validation"
+#TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
 
 
-# TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\train"
-# VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\validation"
-# TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\test"
+TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\train"
+VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\validation"
+TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\test"
 
 MODEL_PATH = "" # path to folder where models will be saved
 FILE_FORMAT = ".mha"
-MODEL_PATH="Models\\UnetPP3D"
+MODEL_PATH="Models\\Unet3D"
+
+
+
+K_FOLD = 5
 
 
 # inferecne

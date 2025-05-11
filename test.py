@@ -48,12 +48,12 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu inferencji ---")
 
     print("--- Ładowanie modelu ---")
-    model_path = "Models\\Unet3D\\experiment_2025-04-30_07-35-51\\Unet3D_model_100_2025-05-01_10-15-46.pth"
+    model_path = "Models\\Unet3D\\experiment_2025-05-07_23-34-03\\Unet3D_model_100_2025-05-09_04-34-37.pth"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = load_model(model_path,device=device)
 
     print("--- Przygotowanie danych testowych ---")
-    output_dir = "Results\\CleanToothFairy_Unet3D96_mainclasses"
+    output_dir = "Results\\CleanTothFairy2_Unet3D_OnlyTeeth"
     pairs = prepare_paths(config.TEST_IMG_PATH,output_dir,config.FILE_FORMAT)
 
     print("--- Tworzenie klasy inferencji ---")

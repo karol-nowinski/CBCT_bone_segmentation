@@ -14,8 +14,8 @@ from pathlib import Path
 def load_model(checkpoint_path,device):
 
     checkpoint = torch.load(checkpoint_path,map_location=device)
-    model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
+    #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
+    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
     model.load_state_dict(checkpoint['model_state_dict'])
     print(f"Załaodwano state_dict do modelu")
 
@@ -48,12 +48,12 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu inferencji ---")
 
     print("--- Ładowanie modelu ---")
-    model_path = "Models\\Unet3D\\experiment_2025-05-07_23-34-03\\Unet3D_model_100_2025-05-09_04-34-37.pth"
+    model_path = "Models\\Unet3D\\experiment_2025-05-14_23-12-57_k=2\\UnetPP3D_model_100_2025-05-16_19-09-39.pth"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = load_model(model_path,device=device)
 
     print("--- Przygotowanie danych testowych ---")
-    output_dir = "Results\\CleanTothFairy2_Unet3D_OnlyTeeth"
+    output_dir = "Results\\test_kwalidacji"
     pairs = prepare_paths(config.TEST_IMG_PATH,output_dir,config.FILE_FORMAT)
 
     print("--- Tworzenie klasy inferencji ---")

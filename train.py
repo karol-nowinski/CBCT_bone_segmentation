@@ -9,6 +9,7 @@ from Algorithms.trainer import UnetTrainer
 import numpy as np
 import config
 import gc
+import random
 
 
 # === Tworzenie Subjectów ===
@@ -36,7 +37,7 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
 
 
 def get_kfold_split(data,k,index):
-    if index <= 0 or index > k:
+    if not 0 <= index < k:
         raise ValueError("Nie można pobrac kfolda")
     
     size = len(data) // k   
@@ -45,7 +46,7 @@ def get_kfold_split(data,k,index):
     end = start + size
 
     val_data = data[start:end]
-    train_data = data[:start] + data[:end]
+    train_data = data[:start] + data[end:]
 
     return train_data, val_data
 
@@ -71,16 +72,22 @@ if __name__ == "__main__":
 
     # podział danych na walidacje oraz treningowe
     train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
-    val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
+    #val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
     train_subjects = train_subjects[:150]
+    
+    random.seed(config.RANDOM_STATE)
+    random.shuffle(train_subjects)
 
     # Podzielenie na k-fold
+    train_subjects,val_subjects = get_kfold_split(train_subjects,config.K_FOLD,4)
 
-
-
-    val_subjects = val_subjects[:30]
     #train_subjects = train_subjects[:30]
     #val_subjects = val_subjects[:6]
+    for subject in val_subjects:
+        image_path = subject['image'].path
+        mask_path = subject['mask'].path
+        print((image_path, mask_path))
+
 
 
     paths = [str(s['image'].path) for s in train_subjects]
@@ -123,7 +130,7 @@ if __name__ == "__main__":
 
     print("--- Tworzenie modelu Unet3D ---")
     #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
+    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
 
 
     print("--- Tworzenie walidacyjnego datasetu---")
@@ -153,7 +160,7 @@ if __name__ == "__main__":
         learning_rate=config.LEARNING_RATE,
         num_epochs=config.EPOCH_COUNT,
         device='cuda' if torch.cuda.is_available() else 'cpu',
-        #model_path="Models\\UnetPP3D\\experiment_2025-04-20_21-12-23\\UnetPP3D_model_28_2025-04-21_03-50-53.pth"
+        model_path="Models\\Unet3D\\experiment_2025-05-18_20-36-43\\UnetPP3D_model_36_2025-05-19_12-23-33.pth"
     )
 
     print("\n--- Trenowanie---")

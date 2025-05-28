@@ -129,8 +129,8 @@ if __name__ == "__main__":
     train_loader = DataLoader(train_queue,batch_size=config.BATCH_SIZE)
 
     print("--- Tworzenie modelu Unet3D ---")
-    #model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
-    model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
+    model = UNet3D(in_channels=1, out_channels=config.CLASS_NUMBER)
+    #model = UNetPP3D(in_channels=1,out_channels=config.CLASS_NUMBER,deep_supervision=True)
 
 
     print("--- Tworzenie walidacyjnego datasetu---")
@@ -160,7 +160,7 @@ if __name__ == "__main__":
         learning_rate=config.LEARNING_RATE,
         num_epochs=config.EPOCH_COUNT,
         device='cuda' if torch.cuda.is_available() else 'cpu',
-        model_path="Models\\Unet3D\\experiment_2025-05-18_20-36-43\\UnetPP3D_model_36_2025-05-19_12-23-33.pth"
+        #model_path="Models\\Unet3D\\experiment_2025-05-18_20-36-43\\UnetPP3D_model_36_2025-05-19_12-23-33.pth"
     )
 
     print("\n--- Trenowanie---")

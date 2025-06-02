@@ -90,7 +90,7 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu liczenia metryk testowych ---")
 
     test_folder = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
-    prediction_folder = "Results\\CleanToothFairy_MergedTeeth_Unet3DPP96" 
+    prediction_folder = "Results\\ToothFairy2_UnetPP3D_k=4" 
 
 
     pairs = prepare_paths(test_folder,prediction_folder,config.FILE_FORMAT)
@@ -113,7 +113,7 @@ if __name__ == "__main__":
         })
 
 
-    save_metrics_to_excel(results_per_file,"toothfairy2_mergedTeeth_UnetPP3D.xlsx")
+    save_metrics_to_excel(results_per_file,"ToothFairy2_3DPPUNET_k=4.xlsx")
 
 
 

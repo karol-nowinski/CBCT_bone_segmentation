@@ -3,7 +3,7 @@
 PATCH_SIZE = (96,96,96)
 BATCH_SIZE = 1 # has to be 1 becouse of the huge memory usage
 EPOCH_COUNT = 200
-CLASS_NUMBER = 9 #36#9#2 # 33 # 36 # 9 - ToothFairy2_MergedTeeth, 36 - ToothFairy2_OnlyTeeth, 2 - ChinaCBCT
+CLASS_NUMBER = 2 #9 ToothFairy2 #36#9#2 # 33 # 36 # 9 - ToothFairy2_MergedTeeth, 36 - ToothFairy2_OnlyTeeth, 2 - ChinaCBCT
 LEARNING_RATE = 1e-3
 RANDOM_STATE = 42
 
@@ -33,6 +33,9 @@ HISTOGRAM_LANDMARKS_FILE="landmarks.npy"
 
 
 # China CBCT
+ALL_IMG_PATH = "Data\\ChinaCBCTClean\\imgPrepared\\all"
+ALL_LABEL_PATH = "Data\\ChinaCBCTClean\\labelPrepared\\all"
+
 # TRAIN_IMG_PATH = "Data\ChinaCBCTClean\imgPrepared\\train"
 # VAL_IMG_PATH = "Data\ChinaCBCTClean\imgPrepared\\validation"
 # TEST_IMG_PATH = "Data\ChinaCBCTClean\imgPrepared\\test"
@@ -40,18 +43,18 @@ HISTOGRAM_LANDMARKS_FILE="landmarks.npy"
 # VAL_LABEL_PATH = "Data\ChinaCBCTClean\labelPrepared\\validation"
 # TEST_LABEL_PATH = "Data\ChinaCBCTClean\labelPrepared\\test"
 # MODEL_PATH = "" # path to folder where models will be saved
-# FILE_FORMAT = ".nii.gz"
+FILE_FORMAT = ".nii.gz"
 # MODEL_PATH="Models\\Unet3D"
 
 # CleanToothFairy2_teethAll
-TRAIN_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\train"
-VAL_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\validation"
-TEST_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\test"
+# TRAIN_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\train"
+# VAL_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\validation"
+# TEST_IMG_PATH = "Data\\CleanToothFairy2\\imagesTr\\test"
 
-# Dla scalonych zebów plus reszty
-TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\train"
-VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\validation"
-TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
+# # Dla scalonych zebów plus reszty
+# TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\train"
+# VAL_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\validation"
+# TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
 
 
 # TRAIN_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\train"
@@ -59,7 +62,7 @@ TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsTeethAll\\test"
 # TEST_LABEL_PATH = "Data\\CleanToothFairy2\\labelsOnlyTeeth\\test"
 
 MODEL_PATH = "" # path to folder where models will be saved
-FILE_FORMAT = ".mha"
+# FILE_FORMAT = ".mha"
 MODEL_PATH="Models\\Unet3D"
 
 

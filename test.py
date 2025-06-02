@@ -48,17 +48,18 @@ if __name__ == "__main__":
     print("--- Uruchomienie skryptu inferencji ---")
 
     print("--- Ładowanie modelu ---")
-    model_path = "Models\\Unet3D\\experiment_2025-05-27_10-57-55_k=4_3DUNET\\Unet3D_model_100_2025-05-28_08-09-32.pth"
+    model_path = "Models\\Unet3D\\experiment_2025-05-28_23-34-58\\Unet3D_model_100_2025-05-29_14-27-42.pth"
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     model = load_model(model_path,device=device)
 
     print("--- Przygotowanie danych testowych ---")
-    output_dir = "Results\\ToothFairy2_Unet3D_k=4"
+    output_dir = "Results\\test_china"
     pairs = prepare_paths(config.TEST_IMG_PATH,output_dir,config.FILE_FORMAT)
 
     print("--- Tworzenie klasy inferencji ---")
     infer = UnetInference(model,device,config.PATCH_SIZE,config.PATCH_OVERLAP,1)
 
+    print(len(pairs))
     #print(pairs)
     for pair in pairs:
         print(pair)

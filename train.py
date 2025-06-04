@@ -10,6 +10,9 @@ import numpy as np
 import config
 import gc
 import random
+from collections import defaultdict
+import os
+import re
 
 
 # === Tworzenie Subjectów ===
@@ -22,7 +25,7 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
 
     subjects = []
     for image_path in image_dir.glob('*'+ config.FILE_FORMAT):
-        image_filename = image_path.stem[:-5] + config.FILE_FORMAT
+        image_filename = image_path.stem[:-4] + config.FILE_FORMAT
         if image_filename in mask_map:
             mask_path = mask_map[image_filename]
             subject = tio.Subject(
@@ -34,6 +37,46 @@ def create_subjects_by_exact_filename(image_dir, mask_dir):
             print(f"⚠️ Brak pasującej maski dla: {image_filename}")
 
     return subjects
+
+
+def group_files_by_patient_id(subjects):
+    """
+    Grupuje pliki w folderze na podstawie ID pacjenta zawartego w nazwie pliku.
+    Zakłada format nazwy: ID_data.nii.gz, np. 1001382496_20180423.nii.gz
+
+    :param folder_path: Ścieżka do folderu z plikami
+    :return: Słownik {ID_pacjenta: [lista_plików]}
+    """
+    grouped_subjects = defaultdict(list)
+
+
+    for subject in subjects:
+        image_path = Path(subject['image'].path)
+        match = re.match(r"(\d+)_", image_path.name)
+        if match:
+            patient_id = match.group(1)
+            grouped_subjects[patient_id].append(subject)
+        else:
+            print(f"⚠️ Nie udało się wyciągnąć ID pacjenta z: {image_path.name}")
+
+    return dict(grouped_subjects)
+
+def get_subject_by_group_split(grouped_subjects ,k):
+
+    patient_ids = list(grouped_subjects.keys())
+    
+    val_group = patient_ids[k]
+
+    val_subjects = grouped_subjects[val_group]
+
+    train_subjects = []
+
+    for pid, subjects in grouped_subjects.items():
+        if pid != val_group:
+            train_subjects.extend(subjects)
+
+    return train_subjects,val_subjects
+
 
 
 def get_kfold_split(data,k,index):
@@ -71,22 +114,36 @@ if __name__ == "__main__":
     #subject_list = create_subjects_by_exact_filename(config.IMG_PATH,config.LABEL_PATH)
 
     # podział danych na walidacje oraz treningowe
-    train_subjects = create_subjects_by_exact_filename(config.TRAIN_IMG_PATH,config.TRAIN_LABEL_PATH)
+    train_subjects = create_subjects_by_exact_filename(config.ALL_IMG_PATH,config.ALL_LABEL_PATH)
     #val_subjects = create_subjects_by_exact_filename(config.VAL_IMG_PATH,config.VAL_LABEL_PATH)
-    train_subjects = train_subjects[:150]
+    #train_subjects = train_subjects[:150]
     
     random.seed(config.RANDOM_STATE)
     random.shuffle(train_subjects)
 
-    # Podzielenie na k-fold
-    train_subjects,val_subjects = get_kfold_split(train_subjects,config.K_FOLD,4)
+    # Podzielenie na k-fold (ToothFairy2)
+    #train_subjects,val_subjects = get_kfold_split(train_subjects,config.K_FOLD,4)
+
+
+    # Podzilenie wedlug LOPO_CV (ChinaCBCT)
+    subject_dict = group_files_by_patient_id(train_subjects)
+
+    train_subjects, val_subjects = get_subject_by_group_split(subject_dict,7)
+    group_count = len(subject_dict)
+    print(f"Łącznie występuje {group_count} grup!") 
+
+    for patient_id, subject_list in subject_dict.items():
+        print(f"\n🧬 Pacjent ID: {patient_id} ({len(subject_list)} subjectów)")
+        for subject in subject_list:
+            image_path = Path(subject['image'].path).name
+            print(f"  - {image_path}")
 
     #train_subjects = train_subjects[:30]
     #val_subjects = val_subjects[:6]
-    for subject in val_subjects:
-        image_path = subject['image'].path
-        mask_path = subject['mask'].path
-        print((image_path, mask_path))
+    # for subject in val_subjects:
+    #     image_path = subject['image'].path
+    #     mask_path = subject['mask'].path
+    #     print((image_path, mask_path))
 
 
 

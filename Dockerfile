@@ -32,11 +32,6 @@ RUN /opt/conda/envs/deep/bin/pip install --no-cache-dir \
         --index-url https://download.pytorch.org/whl/cu130
 
 
-# RUN conda activate deep && \
-#     pip install --no-cache-dir \
-#         torch torchvision \
-#         --index-url https://download.pytorch.org/whl/cu130
-
 ENV CONDA_DEFAULT_ENV=deep
 ENV PATH=/opt/conda/envs/${CONDA_DEFAULT_ENV}/bin:$PATH
 

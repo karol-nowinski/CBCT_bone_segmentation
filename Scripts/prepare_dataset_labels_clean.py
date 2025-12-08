@@ -76,14 +76,14 @@ def prepare_toothfairy_clean(input_folder : Path, output_folder : Path):
 def override_configuration(configuration : SimpleNamespace, args):
     '''
     Metoda nadpisująca konfiguracje na podstawie argumentów uruchomienia. W przypadku braku nadpisania
-    pobierana jest domyślna wartość z pliku config.py
+    pobierana jest domyślna wartość z pliku schema_config.py
     '''
 
     args_dict = vars(args)
 
     for arg_name, arg_value in args_dict.items():
         if arg_value is None:
-            continue  # argument nie podany -> nic nie nadpisujemy
+            continue 
 
         if arg_name in ARG_TO_CONFIG_KEYS:
             config_key = ARG_TO_CONFIG_KEYS[arg_name]

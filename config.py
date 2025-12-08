@@ -7,11 +7,12 @@ from pathlib import Path
 
 PATCH_SIZE = (96,96,96)        # Rozmiar patcha wykorzystywanego do treningu
 BATCH_SIZE = 1                 # Wielkośc batcha, w zaimplementowanej wersji ze względu na wielkośc dany obsługiwana jest wyłącznie wielkość 1
-EPOCH_COUNT = 200              # Liczba epok treningowych
+EPOCH_COUNT = 100              # Liczba epok treningowych
 CLASS_NUMBER = 2               # Liczba klas (ChinaCBCT: 2, ToothFairy2: 9)
 LEARNING_RATE = 1e-3           # Początkowy współczynnik uczenia
 RANDOM_STATE = 42              # Ziarno generatora losowego
 
+DATASET_NAME = "ChinaCBCT"    # Wykorzystywany zbiór danych [ToothFairy2, ChinaCBCT]
 MODEL_TYPE = "UnetPP3D"
 #MODEL_TYPE = "Unet3D"
 # ------------------------------------
@@ -37,12 +38,21 @@ QUE_SAMPLES_PER_VOLUME_VALIDATION  = 8
 
 # Katalog główny projektu
 BASE_DIR = Path(__file__).resolve().parent
+DATA_IMAGES_MAX_TRAIN_COUNT = 150 # maksymalna liczebność zbioru treningowego
 
 # Katalog danych
-DATA_DIR_IMAGES = BASE_DIR / "Data" / "ChinaCBCTClean" / "TEST_DATA_IMG" # Obrazy
-DATA_DIR_LABELS = BASE_DIR / "Data" / "ChinaCBCTClean" / "TEST_DATA_LABEL" # Labele
+#DATA_DIR_IMAGES = BASE_DIR / "Data" / "ChinaCBCTClean" / "TEST_DATA_IMG" # Obrazy
+#DATA_DIR_LABELS = BASE_DIR / "Data" / "ChinaCBCTClean" / "TEST_DATA_LABEL" # Labele
+
+# DATA_DIR_LABELS = BASE_DIR / "Data" / "ChinaCBCTClean" / "labelPrepared" / "all"  # Obrazy
+# DATA_DIR_IMAGES = BASE_DIR / "Data" / "ChinaCBCTClean" / "imgPrepared" / "all" # Labele
+
+DATA_DIR_LABELS = BASE_DIR / "Data" / "CleanToothFairy2" / "labelsTeethAll" / "train"  # Obrazy
+DATA_DIR_IMAGES = BASE_DIR / "Data" / "CleanToothFairy2" / "imagesTr" / "train" # Labele
+
 # Format danych (rozszerzenie)
 FILE_FORMAT = ".nii.gz"
+# FILE_FORMAT = ".mha"
 
 
  # Plik z punktami charakterystycznymi histogramu (po normalizacji)
@@ -75,11 +85,11 @@ MODEL_SAVE_DIR = BASE_DIR / "Models" / MODEL_TYPE
 # ------------------------------------
 # Parametry procedury 
 # ------------------------------------
-
+#PROCEDURE_MODE = 'kfold'
 PROCEDURE_MODE = 'kfold'       # rodzaje precedury: [normal, kfold, lopocv]
 K_FOLD = 5                      # Liczba foldów w k-cross validation
-VAL_KFOLD = 1                   # Numer folda wykorzystywanego jako zbiór walidacyjny
-VAL_LOPOCV = 3
+VAL_KFOLD = 0                   # Numer folda wykorzystywanego jako zbiór walidacyjny
+VAL_LOPOCV = 0
 
 # ------------------------------------
 # Inferencja
@@ -94,7 +104,7 @@ MODEL_EXPERIMENT = "experiment_2025-07-20_22-35-14_k=36"
 
 INF_FILE_NAME = ""                                                              # Nazwa pliku zapisującego inferencje
 PATCH_INF_OVERLAP = (48,48,48)                                                  # Overlap przy składaniu patchy podczas inferencji
-OUTPUT_INF_FOLDER = BASE_DIR / "Results" / "example_inf"
+OUTPUT_INF_FOLDER = BASE_DIR / "Results" / f"{MODEL_TYPE}_{DATASET_NAME}"
 MODEL_PATH = BASE_DIR / "Models" / MODEL_TYPE / MODEL_EXPERIMENT / MODEL_NAME
 INF_MODE = "folder"
-INF_INPUT =  BASE_DIR / "Data" / "ChinaCBCTClean" / "imgPrepared" / "test"
+INF_INPUT =  BASE_DIR / "Data" / "ChinaCBCTClean" / "imgPrepared" / "testall"

@@ -22,6 +22,17 @@ ARG_TO_CONFIG_KEYS = {
 }
 
 
+def get_dict_key_name(dataset: str, name: Path):
+    '''
+    Metoda pobierajaca odpowiedni klucz do slownika
+    '''
+
+    if dataset == "ToothFairy2":
+        st = name.stem
+        return st[:-5] + name.suffix
+    
+    return name.name
+
 def get_kfold_split(subjects, fold_number, index):
     '''
     Metoda dzieląca subjecty na zbiory treningowe oraz walidacyjne.
@@ -57,7 +68,7 @@ def get_subjects_dictionary(subjects):
             patient_id = match.group(1)
             grouped_subjects[patient_id].append(subject)
         else:
-            print(f"⚠️ Nie udało się wyciągnąć ID pacjenta z: {image_path.name}")
+            print(f" Nie udało się wyciągnąć ID pacjenta z: {image_path.name}")
 
     return dict(grouped_subjects)
 
@@ -82,12 +93,13 @@ def load_subjects_by_filename(image_folder_path : Path, label_folder_path : Path
     '''
 
     mask_map = {mask_path.name: mask_path for mask_path in label_folder_path.glob('*' + configuration.FILE_FORMAT)}
-
+    print(mask_map)
     subjects = []
     for image_path in image_folder_path.glob( "*" + configuration.FILE_FORMAT):
-        image_filename = image_path.name
+        image_filename = get_dict_key_name(config.DATASET_NAME,image_path)
         if image_filename in mask_map:
             mask_path = mask_map[image_filename]
+            # print(f"{image_path} - {mask_path}")
             subject = tio.Subject(
                 image=tio.ScalarImage(str(image_path)),
                 mask=tio.LabelMap(str(mask_path)),
@@ -203,7 +215,7 @@ def print_lopocv_subjects(subject_dict):
     print(f"Łącznie występuje {group_count} grup.") 
 
     for patient_id, subject_list in subject_dict.items():
-        print(f"\n🧬 Pacjent ID: {patient_id} ({len(subject_list)} subjectów)")
+        print(f"\n  Pacjent ID: {patient_id} ({len(subject_list)} subjectów)")
         for subject in subject_list:
             image_path = Path(subject['image'].path).name
             print(f"  - {image_path}")
@@ -226,6 +238,8 @@ if __name__ == "__main__":
 
     random.seed(configuration.RANDOM_STATE)
     random.shuffle(subjects)
+    if len(subjects) > config.DATA_IMAGES_MAX_TRAIN_COUNT:
+        subjects = subjects[:config.DATA_IMAGES_MAX_TRAIN_COUNT]
   
     if configuration.PROCEDURE_MODE == 'kfold':
         train_subjects, val_subjects = get_kfold_split(subjects,configuration.K_FOLD, configuration.VAL_KFOLD)
@@ -254,6 +268,7 @@ if __name__ == "__main__":
     class_propabilities = {0: background_weight}
     for i in range(1, config.CLASS_NUMBER):
         class_propabilities[i] = other_weight
+    print(class_propabilities)
 
     train_dataset = tio.SubjectsDataset(train_subjects, transform=training_transform)
     train_queue = tio.Queue(

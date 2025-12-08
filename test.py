@@ -183,7 +183,6 @@ if __name__ == "__main__":
 
     infer = UnetInference(model, device, configuration.PATCH_SIZE, configuration.PATCH_INF_OVERLAP)
 
-
     print("--- Inferencja---")
     for pair in pairs:
         infer.predict_and_save(pair[0],pair[1],True)
